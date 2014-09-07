@@ -2,6 +2,8 @@
 
 Complete personal website, including assets and external resources. Includes [Catalyst](http://insanj.com/catalyst), [Circlet](http://insanj.com/circlet), [Colendar](http://insanj.com/colendar), and [Orangered](http://insanj.com/orangered). Head over to the [Repository](https://github.com/insanj/repository) for my Cydia Repos.
 
+Also contains [lifeiscontent](https://github.com/lifeiscontent)'s responsive [sleepyti.me](http://sleepyti.me/) [fork](https://github.com/lifeiscontent/sleepyti.me) (use it, if you want!).
+
 ### License
 
 	The MIT License (MIT)
