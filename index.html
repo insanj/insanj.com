@@ -10,10 +10,7 @@
 		
 			body {
 				font-size: 25px;
-
 				text-align: center;
-
-				background-color: #78BAFA;
 				color: #333333;
 			}
 
@@ -48,27 +45,58 @@
 				opacity: 0.5;
 			}
 
-			.container {
-				font-family: "HelveticaNeue-Medium", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-				width: 600px;
+			.cover {
+			    background-image: url("images/cover-low.jpg");
+				background-size: cover;
+				background-position: left center;
 
-				margin: 0 auto;
-				margin-top: 50px;
+			    width: 100%;
+			    height: 100%;
+
+			    position: fixed;
+			    left: 0px;
+			    top: 0px;
 			}
 
-			.strip {
-				font-family: "Avenir", "Helvetica-Light", Helvetica, Arial, sans-serif;
+			.footer-container {
+				position: fixed;
+
+			    bottom: -175px;
+				height: 500px;
+				width: 100%;
+				left: 0px;
+
+				background-color: #78BAFA;
+
+				padding-top: 25px;
+
+				-webkit-box-shadow: 0 0px 25px -2px #000000;
+				-moz-box-shadow: 0 0px 25px -2px #000000;
+		        box-shadow: 0 0px 25px -2px #000000;
+			}
+
+			.footer {
+				position: fixed;
 				width: 600px;
 
-				margin: 0 auto;
-				margin-top: 50px;
+				left: 50%;
+				margin-left: -300px;
+			}
+
+			.bio-columns {
+				font-family: "HelveticaNeue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 			}
 
 			/* left column */
 			.name-column {
+				margin-top: 50px;
 				text-align: right;
-				margin-top:8%;
 				float: left;
+			}
+
+			/* center column */
+			.avatar-column {
+				display: inline-block;
 			}
 
 			.avatar {
@@ -81,30 +109,37 @@
 			    border-color: #75AFFF;
 			}
 
-			/* center column */
-			.avatar-column {
-				display: inline-block;
-			}
-
 			/* right column */
 			.bio-column {
-				margin-top: 8%;
+				margin-top: 50px;
 				text-align: left;
 				float: right;
+			}
+
+			.link-container {
+				margin-top: 25px;			
+				font-family: "Helvetica-Light", "Helvetica-Light", Helvetica, Arial, sans-serif;
 			}
 
 		</style>
 	</head>
 	<body>
 
-	<div class="container">
-		<div class="name-column">Julian Weiss<br/><a href="https://twitter.com/insanj">@insanj</a><br/><a href="https://twitter.com/urlinq" style="color: #00b080">@urlinq</a></div>
-		<div class="avatar-column"><img class="avatar" src="images/september.jpg"></div>
-		<div class="bio-column">designer <br/>developer <br/>philosopher</div>
+	<div class="cover">
 	</div>
 
-	<div class="strip">
-		<a href="https://github.com/insanj" style="color: #FFD800;">github</a>. <a href="https://medium.com/@insanj" style="color: #2C2C2C;">medium</a>. <a href="https://soundcloud.com/insanj" style="color: #FC5807;">soundcloud</a>. <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=insanj%40gmail%2ecom&lc=US&item_name=cup%20of%20coffee&item_number=insanj&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest" style="color: #0075FC;">paypal.</a><br/><a href="about.html" style="color: #E6E6E6;">contact + hire + more about me</a></div>
+	<div class="footer-container">
+	<div class="footer">
+		<div class="bio-columns">
+			<div class="name-column">Julian Weiss<br/><a href="https://twitter.com/insanj">@insanj</a><br/><a href="https://twitter.com/urlinq" style="color: #00b080">@urlinq</a></div>
+			<div class="avatar-column"><img class="avatar" src="images/october@2x.png"></div>
+			<div class="bio-column">designer <br/>developer <br/>philosopher</div>
+		</div>
+
+		<div class="link-container">
+			<a href="https://github.com/insanj" style="color: #FFD800;">github</a>. <a href="https://medium.com/@insanj" style="color: #2C2C2C;">medium</a>. <a href="https://soundcloud.com/insanj" style="color: #FC5807;">soundcloud</a>. <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=insanj%40gmail%2ecom&lc=US&item_name=cup%20of%20coffee&item_number=insanj&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest" style="color: #0075FC;">paypal.</a><br/><a href="about.html" style="color: #E6E6E6;">contact + hire + more about me</a></div>
+		</div>
+	</div>
 	</div>
 
 	</body>
