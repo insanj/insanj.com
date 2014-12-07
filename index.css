@@ -4,12 +4,12 @@ body {
 
 ::selection {
 	color: #F1F1F1;
-	background: #E6E6E6;
+	background: #0080FF;
 }
 
 ::-moz-selection {
 	color: #F1F1F1;
-	background: #E6E6E6; 
+	background: #0080FF; 
 }
 
 a {
@@ -83,7 +83,7 @@ a:hover {
 }
 
 .bottombox {
-	background-color: #58C5FB;
+	border-top: solid 1px #999999;
 
 	width: 105%;
 	height: 891px;
@@ -97,19 +97,17 @@ a:hover {
 }
 
 .bottombox-text {
-	color: #FFFFFF;
+	color: #191919;
 
 	text-align: justify;
 	font-size: 20px;
 	font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 
 	width: 500px;
-
 	padding-top: 35px;
-
 	margin: auto;
 }
 
 div.bottombox-text a {
-	color: #0080FF;
+	color: #999999;
 }
