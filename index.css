@@ -1,5 +1,5 @@
 body {
-	background: #FFFFFF;
+	background: #2E3031;
 }
 
 ::selection {
@@ -13,7 +13,7 @@ body {
 }
 
 a {
-	color: #1E6BD6;
+	color: #6E97EC;
 	text-decoration: none;
 
 	-webkit-transition-property: opacity;
@@ -30,18 +30,19 @@ a {
 }
 
 a:hover {
-	opacity: 0.5;
+	text-decoration: underline;
 }
 
 .topbox {
 	font-size: 25px;
 	text-align: center;
+	color: #CFCFCF;
 
 	width: 600px;
 	margin: auto;
 	position: relative;
 
-	top: 20px;
+	top: 90px;
 	left: 0px;
 	bottom: 0px;
 	right: 0px;
@@ -61,11 +62,11 @@ a:hover {
 
 .topbox-column-center-avatar {
 	width: 200px;
-    height: 200px;
+	height: 200px;
 
 	border-style: solid;
-    border-radius: 50%;
-    border-color: transparent;
+	border-radius: 50%;
+	border-color: transparent;
 }
 
 .topbox-column-right {
@@ -86,26 +87,30 @@ a:hover {
 	border-top: solid 1px #999999;
 
 	width: 105%;
-	height: 891px;
+	height: 720px;
 
 	position: relative;
 
-	top: 79px;
+	top: 193px;
 	left: -3%;
 	bottom: 0px;
 	right: 0px;
 }
 
 .bottombox-text {
-	color: #191919;
+	color: #C5C5C5;
 
-	text-align: justify;
 	font-size: 20px;
 	font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 
-	width: 500px;
-	padding-top: 35px;
+	width: 750px;
+	padding-top: 98px;
 	margin: auto;
+
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+}
 }
 
 div.bottombox-text a {
