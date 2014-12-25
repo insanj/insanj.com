@@ -1,13 +1,14 @@
-## insanj.com
+# insanj.com
 
-Complete personal website, including assets and external resources. Includes [Catalyst](http://insanj.com/catalyst), [Circlet](http://insanj.com/circlet), [Colendar](http://insanj.com/colendar), and [Orangered](http://insanj.com/orangered). Head over to the [Repository](https://github.com/insanj/repository) for my Cydia Repos. This website has existed for as long as I've been on the internet, and previously  merged with my blog (which has now been consumed [by Medium](https://medium.com/@insanj)). You can get a peek at this evolution using [the Wayback Machine](https://web.archive.org/web/20110704211307/http://www.insanj.com/).
+Complete personal website, including assets and external resources. Includes [Catalyst](http://insanj.com/catalyst), [Circlet](http://insanj.com/circlet), [Colendar](http://insanj.com/colendar), and [Orangered](http://insanj.com/orangered). Head over to the [Repository](https://github.com/insanj/repository) for my Cydia Repos.
 
-Also contains [lifeiscontent](https://github.com/lifeiscontent)'s responsive [sleepyti.me](http://sleepyti.me/) [fork](https://github.com/lifeiscontent/sleepyti.me) (use it, if you want!).
+This website has existed for as long as I've been on the internet (although I wish [it was always on Github](https://web.archive.org/web/*/insanj.com)), previously at [The Wio](https://web.archive.org/web/*/thewio.com), various blogs ("The Read-a-Thon", etc), and at one point merged with [my Tumblr](http://insanjblog.tumblr.com/) (which has now been consumed [by Medium](https://medium.com/@insanj)).
+
+Also contains [lifeiscontent](https://github.com/lifeiscontent)'s responsive [sleepyti.me](http://sleepyti.me/) [fork](https://github.com/lifeiscontent/sleepyti.me)—use it, if you want!
 
 ### [License](LICENSE.md)
-
 	insanj.com: complete personal, dynamic website
-	Copyright (C) 2011-2014  Julian (insanj) Weiss
+	Copyright (C) 2008-2014  Julian (insanj) Weiss
 
 	This program is free software: you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
