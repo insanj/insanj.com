@@ -8,7 +8,7 @@ Also contains [lifeiscontent](https://github.com/lifeiscontent)'s responsive [sl
 
 ### [License](LICENSE.md)
 	insanj.com: complete personal, dynamic website
-	Copyright (C) 2008-2014  Julian (insanj) Weiss
+	Copyright (C) 2008-2015  Julian (insanj) Weiss
 
 	This program is free software: you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
