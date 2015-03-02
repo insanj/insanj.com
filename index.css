@@ -77,17 +77,45 @@ a:visited {
 
 	float: left;
 	margin-top: 50px;
+	margin-right: 60px;
 }
 
 .topbox-column-center {
 	display: inline-block;
+	float: center;
 }
 
-.topbox-column-center-avatar {
+.topbox-column-center-avatar-first {
 	width: 200px;
 	height: 200px;
-
 	border-radius: 50%;
+
+	margin: auto;
+	position: relative;
+	opacity: 1;
+
+-webkit-animation: fade-animation 2s ease-out 1 reverse forwards;
+   -moz-animation: fade-animation 2s ease-out 1 reverse forwards;
+    -ms-animation: fade-animation 2s ease-out 1 reverse forwards;
+     -o-animation: fade-animation 2s ease-out 1 reverse forwards;
+        animation: fade-animation 2s ease-out 1 reverse forwards;
+}
+
+.topbox-column-center-avatar-second {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+
+	margin: auto;
+	position: relative;
+	opacity: 0;
+	left: -200px;
+
+-webkit-animation: fade-animation 2s ease-in 1 forwards;
+   -moz-animation: fade-animation 2s ease-in 1 forwards;
+    -ms-animation: fade-animation 2s ease-in 1 forwards;
+     -o-animation: fade-animation 2s ease-in 1 forwards;
+        animation: fade-animation 2s ease-in 1 forwards;
 }
 
 .topbox-column-right {
@@ -95,7 +123,7 @@ a:visited {
 	text-align: left;
 
 	float: right;
-	margin-top: 50px;
+	margin-top: -150px;
 }
 
 .topbox-footer {
