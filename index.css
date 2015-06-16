@@ -1,6 +1,6 @@
-@import url(http://nicholastodor.com/sf/usesf.css);
-
 body {
+	font-family: 'Roboto', "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-weight: 400;
 	background: #181817;
 }
 
@@ -18,16 +18,16 @@ a {
 	text-decoration: none;
 
 	opacity: 1.0;
-	-o-transition: .25s ease-in-out;
-	-ms-transition: .25s ease-in-out;
-	-moz-transition: .25s ease-in-out;
-	-webkit-transition: .25s ease-in-out;
-	transition: .25s;
+	-o-transition: .26s ease-in-out;
+	-ms-transition: .26s ease-in-out;
+	-moz-transition: .26s ease-in-out;
+	-webkit-transition: .26s ase-in-out;
+	transition: .26s;
 }
 
 a:hover {
 	text-decoration: inherit;
-	opacity: 0.5;
+	opacity: 0.6;
 }
 
 a:visited {
@@ -35,7 +35,6 @@ a:visited {
 }
 
 .profile {
-	font-family: 'San Francisco Text', "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
 	font-size: 17px;
 	text-align: left;
 	color: white;
@@ -53,21 +52,27 @@ img.avatar {
 	border-radius: 50%;
 }
 
+.biography-container {
+	font-weight: 300;
+
+	position: fixed;
+	top: 0px;
+	left: 260px;
+	right: 5px;
+	bottom: 0px;
+
+	overflow: scroll;
+}
+
 .biography {
-	font-family: 'San Francisco Display', "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	text-align: justify;
 	color: #E0DFDA;
 
-	position: fixed;
-	top: 0px;
-	right: 2px;
-	left: 260px;
-
 	padding-right: 50px;
 
+	min-width: 360px;	
 	max-height: 100%;
-	overflow: scroll;
 }
 
 .biography a {
