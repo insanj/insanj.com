@@ -2,6 +2,8 @@ body {
 	font-family: 'Roboto', "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	background: #181817;
+
+	min-width: 500px;
 }
 
 ::selection {
@@ -37,9 +39,11 @@ a:visited {
 .profile {
 	font-size: 17px;
 	text-align: left;
-	color: white;
+	color: #D8D8D8;
 
-	position: fixed;
+	opacity: 0.8;
+
+	position: absolute;
 	top: 20px;
 	left: 50px;
 	bottom: 10px;
@@ -55,11 +59,13 @@ img.avatar {
 .biography-container {
 	font-weight: 300;
 
-	position: fixed;
+	position: absolute;
 	top: 0px;
 	left: 260px;
 	right: 5px;
 	bottom: 0px;
+
+	min-width: 500px;
 
 	overflow: scroll;
 }
