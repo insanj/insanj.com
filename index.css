@@ -74,20 +74,17 @@ img.avatar {
 }
 
 .biography-container {
-	font-weight: 300;
-
 	position: absolute;
-	top: 0px;
 	left: 260px;
+	top: 0px;
 	right: 5px;
 	bottom: 0px;
 
 	min-width: 500px;
-
-	overflow: scroll;
 }
 
 .biography {
+	font-weight: 300;
 	font-size: 18px;
 	color: #E0DFDA;
 
@@ -96,9 +93,7 @@ img.avatar {
 	hyphens: auto;
 	
 	padding-right: 50px;
-
 	min-width: 360px;	
-	max-height: 100%;
 }
 
 .biography a {
