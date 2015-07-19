@@ -4,6 +4,7 @@ body {
 	background: #181817;
 
 	min-width: 500px;
+	display: block;
 }
 
 ::selection {
@@ -34,6 +35,22 @@ a:hover {
 
 a:visited {
 	color: inherit;
+}
+
+input#show, input#hide, span#content {
+	display: none;
+}
+
+input#show:checked ~ span#content  {
+	display: block;
+}
+
+input#hide:checked ~ span#content  {
+	display: none;
+}
+
+span#content a {
+	color: white;
 }
 
 .profile {
@@ -72,9 +89,12 @@ img.avatar {
 
 .biography {
 	font-size: 18px;
-	text-align: justify;
 	color: #E0DFDA;
 
+	text-align: justify;
+	text-justify: newspaper;
+	hyphens: auto;
+	
 	padding-right: 50px;
 
 	min-width: 360px;	
