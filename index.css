@@ -20,17 +20,12 @@ body {
 a {
 	text-decoration: none;
 
-	opacity: 1.0;
-	-o-transition: .26s ease-in-out;
-	-ms-transition: .26s ease-in-out;
-	-moz-transition: .26s ease-in-out;
-	-webkit-transition: .26s ase-in-out;
-	transition: .26s;
+
 }
 
 a:hover {
 	text-decoration: inherit;
-	opacity: 0.6;
+	opacity: 0.7;
 }
 
 a:visited {
@@ -53,6 +48,14 @@ span#content a {
 	color: white;
 }
 
+span#showlabel {
+	cursor: pointer;
+}
+
+span#hidelabel {
+		cursor: pointer;
+}
+
 .profile {
 	font-size: 17px;
 	text-align: left;
@@ -73,11 +76,41 @@ img.avatar {
 	border-radius: 50%;
 }
 
+img.icon {
+	width: 70px;
+	height: 70px;
+	border-radius: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	opacity: 0.8;
+}
+
+h1 {
+	font-size: 22px;
+	text-align: 500;
+	opacity: 1.0;
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: 300;
+	opacity: 1.0;
+}
+
+h2.fixmargin {
+	margin-top: -10px;
+}
+
+h3 {
+	font-size: 19px;
+	font-weight: 400;	
+}
+
 .biography-container {
 	position: absolute;
 	left: 260px;
 	top: 0px;
-	right: 5px;
+	right: 0px;
 	bottom: 0px;
 
 	min-width: 500px;
@@ -85,6 +118,7 @@ img.avatar {
 
 .biography {
 	font-weight: 300;
+	font-family: HelveticaNeue, "HelveticaNeue", Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	color: #E0DFDA;
 
@@ -93,6 +127,10 @@ img.avatar {
 	hyphens: auto;
 	
 	padding-right: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+
 	min-width: 360px;	
 }
 
@@ -100,3 +138,13 @@ img.avatar {
 	color: #6E97EC;
 }
 
+.biography p {
+	opacity: 0.9;
+}
+
+p.footer {
+	margin-top: 20px;
+	opacity: 0.5;
+	color: #8F908A;
+	font-size: 10px;
+}
