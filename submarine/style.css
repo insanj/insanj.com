@@ -3,44 +3,26 @@ html {
 }
 
 body {
-	background-color: #000;
-	font-family: Avenir, HelveticaNeue, Helvetica, Arial, sans-serif;
-	font-weight: 500;
-	font-size: 12px;
-	color: #F9F9F9;
-	text-align: left;
-
-	height: 100%;
-	width: 100%;
-
-	margin: 0 auto;
-	padding: 0 auto;
-}
-
-p {
-	margin-top: 10px;
-	margin-bottom: 10px;
+	background-color: black;
+	opacity: 0.8;
 }
 
 h1 {
-	font-size: 36px;
-	font-weight: 600;
+	font-size: 28px;
+	font-weight: 500;
 }
 
 h2 {
-	font-size: 18px;
-	font-weight: 700;
+	margin-top: -20px;
+	font-size: 20px;
+	font-weight: 400;
 }
 
 h3 {
-	font-size: 14px;
-	font-weight: 600;
-}
-
-h4 {
-	font-size: 13px;
-	font-weight: 600;
-	font-family: Avenir, HelveticaNeue, Helvetica, Arial, sans-serif;
+	margin-top: 0px;
+	font-size: 12px;
+	font-weight: 200;
+	opacity: 0.5;
 }
 
 a {
@@ -48,26 +30,37 @@ a {
 	color: #4C7BD8;
 }
 
-hr {
-    display: block;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: solid;
-    border-width: 1.0px;
-    border-color: white;
-    opacity: 0.25;
-    border-radius: 1.5px;
+#top {
+	font-family: Avenir, HelveticaNeue, "HelveticaNeue", Helvetica, Arial, sans-serif;
+	color: #F9F9F9;
+
+	text-align: center;
+	padding: 50px;
+
+	background-color: black;
+}
+
+#bottom {
+	font-family: Avenir, HelveticaNeue, "HelveticaNeue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #D6D6D6;
+
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 10px;
+
+	background-color: #141414;
 }
 
 #icon {
 	width: 100px;
 	height: 100px;
-
-	margin-left: 50px;
-	
 	border-radius: 10px;
+
+	float: center;
 }
 
 #testflight {
@@ -80,205 +73,14 @@ hr {
 	border-style: solid;
 }
 
-#wireframe {
-	opacity: 0.5;
-
-	width: 342px;
-	height: auto;
-}
-
 #screenshot {
 	margin: 10px;
 	width: 200px;
-}
 
-figure {
-	position: absolute;
+	float: center;
 
-	width: 100%;
-	margin-top: 83px;
-	margin-left: 0px;
-
-	opacity: 0;
-}
-
-figure img {
-	width: 298px;
-	height: auto;
-}
-
-figure:nth-child(1) {
-	-webkit-animation: xfade 15s ease-in-out 0s infinite forwards;
-	   -moz-animation: xfade 15s ease-in-out 0s infinite forwards;
-	    -ms-animation: xfade 15s ease-in-out 0s infinite forwards;
-	     -o-animation: xfade 15s ease-in-out 0s infinite forwards;
-	        animation: xfade 15s ease-in-out 0s infinite forwards;
-}
-
-figure:nth-child(2) {
-	-webkit-animation: xfade 15s ease-in-out 3s infinite forwards;
-	   -moz-animation: xfade 15s ease-in-out 3s infinite forwards;
-	    -ms-animation: xfade 15s ease-in-out 3s infinite forwards;
-	     -o-animation: xfade 15s ease-in-out 3s infinite forwards;
-	        animation: xfade 15s ease-in-out 3s infinite forwards;
-}
-
-figure:nth-child(3) {
-	-webkit-animation: xfade 15s ease-in-out 6s infinite forwards;
-	   -moz-animation: xfade 15s ease-in-out 6s infinite forwards;
-	    -ms-animation: xfade 15s ease-in-out 6s infinite forwards;
-	     -o-animation: xfade 15s ease-in-out 6s infinite forwards;
-	        animation: xfade 15s ease-in-out 6s infinite forwards;
-}
-
-figure:nth-child(4) {
-	-webkit-animation: xfade 15s ease-in-out 9s infinite forwards;
-	   -moz-animation: xfade 15s ease-in-out 9s infinite forwards;
-	    -ms-animation: xfade 15s ease-in-out 9s infinite forwards;
-	     -o-animation: xfade 15s ease-in-out 9s infinite forwards;
-	        animation: xfade 15s ease-in-out 9s infinite forwards;
-}
-
-figure:nth-child(5) {
-	-webkit-animation: xfade 15s ease-in-out 12s infinite forwards;
-	   -moz-animation: xfade 15s ease-in-out 12s infinite forwards;
-	    -ms-animation: xfade 15s ease-in-out 12s infinite forwards;
-	     -o-animation: xfade 15s ease-in-out 12s infinite forwards;
-	        animation: xfade 15s ease-in-out 12s infinite forwards;
-}
-
-#background {
-	min-width: 1120px;
-	width: auto;
-	height: 500px;
-
-	left: 0;
-	top: 20px;
-	bottom: 20px;
-	right: 0;
-
-	position: absolute;
-
-	opacity: 0;
-	-webkit-animation: fade-animation 4.0s ease-in-out 0s 1 forwards;
-	   -moz-animation: fade-animation 4.0s ease-in-out 0s 1 forwards;
-	    -ms-animation: fade-animation 4.0s ease-in-out 0s 1 forwards;
-	     -o-animation: fade-animation 4.0s ease-in-out 0s 1 forwards;
-	        animation: fade-animation 4.0s ease-in-out 0s 1 forwards;
-}
-
-#background-left {
-	width: 200px;
-	height: 100%;
-
-	top: 100px;
-	left: 50px;
-	text-align: left;
-
-	position: absolute;
-	opacity: 0.8;
-}
-
-#background-right {
-	width: auto;
-	height: 100%;
-
-	top: 70px;
-	left: 360px;
-	right: 100px;
-	text-align: left;
-
-	font-size: 20px;
-	font-family: Avenir, HelveticaNeue, Helvetica, Arial, sans-serif;
-
-	position: absolute;
-	opacity: 0.8;
-}
-
-@keyframes xfade{
-   0%{
-      opacity: 0;
-   }
-   10% {
-      opacity:1;
-   }
-   30%{
-      opacity: 0;
-   }
-}
-
-@-webkit-keyframes xfade{
-   0%{
-      opacity: 0;
-   }
-   10% {
-      opacity:1;
-   }
-   30%{
-      opacity: 0;
-   }
-}
-
-@-moz-keyframes xfade{
-   0%{
-      opacity: 0;
-   }
-   10% {
-      opacity:1;
-   }
-   30%{
-      opacity: 0;
-   }
-}
-
-@-o-keyframes xfade{
-   0%{
-      opacity: 0;
-   }
-   10% {
-      opacity:1;
-   }
-   30%{
-      opacity: 0;
-   }
-}
-
-@keyframes fade-animation {
-	0%   { opacity: 0; }
-	100% { opacity: 1; }
-}
-
-@-webkit-keyframes fade-animation {
-	0%   { opacity: 0; }
-	100% { opacity: 1; }
-}
-
-@-moz-keyframes fade-animation {
-	0%   { opacity: 0; }
-	100% { opacity: 1; }
-}
-
-@-o-keyframes fade-animation {
-	0%   { opacity: 0; }
-	100% { opacity: 1; }
-}
-
-@keyframes move-animation {
-	0%   { top: 105%; }
-	100% { top: 20px; }
-}
-
-@-webkit-keyframes move-animation {
-	0%   { top: 105%; }
-	100% { top: 20px; }
-}
-
-@-moz-keyframes move-animation {
-	0%   { top: 105%; }
-	100% { top: 20px; }
-}
-
-@-o-keyframes move-animation {
-	0%   { top: 105%; }
-	100% { top: 20px; }
+	border-radius: 2px;
+	border-width: 1px;
+	border-color: #111;
+	border-style: solid;
 }
