@@ -63,14 +63,8 @@ a {
 	float: center;
 }
 
-#testflight {
+#badge {
 	width: 175px;
-	margin-left: 10px;
-
-	border-radius: 7px;
-	border-width: 1px;
-	border-color: #333;
-	border-style: solid;
 }
 
 #screenshot {
