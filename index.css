@@ -17,59 +17,6 @@ body {
 	background: #8B8B8B; 
 }
 
-a {
-	text-decoration: none;
-
-
-}
-
-a:hover {
-	text-decoration: inherit;
-	opacity: 0.7;
-}
-
-a:visited {
-	color: inherit;
-}
-
-input#show, input#hide, span#content {
-	display: none;
-}
-
-input#show:checked ~ span#content  {
-	display: block;
-}
-
-input#hide:checked ~ span#content  {
-	display: none;
-}
-
-span#content a {
-	color: white;
-}
-
-span#showlabel {
-	cursor: pointer;
-}
-
-span#hidelabel {
-		cursor: pointer;
-}
-
-.profile {
-	font-size: 17px;
-	text-align: left;
-	color: #D8D8D8;
-
-	opacity: 0.8;
-
-	position: absolute;
-	top: 20px;
-	left: 50px;
-	bottom: 10px;
-	width: 200px;
-}
-
 img.avatar {
 	width: 150px;
 	height: 150px;
@@ -83,6 +30,30 @@ img.icon {
 	margin-left: 10px;
 	margin-right: 10px;
 	opacity: 0.8;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: inherit;
+	opacity: 0.7;
+}
+
+a:visited {
+	color: inherit;
+}
+
+p.footer {
+	margin-top: 20px;
+	opacity: 0.5;
+	color: #8F908A;
+	font-size: 10px;
+}
+
+p.footer a {
+	color: inherit;
 }
 
 h1 {
@@ -104,6 +75,20 @@ h2.fixmargin {
 h3 {
 	font-size: 19px;
 	font-weight: 400;	
+}
+
+.profile {
+	font-size: 17px;
+	text-align: left;
+	color: #D8D8D8;
+
+	opacity: 0.8;
+
+	position: absolute;
+	top: 20px;
+	left: 50px;
+	bottom: 10px;
+	width: 200px;
 }
 
 .biography-container {
@@ -140,11 +125,4 @@ h3 {
 
 .biography p {
 	opacity: 0.9;
-}
-
-p.footer {
-	margin-top: 20px;
-	opacity: 0.5;
-	color: #8F908A;
-	font-size: 10px;
 }
