@@ -2,8 +2,6 @@ body {
 	font-family: 'Roboto', "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	background: #181817;
-
-	min-width: 500px;
 	display: block;
 }
 
@@ -74,7 +72,7 @@ h2.fixmargin {
 
 h3 {
 	font-size: 19px;
-	font-weight: 400;	
+	font-weight: 600;	
 }
 
 .profile {
@@ -98,12 +96,12 @@ h3 {
 	right: 0px;
 	bottom: 0px;
 
-	min-width: 500px;
+	min-width: 600px;
 }
 
 .biography {
-	font-weight: 300;
-	font-family: HelveticaNeue, "HelveticaNeue", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-family: "Open Sans", HelveticaNeue, "HelveticaNeue", Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	color: #E0DFDA;
 
