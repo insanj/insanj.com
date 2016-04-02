@@ -7,8 +7,6 @@ body {
 }
 
 h1 {
-	padding-top: 15px;
-
 	font-size: 40px;
 	font-weight: 200;
 	line-height: 38px;
@@ -18,8 +16,6 @@ h1 {
 }
 
 h2 {
-	padding-top: 10px;
-
 	font-size: 22px;
 	font-weight: 300;
 	color: #3b3b39;
@@ -28,20 +24,42 @@ h2 {
 div.biography {
 	color: #4a4a48;
 	position: relative;
-	width: 80%;
+	width: 50%;
+	float: left;
+
+	left: 30px;
 
 	font-weight: 300;
 	font-size: 18px;
 }
 
-p.links {
-	text-align: center;
-	margin-top: 90px;
-	margin-bottom: 310px;
+div.links {
+	position: relative;
+	width: 50%;
+	float: right;
+
+	top: 0px;
+	right: 30px;
+
+	text-align: right;
 }
 
-p.footer {
-	margin-top: 50px;
+div.apps {
+	position: relative;
+	margin-top: 60px;
+
+	width: 100%;
+	text-align: center;
+	float: left;
+}
+
+div.footer {
+	position: relative;
+	padding-top: 150px;
+	padding-bottom: 20px;
+	float: left;
+	text-align: left;
+
 	color: #323231;
 	font-size: 14px;
 	opacity: 0.9;
@@ -83,15 +101,4 @@ a {
 a:hover {
 	text-decoration: inherit;
 	opacity: 0.7;
-}
-
-div.sidebar {
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	width: 100px;
-}
-
-div.sidebar img {
-	margin: 10px;
 }
