@@ -1,11 +1,20 @@
 
-
 body {
 	background: #181817;
 	margin: 20px;
 
 	font-family: 'Roboto', system, -apple-system, BlinkMacSystemFont, "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
 	min-width: 1000px;
+    animation: background-fade 60s forwards;
+}
+
+@keyframes background-fade {
+    0% {
+        background:#181817;
+    }
+    100% {
+        background:#B4DCE4;
+    }
 }
 
 h1 {
@@ -184,3 +193,8 @@ a:hover {
 	text-decoration: inherit;
 	opacity: 0.7;
 }
+
+/*div.footer a {
+	text-decoration: none;
+	color: rgba(97, 102, 231, 0.7);
+}*/
