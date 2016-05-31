@@ -3,24 +3,21 @@ body {
 	margin: 20px;
 
 	font-family: 'Roboto', system, -apple-system, BlinkMacSystemFont, "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
-	min-width: 1200px;
 
-    background: -webkit-linear-gradient(-90deg, rgb(255, 255, 255), rgb(254, 255, 233)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(-90deg, rgb(255, 255, 255), rgb(254, 255, 233)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(-90deg, rgb(255, 255, 255), rgb(254, 255, 233)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(-90deg, rgb(255, 255, 255), rgb(254, 255, 233)); /* Standard syntax (must be last) */
-    background-repeat: no-repeat;
+	min-width: 735px;
+
+    background: #F1FCFD;
 }
 
 h1 {
 	font-size: 40px;
-	font-weight: 200;
+	font-weight: 300;
 	line-height: 38px;
 	color: rgb(81, 81, 81);
 }
 
 h2 {
-	font-size: 22px;
+	font-size: 21px;
 	font-weight: 300;
 	color: #494A48;
 }
@@ -32,7 +29,6 @@ p {
 div.biography {
 	color: #4a4a48;
 	position: relative;
-	width: 50%;
 	float: left;
 
 	left: 30px;
@@ -46,7 +42,6 @@ img.avatar {
 	height: 42px;
 
 	border-radius: 50%;
-	opacity: 0.8;
 
 	float: left;
 	margin-top: 22px;
@@ -56,15 +51,17 @@ img.avatar {
 div.links {
 	font-size: 30px;
 	font-weight: 200;
-	margin-top: -500px;
 
 	clear: both;
 	position: relative;
-	float: left;
+	float: center;
 
 	text-align: center;
 	line-height: 40px;
-	width: 500px;
+
+	padding: 50px;
+	margin-left: 0px;
+	margin-right: 0px;
 
 	font-variant: small-caps;
 }
@@ -76,7 +73,7 @@ div.links a {
 	padding-left: 5px;
 	padding-right: 5px;
 
-	background-color: rgba(122, 149, 187, 0.1);
+	background-color: rgba(250, 249, 224, 0.7);
 	border-radius: 5px;
 }
 
@@ -88,25 +85,20 @@ div.links a.chevron {
 
 div.apps {
 	position: relative;
-	padding: 20px;
 	padding-left: 50px;
-
-	width: 250px;
-
-	float: left;
-	text-align: center;
+	clear: both;
 
 	color: #5A5A5A;
 	font-weight: 300;
 }
 
 div.apps a {
-	opacity: 0.5;
-	color: inherit;
+	opacity: 1.0;
+	color: #7B7B7B;
 }
 
 div.apps a:hover {
-	opacity: 1.0;
+	opacity: 0.5;
 }
 
 div.apps-overflow {
@@ -114,10 +106,13 @@ div.apps-overflow {
 	font-weight: 300;
 
 	position: relative;
-	padding: 75px;
-	padding-bottom: 200px;
 
-	width: 850px;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: center;
+
+	padding: 75px;
+	padding-bottom: 150px;
 
 	clear: both;
 	column-count: 3;
@@ -127,13 +122,17 @@ div.apps-overflow {
 	text-align: center;
 }
 
+div.apps-overflow div {
+	padding: 20px;
+}
+
 div.apps-overflow a {
-	opacity: 0.5;
-	color: inherit;
+	opacity: 1.0;
+	color: #7B7B7B;
 }
 
 div.apps-overflow a:hover {
-	opacity: 1.0;
+	opacity: 0.5;
 }
 
 div.inner-app {
@@ -157,7 +156,9 @@ div.footer {
 	
 	clear: both;
 	float: center;
-	width: 90%;
+	
+	margin-left: 0px;
+	margin-right: 0px;
 
 	text-align: center;
 	color: #323231;
