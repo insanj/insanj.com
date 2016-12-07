@@ -51,7 +51,7 @@ img.avatar {
     margin-right: auto;
 }
 
-div.links {
+.links {
 	font-size: 30px;
 	font-weight: 300;
 
@@ -67,7 +67,8 @@ div.links {
 	font-variant: small-caps;
 }
 
-div.links a {
+.links a {
+	cursor: pointer;
 	position: relative;
 
 	padding-bottom: 5px;
@@ -82,77 +83,42 @@ div.links a {
 	border-radius: 5px;
 }
 
-div.links a.chevron {
+.links a.chevron {
 	font-size: 100px;
 	background-color: rgba(0,0,0,0);
 	opacity: 0.2;
 }
 
-div.apps {
-	position: relative;
-	padding-left: 50px;
-	clear: both;
-
-	color: #5A5A5A;
-	font-weight: 300;
-}
-
-div.apps a {
-	opacity: 1.0;
-	color: #7B7B7B;
-}
-
-div.apps a:hover {
-	opacity: 0.5;
-}
-
-div.apps-overflow {
-	color: #8b7e9b;
-	font-weight: 300;
-
-	position: relative;
-
-	margin-left: 0px;
+.apps-overflow {
+	table-layout: fixed;
+	
+	margin-left: -20px;
 	margin-right: 0px;
-	text-align: center;
+	text-align: left;
 
 	padding-bottom: 60px;
 
 	clear: both;
 	column-count: 3;
-	column-gap: 50px;
-
-	float: left;
-	text-align: center;
+	column-gap: 0px;
 }
 
-div.apps-overflow div {
-	padding: 20px;
+.inner-app {
+	padding: 30px;
 }
 
-div.apps-overflow a {
-	opacity: 1.0;
-	color: #f4e0e0;
-}
-
-div.apps-overflow a:hover {
-	opacity: 0.5;
-}
-
-div.inner-app {
-	padding-top: 30px;
-	display: inline-block;
-}
-
-img.icon {
+.icon {
 	float: center;
+	display: block;
 
 	width: 70px;
 	height: 70px;
 
 	border-radius: 10px;
+	
 	margin: 10px;
-	opacity: 0.8;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 div.footer {
@@ -183,14 +149,18 @@ div.footer {
 a {
 	text-decoration: none;
 	color: #909eb4;
+	cursor: pointer;
 }
 
 a:hover {
 	text-decoration: inherit;
-	opacity: 0.7;
+	opacity: 0.8;
 }
 
 /*div.footer a {
 	text-decoration: none;
 	color: rgba(97, 102, 231, 0.7);
 }*/
+
+
+
