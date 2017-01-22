@@ -103,7 +103,13 @@ img.avatar {
 	column-gap: 0px;
 }
 
+.apps-overflow td {
+	width: 33%;
+}
+
 .inner-app {
+	text-align: center;
+	vertical-align: top;
 	padding: 30px;
 }
 
@@ -138,12 +144,12 @@ div.footer {
 
 ::selection {
 	color: #CCCCCC;
-	background: #8B8B8B;
+	background: black;
 }
 
 ::-moz-selection {
 	color: #CCCCCC;
-	background: #8B8B8B; 
+	background: black; 
 }
 
 a {
@@ -161,6 +167,3 @@ a:hover {
 	text-decoration: none;
 	color: rgba(97, 102, 231, 0.7);
 }*/
-
-
-
