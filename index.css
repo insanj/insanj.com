@@ -89,6 +89,10 @@ img.avatar {
 	opacity: 0.2;
 }
 
+.links a:hover {
+	background-color: rgba(1,1,1,0.2);
+ }
+
 .apps-overflow {
 	table-layout: fixed;
 	
@@ -105,6 +109,19 @@ img.avatar {
 
 .apps-overflow td {
 	width: 33%;
+
+	-webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: rgba(0,0,0,0);
+}
+
+.apps-overflow td:hover {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #909eb4;
 }
 
 .inner-app {
@@ -142,6 +159,10 @@ div.footer {
 	opacity: 0.5;
 }
 
+.footer a:hover {
+	opacity: 0.5;
+}
+
 ::selection {
 	color: #CCCCCC;
 	background: black;
@@ -156,11 +177,13 @@ a {
 	text-decoration: none;
 	color: #909eb4;
 	cursor: pointer;
+
+	-webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 a:hover {
 	text-decoration: inherit;
-	opacity: 0.8;
 }
 
 /*div.footer a {
