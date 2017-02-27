@@ -194,19 +194,19 @@ a:hover {
 
 
 .extraprojects {
-	color: rgba(133, 158, 180, 0.5);
+	color: rgba(144, 158, 180, 0.5);
 	font-size: 24px;
-	font-variant: small-caps;
 
 	line-height: 50px;
 	margin-bottom: 60px;
 }
 
 .extraprojects .projectgroup {
-	color: rgba(133, 158, 180, 1.0);
+	color: rgba(144, 158, 180, 1.0);
 	font-size: 18px;
 	font-weight: 400;
 	font-variant: none;
+	margin-bottom: 5px;
 
 	display: block;
 	line-height: normal;
@@ -219,17 +219,24 @@ a:hover {
 
 	padding: 5px;
 	margin-bottom: 5px;
-	border-radius: 2px;
+	line-height: 16px;
+	baseline-shift: 50px;
+
+	border-radius: 10px;
 	border-style: solid;
 	border-width: 1.0px;
 	border-color: rgba(133, 158, 180, 0.5);
+
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 .extraprojects .project a {
+	vertical-align: text-bottom;
 	font-weight: 700;
 	color: rgba(133, 158, 180, 1.0);
 }
 
-.extraprojects .project a:hover {
-	text-decoration: underline;
+.extraprojects .project:hover {
+	background-color: rgba(1,1,1,0.2);
 }
