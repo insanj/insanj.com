@@ -1,12 +1,12 @@
 
 body {
-	margin: 70px;
+	min-width: 500px;
+	margin: 0px;
+	padding: 70px;
 
 	font-family: 'Roboto', system, -apple-system, BlinkMacSystemFont, "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
 
-	min-width: 735px;
-
-    background: #373d55;
+	background: #373d55;
 }
 
 h1 {
@@ -47,8 +47,8 @@ img.avatar {
 	border-radius: 50%;
 
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .links {
@@ -100,7 +100,7 @@ img.avatar {
 	margin-right: 0px;
 	text-align: left;
 
-	padding-bottom: 60px;
+	padding-bottom: 20px;
 
 	clear: both;
 	column-count: 3;
@@ -111,7 +111,7 @@ img.avatar {
 	width: 33%;
 
 	-webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 
 	border-bottom-width: 2px;
 	border-bottom-style: solid;
@@ -179,7 +179,7 @@ a {
 	cursor: pointer;
 
 	-webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 a:hover {
@@ -190,3 +190,46 @@ a:hover {
 	text-decoration: none;
 	color: rgba(97, 102, 231, 0.7);
 }*/
+
+
+
+.extraprojects {
+	color: rgba(133, 158, 180, 0.5);
+	font-size: 24px;
+	font-variant: small-caps;
+
+	line-height: 50px;
+	margin-bottom: 60px;
+}
+
+.extraprojects .projectgroup {
+	color: rgba(133, 158, 180, 1.0);
+	font-size: 18px;
+	font-weight: 400;
+	font-variant: none;
+
+	display: block;
+	line-height: normal;
+}
+
+.extraprojects .project {
+	font-size: 12px;
+	font-weight: 400;
+	display: inline-block;
+
+	padding: 5px;
+	margin-bottom: 5px;
+	border-radius: 2px;
+	border-style: solid;
+	border-width: 1.0px;
+	border-color: rgba(133, 158, 180, 0.5);
+}
+
+.extraprojects .project a {
+	font-weight: 700;
+	color: rgba(133, 158, 180, 1.0);
+}
+
+.extraprojects .project a:hover {
+	text-decoration: underline;
+}
