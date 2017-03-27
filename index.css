@@ -4,20 +4,23 @@ body {
 	margin: 0px;
 	padding: 70px;
 
-	font-family: 'Roboto', system, -apple-system, BlinkMacSystemFont, "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-family: 'Arimo', system, -apple-system, BlinkMacSystemFont, "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
 
 	background: #373d55;
 }
 
 h1 {
-	font-size: 42px;
+	margin-top: 20px;
+	margin-bottom: 35px;
+
+	font-size: 50px;
 	font-weight: 300;
-	line-height: 38px;
+	line-height: 0.9;
 	color: #909eb4;
 }
 
 h2 {
-	font-size: 21px;
+	font-size: 25px;
 	font-weight: 300;
 	color: #909eb4;
 	opacity: 0.8;
@@ -52,7 +55,9 @@ img.avatar {
 }
 
 .links {
-	font-size: 30px;
+	font-family: 'Roboto', system, -apple-system, BlinkMacSystemFont, "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
+
+	font-size: 35px;
 	font-weight: 300;
 
 	clear: both;
@@ -60,9 +65,9 @@ img.avatar {
 	float: center;
 
 	text-align: center;
-	line-height: 50px;
+	line-height: 1.7;
 
-	margin-top: 60px;	
+	margin-top: 40px;	
 
 	font-variant: small-caps;
 }
@@ -94,10 +99,14 @@ img.avatar {
  }
 
 .apps-overflow {
+	font-family: 'Roboto', system, -apple-system, BlinkMacSystemFont, "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
 	table-layout: fixed;
+	font-size: 18px;
 	
 	margin-left: -20px;
 	margin-right: 0px;
+	margin-top: -30px;
+
 	text-align: left;
 
 	padding-bottom: 20px;
@@ -194,8 +203,9 @@ a:hover {
 
 
 .extraprojects {
+	font-family: 'Roboto', system, -apple-system, BlinkMacSystemFont, "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
 	color: rgba(144, 158, 180, 0.5);
-	font-size: 24px;
+	font-size: 4px;
 
 	line-height: 50px;
 	margin-bottom: 60px;
@@ -203,7 +213,7 @@ a:hover {
 
 .extraprojects .projectgroup {
 	color: rgba(144, 158, 180, 1.0);
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 400;
 	font-variant: none;
 	margin-bottom: 5px;
@@ -213,14 +223,13 @@ a:hover {
 }
 
 .extraprojects .project {
-	font-size: 12px;
-	font-weight: 400;
+	font-size: 14px;
+	font-weight: 300;
 	display: inline-block;
 
 	padding: 5px;
 	margin-bottom: 5px;
-	line-height: 16px;
-	baseline-shift: 50px;
+	line-height: 1.3;
 
 	border-radius: 10px;
 	border-style: solid;
@@ -233,7 +242,7 @@ a:hover {
 
 .extraprojects .project a {
 	vertical-align: text-bottom;
-	font-weight: 700;
+	font-weight: 400;
 	color: rgba(133, 158, 180, 1.0);
 }
 
