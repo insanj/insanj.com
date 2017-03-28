@@ -109,8 +109,6 @@ img.avatar {
 
 	text-align: left;
 
-	padding-bottom: 20px;
-
 	clear: both;
 	column-count: 3;
 	column-gap: 0px;
@@ -159,6 +157,8 @@ div.footer {
 	clear: both;
 	float: center;
 	
+	line-height: normal;
+	margin-top: 80px;
 	margin-left: 0px;
 	margin-right: 0px;
 
@@ -205,25 +205,27 @@ a:hover {
 .extraprojects {
 	font-family: 'Roboto', system, -apple-system, BlinkMacSystemFont, "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
 	color: rgba(144, 158, 180, 0.5);
-	font-size: 4px;
+	font-size: 24px;
+	text-align: center;
 
-	line-height: 50px;
-	margin-bottom: 60px;
+	line-height: 100px;
+	margin-bottom: 20px;
 }
 
 .extraprojects .projectgroup {
+	text-align: left;
 	color: rgba(144, 158, 180, 1.0);
 	font-size: 20px;
 	font-weight: 400;
 	font-variant: none;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 
 	display: block;
 	line-height: normal;
 }
 
 .extraprojects .project {
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: 300;
 	display: inline-block;
 
