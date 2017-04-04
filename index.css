@@ -105,13 +105,15 @@ img.avatar {
 	
 	margin-left: -20px;
 	margin-right: 0px;
-	margin-top: -30px;
+	margin-top: -10px;
 
 	text-align: left;
 
 	clear: both;
 	column-count: 3;
 	column-gap: 0px;
+
+	margin-bottom: 60px;
 }
 
 .apps-overflow td {
@@ -206,10 +208,19 @@ a:hover {
 	font-family: 'Roboto', system, -apple-system, BlinkMacSystemFont, "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
 	color: rgba(144, 158, 180, 0.5);
 	font-size: 24px;
-	text-align: center;
+	text-align: left;
 
 	line-height: 100px;
 	margin-bottom: 20px;
+}
+
+.projectseparator {
+	border-width: 1px;
+	border-style: solid;
+	width: 50%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border-color: rgba(144, 158, 180, 0.1);
 }
 
 .extraprojects .projectgroup {
@@ -220,17 +231,29 @@ a:hover {
 	font-variant: none;
 	margin-bottom: 0px;
 
-	display: block;
+	display: inline-block;
 	line-height: normal;
 }
 
+.extraprojects .project-header {
+	float: left;
+
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
 .extraprojects .project {
+	text-align: left;
 	font-size: 18px;
 	font-weight: 300;
 	display: inline-block;
 
 	padding: 5px;
 	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
 	line-height: 1.3;
 
 	border-radius: 10px;
