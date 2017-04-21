@@ -8,9 +8,102 @@
 		<link rel="stylesheet" href="index.css">
 		<link href='http://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	</head>
 
 	<body>	
+		<div class="sidebar">
+			<div class="sidebar-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+			<div class="sidebar-apps"><i class="fa fa-globe" aria-hidden="true"></i></div>
+			<div class="sidebar-programming"><i class="fa fa-code-fork" aria-hidden="true"></i></div>
+			<div class="sidebar-writing"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+			<div class="sidebar-awards"><i class="fa fa-star-o" aria-hidden="true"></i></div>
+		</div>
+
+		<script src="http://nimsyllabus.com/jquery-3.1.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script>
+			function updateSelectedStatus(height) {
+			    if (height < 500.0) {
+			        $("#selected").css("border-left-width", "2px");
+			        $("#selected").removeAttr("id");
+
+			        $(".sidebar-top").attr("id", "selected");
+			        $(".sidebar-top").css("border-left-width", "4px");
+			    }	
+
+			    else if (height < 1400.0) {
+			        $("#selected").css("border-left-width", "2px");
+			        $("#selected").removeAttr("id");
+
+			        $(".sidebar-apps").attr("id", "selected");
+			        $(".sidebar-apps").css("border-left-width", "4px");
+			    }		
+
+				else if (height < 2200.0) {
+					$("#selected").css("border-left-width", "2px");
+			        $("#selected").removeAttr("id");
+
+			        $(".sidebar-programming").attr("id", "selected");
+			        $(".sidebar-programming").css("border-left-width", "4px");
+			    }	
+
+				else if (height < 3300.0) {
+					$("#selected").css("border-left-width", "2px");
+			        $("#selected").removeAttr("id");
+
+			        $(".sidebar-writing").attr("id", "selected");
+			        $(".sidebar-writing").css("border-left-width", "4px");
+			    }	
+
+				else {
+			        $("#selected").css("border-left-width", "2px");
+			        $("#selected").removeAttr("id");
+
+			        $(".sidebar-awards").attr("id", "selected");
+			        $(".sidebar-awards").css("border-left-width", "4px");
+			    }		
+			}
+
+		    updateSelectedStatus($(window).scrollTop());
+
+			$(window).scroll(function (event) {
+			   	var height = $(window).scrollTop();
+		    	updateSelectedStatus(height);
+			});
+
+			var animationTimeConstant = 1000;
+			$(".sidebar-top").bind("click", function(){
+			    $('html, body').animate({
+			        scrollTop: $("body").offset().top
+			    }, animationTimeConstant);
+			});
+
+			$(".sidebar-apps").bind("click", function(){
+			    $('html, body').animate({
+			        scrollTop: $(".apps-overflow").offset().top
+			    }, animationTimeConstant);
+			});
+
+			$(".sidebar-programming").bind("click", function(){
+			    $('html, body').animate({
+			        scrollTop: $("#programming").offset().top
+			    }, animationTimeConstant);
+			});
+
+			$(".sidebar-writing").bind("click", function(){
+			    $('html, body').animate({
+			        scrollTop: $("#writing").offset().top
+			    }, animationTimeConstant);
+			});			
+
+			$(".sidebar-awards").bind("click", function(){
+			    $('html, body').animate({
+			        scrollTop: $("#awards").offset().top
+			    }, animationTimeConstant);
+			});
+		</script>	
+			
 		<div class="biography">
 			<a target='_blank' href="https://instagram.com/insanj"><img class="avatar" src="images/summer.jpg"/></a>
 			<h1>Julian Weiss</h1>
@@ -67,7 +160,7 @@
 
 		<hr class="projectseparator"/>
 
-		<div class="extraprojects">
+		<div class="extraprojects" id="programming">
 			<div class="projectgroup">
 				<div class="project-header">Cocoapods</div>
 
@@ -171,7 +264,7 @@
 
 		<hr class="projectseparator"/>
 
-		<div class="extraprojects">
+		<div class="extraprojects" id="writing">
 			<div class="projectgroup">
 				<div class="project-header">Medium</div>
 				<div class="project"><a target='_blank' href="http://insanj.com/images/ah398%20-%20final%20paper%20-%20julian%20weiss.pdf">"The Fl&#226;nerie of Instagram: Studying the Photography-Based Social Network as a Self-Curated Newspaper within the Modern Cityscape of the Internet" (2016)</a></div>
@@ -242,7 +335,7 @@
 
 		<hr class="projectseparator"/>
 
-		<div class="extraprojects">
+		<div class="extraprojects" id="awards">
 			<div class="projectgroup">
 				<div class="project-header">Awards</div>
 				<div class="project">University of Rochester Writing, Speaking, and Argument Writing Contest Winner, Honorable Mention in Humanities (2017)</a></div>
