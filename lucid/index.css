@@ -2,7 +2,6 @@
 body {
 	min-width: 700px;
 	width: 100%;
-	height: 100%;
 	margin: 0px;
 
 	font-family: 'AmericanTypewriter', system, -apple-system, BlinkMacSystemFont, "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
@@ -15,6 +14,11 @@ body {
 	/*animation:backgroundfade 10s;
     -moz-animation:backgroundfade 10s infinite;
     -webkit-animation:backgroundfade 10s infinite;*/
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
 .container {
@@ -43,6 +47,30 @@ body {
 	margin-right: auto;
 
 	line-height: normal;
+}
+
+.banner {
+	width: 500px;
+	display: block;
+
+	text-align: left;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	margin-top: 50px;
+	margin-bottom: 20px;
+
+	font-size: 16px;
+}
+
+.banner img {
+	float: left;
+
+	width: 60px;
+	height: 60px;
+
+	margin-right: 10px;
 }
 
 h1 {
