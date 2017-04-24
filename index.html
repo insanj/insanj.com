@@ -17,93 +17,8 @@
 			<div class="sidebar-apps"><i class="fa fa-globe" aria-hidden="true"></i></div>
 			<div class="sidebar-programming"><i class="fa fa-code-fork" aria-hidden="true"></i></div>
 			<div class="sidebar-writing"><i class="fa fa-pencil" aria-hidden="true"></i></div>
-			<div class="sidebar-awards"><i class="fa fa-star-o" aria-hidden="true"></i></div>
 		</div>
-
-		<script src="http://nimsyllabus.com/jquery-3.1.1.min.js"></script>
-		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		<script>
-			function updateSelectedStatus(height) {
-			    if (height < 500.0) {
-			        $("#selected").css("border-left-width", "2px");
-			        $("#selected").removeAttr("id");
-
-			        $(".sidebar-top").attr("id", "selected");
-			        $(".sidebar-top").css("border-left-width", "4px");
-			    }	
-
-			    else if (height < 1400.0) {
-			        $("#selected").css("border-left-width", "2px");
-			        $("#selected").removeAttr("id");
-
-			        $(".sidebar-apps").attr("id", "selected");
-			        $(".sidebar-apps").css("border-left-width", "4px");
-			    }		
-
-				else if (height < 2200.0) {
-					$("#selected").css("border-left-width", "2px");
-			        $("#selected").removeAttr("id");
-
-			        $(".sidebar-programming").attr("id", "selected");
-			        $(".sidebar-programming").css("border-left-width", "4px");
-			    }	
-
-				else if (height < 3300.0) {
-					$("#selected").css("border-left-width", "2px");
-			        $("#selected").removeAttr("id");
-
-			        $(".sidebar-writing").attr("id", "selected");
-			        $(".sidebar-writing").css("border-left-width", "4px");
-			    }	
-
-				else {
-			        $("#selected").css("border-left-width", "2px");
-			        $("#selected").removeAttr("id");
-
-			        $(".sidebar-awards").attr("id", "selected");
-			        $(".sidebar-awards").css("border-left-width", "4px");
-			    }		
-			}
-
-		    updateSelectedStatus($(window).scrollTop());
-
-			$(window).scroll(function (event) {
-			   	var height = $(window).scrollTop();
-		    	updateSelectedStatus(height);
-			});
-
-			var animationTimeConstant = 1000;
-			$(".sidebar-top").bind("click", function(){
-			    $('html, body').animate({
-			        scrollTop: $("body").offset().top
-			    }, animationTimeConstant);
-			});
-
-			$(".sidebar-apps").bind("click", function(){
-			    $('html, body').animate({
-			        scrollTop: $(".apps-overflow").offset().top
-			    }, animationTimeConstant);
-			});
-
-			$(".sidebar-programming").bind("click", function(){
-			    $('html, body').animate({
-			        scrollTop: $("#programming").offset().top
-			    }, animationTimeConstant);
-			});
-
-			$(".sidebar-writing").bind("click", function(){
-			    $('html, body').animate({
-			        scrollTop: $("#writing").offset().top
-			    }, animationTimeConstant);
-			});			
-
-			$(".sidebar-awards").bind("click", function(){
-			    $('html, body').animate({
-			        scrollTop: $("#awards").offset().top
-			    }, animationTimeConstant);
-			});
-		</script>	
-			
+		
 		<div class="biography">
 			<a target='_blank' href="https://instagram.com/insanj"><img class="avatar" src="images/summer.jpg"/></a>
 			<h1>Julian Weiss</h1>
@@ -357,5 +272,95 @@
 			&#10035;&#65038; <a target='_blank' href="/orangered">orangered</a>
 			&#10035;&#65038; <a target='_blank' href="/submarine">submarine</a>
 		</div>
+
+		<script src="http://nimsyllabus.com/jquery-3.1.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script>
+			function updateSelectedStatus(height) {
+				//var documentHeight = $(window).height();
+
+				// console.log("OVERFLOW=" + $(".apps-overflow").offset().top + "\nDOC=" + documentHeight);
+
+				var height = $(window).scrollTop();
+				var appsHeight = $(".apps-overflow").offset().top;
+				var programmingHeight = $("#programming").offset().top;
+				var writingHeight = $("#writing").offset().top;
+				//var awardsHeight = $("#awards").offset().top;
+				//var footerHeight = $(".footer").offset().top;
+
+				console.log("height = " + height + "\napps = " + appsHeight + "\nprogramming = " + programmingHeight + "\nwriting = " + writingHeight);
+			    if (height < appsHeight) {
+			        $("#selected").css("border-left-width", "2px");
+			        $("#selected").removeAttr("id");
+
+			        $(".sidebar-top").attr("id", "selected");
+			        $(".sidebar-top").css("border-left-width", "4px");
+			    }	
+
+			    else if (height < programmingHeight) {
+			        $("#selected").css("border-left-width", "2px");
+			        $("#selected").removeAttr("id");
+
+			        $(".sidebar-apps").attr("id", "selected");
+			        $(".sidebar-apps").css("border-left-width", "4px");
+			    }		
+
+				else if (height < writingHeight) {
+					$("#selected").css("border-left-width", "2px");
+			        $("#selected").removeAttr("id");
+
+			        $(".sidebar-programming").attr("id", "selected");
+			        $(".sidebar-programming").css("border-left-width", "4px");
+			    }	
+
+				else { //else if (height < awardsHeight) {
+					$("#selected").css("border-left-width", "2px");
+			        $("#selected").removeAttr("id");
+
+			        $(".sidebar-writing").attr("id", "selected");
+			        $(".sidebar-writing").css("border-left-width", "4px");
+			    }	
+
+				/*else {
+			        $("#selected").css("border-left-width", "2px");
+			        $("#selected").removeAttr("id");
+
+			        $(".sidebar-awards").attr("id", "selected");
+			        $(".sidebar-awards").css("border-left-width", "4px");
+			    }	*/	
+			}
+
+		    updateSelectedStatus($(window).scrollTop());
+
+			$(window).scroll(function (event) {
+			   	var height = $(window).scrollTop();
+		    	updateSelectedStatus(height);
+			});
+
+			var animationTimeConstant = 1000;
+			$(".sidebar-top").bind("click", function(){
+			    $('html, body').animate({
+			        scrollTop: $("body").offset().top
+			    }, animationTimeConstant);
+			});
+
+			$(".sidebar-apps").bind("click", function(){
+			    $('html, body').animate({
+			        scrollTop: $(".apps-overflow").offset().top
+			    }, animationTimeConstant);
+			});
+
+			$(".sidebar-programming").bind("click", function(){
+			    $('html, body').animate({
+			        scrollTop: $("#programming").offset().top
+			    }, animationTimeConstant);
+			});
+
+			$(".sidebar-writing").bind("click", function(){
+			    $('html, body').animate({
+			        scrollTop: $("#writing").offset().top
+			    }, animationTimeConstant);
+			});			
+		</script>
 	</body>
 </html>
