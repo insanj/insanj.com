@@ -273,61 +273,53 @@
 			&#10035;&#65038; <a target='_blank' href="/submarine">submarine</a>
 		</div>
 
-		<script src="http://nimsyllabus.com/jquery-3.1.1.min.js"></script>
-		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="jquery-3.1.1.min.js"></script>
 		<script>
 			function updateSelectedStatus(height) {
-				//var documentHeight = $(window).height();
-
-				// console.log("OVERFLOW=" + $(".apps-overflow").offset().top + "\nDOC=" + documentHeight);
-
 				var height = $(window).scrollTop();
 				var appsHeight = $(".apps-overflow").offset().top;
 				var programmingHeight = $("#programming").offset().top;
 				var writingHeight = $("#writing").offset().top;
-				//var awardsHeight = $("#awards").offset().top;
-				//var footerHeight = $(".footer").offset().top;
 
-				console.log("height = " + height + "\napps = " + appsHeight + "\nprogramming = " + programmingHeight + "\nwriting = " + writingHeight);
 			    if (height < appsHeight) {
-			        $("#selected").css("border-left-width", "2px");
-			        $("#selected").removeAttr("id");
+			    	if ($(".sidebar-top").attr("id") != "selected") {
+				        $("#selected").css("border-left-width", "2px");
+				        $("#selected").removeAttr("id");
 
-			        $(".sidebar-top").attr("id", "selected");
-			        $(".sidebar-top").css("border-left-width", "4px");
+				        $(".sidebar-top").attr("id", "selected");
+				        $(".sidebar-top").css("border-left-width", "4px");
+			       	}
 			    }	
 
 			    else if (height < programmingHeight) {
-			        $("#selected").css("border-left-width", "2px");
-			        $("#selected").removeAttr("id");
+			    	if ($(".sidebar-apps").attr("id") != "selected") {
+				        $("#selected").css("border-left-width", "2px");
+				        $("#selected").removeAttr("id");
 
-			        $(".sidebar-apps").attr("id", "selected");
-			        $(".sidebar-apps").css("border-left-width", "4px");
+				        $(".sidebar-apps").attr("id", "selected");
+				        $(".sidebar-apps").css("border-left-width", "4px");
+					}
 			    }		
 
 				else if (height < writingHeight) {
-					$("#selected").css("border-left-width", "2px");
-			        $("#selected").removeAttr("id");
+			    	if ($(".sidebar-programming").attr("id") != "selected") {
+						$("#selected").css("border-left-width", "2px");
+				        $("#selected").removeAttr("id");
 
-			        $(".sidebar-programming").attr("id", "selected");
-			        $(".sidebar-programming").css("border-left-width", "4px");
+				        $(".sidebar-programming").attr("id", "selected");
+				        $(".sidebar-programming").css("border-left-width", "4px");
+			       	}
 			    }	
 
-				else { //else if (height < awardsHeight) {
-					$("#selected").css("border-left-width", "2px");
-			        $("#selected").removeAttr("id");
+				else {
+			    	if ($(".sidebar-writing").attr("id") != "selected") {
+						$("#selected").css("border-left-width", "2px");
+				        $("#selected").removeAttr("id");
 
-			        $(".sidebar-writing").attr("id", "selected");
-			        $(".sidebar-writing").css("border-left-width", "4px");
+				        $(".sidebar-writing").attr("id", "selected");
+				        $(".sidebar-writing").css("border-left-width", "4px");
+			       	}
 			    }	
-
-				/*else {
-			        $("#selected").css("border-left-width", "2px");
-			        $("#selected").removeAttr("id");
-
-			        $(".sidebar-awards").attr("id", "selected");
-			        $(".sidebar-awards").css("border-left-width", "4px");
-			    }	*/	
 			}
 
 		    updateSelectedStatus($(window).scrollTop());

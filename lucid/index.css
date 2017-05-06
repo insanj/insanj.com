@@ -51,6 +51,7 @@ a {
 
 .banner {
 	width: 500px;
+	height: 60px;
 	display: block;
 
 	text-align: left;
@@ -62,6 +63,7 @@ a {
 	margin-bottom: 20px;
 
 	font-size: 16px;
+	line-height: 20px;
 }
 
 .banner img {
@@ -70,6 +72,7 @@ a {
 	width: 60px;
 	height: 60px;
 
+	margin-top: -5px;
 	margin-right: 10px;
 }
 
@@ -93,15 +96,18 @@ h2 {
 	text-align: center;
 }
 
-video {
+.anchor {
+
+}
+
+.video {
 	background-color: black;
-	display: inline-block;
+	margin: 0px;
 
 	box-shadow: rgba(255,255,255,0.5) 0px 0px 10px 5px;
 
-	margin-top: 50px;
-
-	width: 600px;
+	width: 560px;
+	height: 315px;
 }
 
 .credits {
