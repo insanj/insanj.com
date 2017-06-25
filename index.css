@@ -98,6 +98,21 @@ img.avatar {
 	background-color: rgba(1,1,1,0.2);
  }
 
+ .mapcontainer {
+ 	pointer-events: none;
+
+	width: 115.5%;
+	height: 200px;
+
+	margin-left: -70px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+ }
+
+#map {
+	height: 200px;
+}
+
 .apps-overflow {
 	font-family: 'Roboto', system, -apple-system, BlinkMacSystemFont, "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
 	table-layout: fixed;
