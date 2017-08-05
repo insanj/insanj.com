@@ -7,7 +7,6 @@
 		<link rel="icon" type="image/png" href="images/favicon.png">
 		<link rel="stylesheet" href="index.css">
 		<link href='http://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500' rel='stylesheet' type='text/css'>
-		<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	</head>
 
@@ -18,123 +17,32 @@
 			<div class="sidebar-programming"><i class="fa fa-code-fork" aria-hidden="true"></i></div>
 			<div class="sidebar-writing"><i class="fa fa-pencil" aria-hidden="true"></i></div>
 		</div>
-		
+
 		<div class="biography">
 			<a target='_blank' href="https://instagram.com/insanj"><img class="avatar" src="images/summer.jpg"/></a>
 			<h1>Julian Weiss</h1>
 
-			<p><h2>iOS entrepreneur, design pragmatist, music enthusiast, college grad.</p>	
-		</div>
+			<p><h2>iOS entrepreneur, design pragmatist,<br/>music enthusiast, college grad.</h2></p>
 
-		<div class="links">
+			<div class="links">
  				<a target='_blank' href="https://twitter.com/insanj" style="color: #059FF5">twitter</a>
 				<a target='_blank' href="https://github.com/insanj" style="color: #F0CA5A;">github</a>
 				<a target='_blank' href="https://medium.com/@insanj" style="color: #00ab6c;">medium</a>
-				<br/>
-				<a target='_blank' href="https://www.linkedin.com/in/insanj" style="color: #0077b5;">linkedin</a>
-				<a target='_blank' href="http://insanj.com/images/julian%20weiss%20resume%202017%20.pdf" style="color: #bbbbbb;">resum&eacute;</a>
-				<br/>
+			</div>
+
+			<table class="apps-overflow">
+				<tr>
+					<td></td>
+					<td class="inner-app"><a target='_blank' href="http://slyce.it"><img class="icon" src="images/slyce.jpg"/>
+					Slyce is an extraordinary visual search engine that drives mobile products for the top retailers in the United States.<br/><br/>
+					<b>julian @ slyce.it</b>
+					</a></td>
+					<td></td>
+				</tr>
+			</table>
 		</div>
 
-		<a href="https://www.google.com/maps/place/University+City,+Philadelphia,+PA/@39.9502296,-75.2119406,14z/data=!3m1!4b1!4m5!3m4!1s0x89c6c658962e50b9:0x340aefd494454594!8m2!3d39.9504406!4d-75.1924755">
-		<div class="mapcontainer">
-			<div id="map"></div>
-		    <script>
-		      function initMap() {
-		      	// Styles a map in night mode.
-		        var universityCityPhiladelphia = {lat: 39.9502296, lng: -75.2119836};
-		        var map = new google.maps.Map(document.getElementById('map'), {
-		          center: universityCityPhiladelphia,
-		          zoom: 12,
-		          styles: [
-		            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
-		            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
-		            {elementType: 'labels.text.fill', stylers: [{color: '#909eb4'}]},
-		            {
-		              featureType: 'administrative.locality',
-		              elementType: 'labels.text.fill',
-		              stylers: [{color: '#909eb4'}]
-		            },
-		            {
-		              featureType: 'poi',
-		              elementType: 'labels.text.fill',
-		              stylers: [{color: '#909eb4'}]
-		            },
-		            {
-		              featureType: 'poi.park',
-		              elementType: 'geometry',
-		              stylers: [{color: '#263c3f'}]
-		            },
-		            {
-		              featureType: 'poi.park',
-		              elementType: 'labels.text.fill',
-		              stylers: [{color: '#909eb4'}]
-		            },
-		            {
-		              featureType: 'road',
-		              elementType: 'geometry',
-		              stylers: [{color: '#38414e'}]
-		            },
-		            {
-		              featureType: 'road',
-		              elementType: 'geometry.stroke',
-		              stylers: [{color: '#212a37'}]
-		            },
-		            {
-		              featureType: 'road',
-		              elementType: 'labels.text.fill',
-		              stylers: [{color: '#909eb4'}]
-		            },
-		            {
-		              featureType: 'road.highway',
-		              elementType: 'geometry',
-		              stylers: [{color: '#746855'}]
-		            },
-		            {
-		              featureType: 'road.highway',
-		              elementType: 'geometry.stroke',
-		              stylers: [{color: '#1f2835'}]
-		            },
-		            {
-		              featureType: 'road.highway',
-		              elementType: 'labels.text.fill',
-		              stylers: [{color: '#909eb4'}]
-		            },
-		            {
-		              featureType: 'transit',
-		              elementType: 'geometry',
-		              stylers: [{color: '#2f3948'}]
-		            },
-		            {
-		              featureType: 'transit.station',
-		              elementType: 'labels.text.fill',
-		              stylers: [{color: '#909eb4'}]
-		            },
-		            {
-		              featureType: 'water',
-		              elementType: 'geometry',
-		              stylers: [{color: '#17263c'}]
-		            },
-		            {
-		              featureType: 'water',
-		              elementType: 'labels.text.fill',
-		              stylers: [{color: '#909eb4'}]
-		            },
-		            {
-		              featureType: 'water',
-		              elementType: 'labels.text.stroke',
-		              stylers: [{color: '#17263c'}]
-		            }
-		          ]
-		        });
-		      }
-		    </script>
-		    <script async defer
-		    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUfoxgE101Q3t7toxnjEhKcJg-LmDqtJg&callback=initMap">
-		    </script>
-		</div></a>
-
-		<table class="apps-overflow"><a name="apps"></a>
+		<table id="main-apps-overflow" class="apps-overflow"><a name="apps"></a>
 		<tr>
 			<td class="inner-app"><a target='_blank' href="submarine/index.html"><img class="icon" src="submarine/images/submarine.jpg"/>
 			Submarine is a feature-packed, community-driven Reddit app. Personally designed and developed in 2015 and 2017. <b>Available on iOS.</b>
@@ -145,29 +53,40 @@
 			</a></td>
 
 			<td class="inner-app"><a target='_blank' href="http://dribbleup.com"><img class="icon" src="images/dribbleup.png"/>
-			DribbleUp is the first basketball tracking app, a breakthrough tech with a custom ball. iOS Lead 2015-2016. <b>Available on iOS and Android.</b></a></td>
+			DribbleUp is the first basketball tracking app, a breakthrough tech with a custom ball. Lead iOS 2015-2016. <b>Available on iOS and Android.</b></a></td>
 		</tr>
 		<tr>
 			<td class="inner-app"><a target='_blank' href="http://pianoteapp.com"><img class="icon" src="images/pianote.png" />
-			Pianote is a streamlined app for musicians. Practice your music smarter. <b>Coming Early 2017.</b></a></td>
+			Pianote is a streamlined app for musicians. Practice your music smarter. <b>In development.</b></a></td>
 
 			<td class="inner-app"><a target='_blank' href="https://twitter.com/flogg"><img class="icon" src="images/flogg.png"/>
 			Flogg is an innovative commerce platform for friends. iOS Developer 2016. <b>Available on iOS.</b></a></td>
 
 			<td class="inner-app"><a target='_blank' href="http://revuu.it"><img class="icon" src="images/revuu.png"/>
-			REVUU is an NYC startup reinventing the future of the magazine. Lead iOS/CTO 2015-2016. <b>Available on iOS and Web.</b>
+			REVUU is an NYC startup reinventing the future of the magazine. Lead iOS 2015-2016. <b>Available on iOS and Web.</b>
 			</a></td>
 		</tr>
 		<tr>
 			<td class="inner-app"><a target='_blank' href="https://twitter.com/smockups"><img class="icon" src="images/smock.png"/>
-			Smock is a powerful responsive web mockup tool I helped build using Swift in 2016. <b>Available on Mac App Store.</b>
+			Smock is a powerful responsive web mockup tool. Swift Developer 2016. <b>Available on Mac App Store.</b>
 			</a></td>
 
 			<td class="inner-app"><a target='_blank' href="https://itunes.apple.com/us/app/cold-open-your-new-favorite/id1047272956?mt=8"><img class="icon" src="images/cold%20open.png"/>
-			Cold Open is an intuitive TV show app I helped build Summer 2015 as a part of The Appical. <b>Available on iOS.</b></a></td>
+			Cold Open is an intuitive TV show app. iOS Developer Summer 2015 as a part of The Appical. <b>Available on iOS.</b></a></td>
 
 			<td class="inner-app"><a target='_blank' href="https://twitter.com/giffageapp"><img class="icon" src="images/giffage.png"/>
-			Giffage is an all-in-one GIF keyboard. Implemented core features Summer 2015. <b>Available on iOS.</b></a></td>
+			Giffage is an all-in-one GIF keyboard. Implemented core iOS features Summer 2015. <b>Available on iOS.</b></a></td>
+		</tr>
+		<tr>
+			<td class="inner-app"><a target='_blank' href="http://amprojectedrelation.com"><img class="icon" src="images/AM.jpg"/>
+			AM is a collaborative digital humanities art project. Full stack developer Spring and Summer 2017. <b>Talk to her on iOS and Web.</b>
+			</a></td>
+
+			<td></td>
+
+			<td class="inner-app"><a target='_blank' href="http://www.digital.nyc/startups/urlinq"><img class="icon" src="images/urlinq.png" />
+			Urlinq was a powerful ed-tech network for students and professors that brought the university experience to the 21st century.</a></td>
+
 		</tr>
 		</table>
 
@@ -377,11 +296,17 @@
 			&#10035;&#65038; <a target='_blank' href="/submarine">submarine</a>
 		</div>
 
-		<script src="jquery-3.1.1.min.js"></script>
+		<a href="https://www.google.com/maps/place/University+City,+Philadelphia,+PA/@39.9502296,-75.2119406,14z/data=!3m1!4b1!4m5!3m4!1s0x89c6c658962e50b9:0x340aefd494454594!8m2!3d39.9504406!4d-75.1924755">
+		<div class="mapcontainer">
+			<div id="map"></div>
+		</div>
+		</a>
+
+		<script src="http://insanj.com/jquery-3.1.1.min.js"></script>
 		<script>
 			function updateSelectedStatus(height) {
 				var height = $(window).scrollTop();
-				var appsHeight = $(".apps-overflow").offset().top;
+				var appsHeight = $("#main-apps-overflow").offset().top;
 				var programmingHeight = $("#programming").offset().top;
 				var writingHeight = $("#writing").offset().top;
 
@@ -442,7 +367,7 @@
 
 			$(".sidebar-apps").bind("click", function(){
 			    $('html, body').animate({
-			        scrollTop: $(".apps-overflow").offset().top
+			        scrollTop: $("#main-apps-overflow").offset().top
 			    }, animationTimeConstant);
 			});
 
@@ -457,6 +382,97 @@
 			        scrollTop: $("#writing").offset().top
 			    }, animationTimeConstant);
 			});			
+
+			function initMap() {
+		      	// Styles a map in night mode.
+		        var universityCityPhiladelphia = {lat: 39.9529781, lng: -75.160778};
+		        var map = new google.maps.Map(document.getElementById('map'), {
+		          center: universityCityPhiladelphia,
+		          zoom: 15,
+		          styles: [
+		            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+		            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+		            {elementType: 'labels.text.fill', stylers: [{color: '#909eb4'}]},
+		            {
+		              featureType: 'administrative.locality',
+		              elementType: 'labels.text.fill',
+		              stylers: [{color: '#909eb4'}]
+		            },
+		            {
+		              featureType: 'poi',
+		              elementType: 'labels.text.fill',
+		              stylers: [{color: '#909eb4'}]
+		            },
+		            {
+		              featureType: 'poi.park',
+		              elementType: 'geometry',
+		              stylers: [{color: '#263c3f'}]
+		            },
+		            {
+		              featureType: 'poi.park',
+		              elementType: 'labels.text.fill',
+		              stylers: [{color: '#909eb4'}]
+		            },
+		            {
+		              featureType: 'road',
+		              elementType: 'geometry',
+		              stylers: [{color: '#38414e'}]
+		            },
+		            {
+		              featureType: 'road',
+		              elementType: 'geometry.stroke',
+		              stylers: [{color: '#212a37'}]
+		            },
+		            {
+		              featureType: 'road',
+		              elementType: 'labels.text.fill',
+		              stylers: [{color: '#909eb4'}]
+		            },
+		            {
+		              featureType: 'road.highway',
+		              elementType: 'geometry',
+		              stylers: [{color: '#746855'}]
+		            },
+		            {
+		              featureType: 'road.highway',
+		              elementType: 'geometry.stroke',
+		              stylers: [{color: '#1f2835'}]
+		            },
+		            {
+		              featureType: 'road.highway',
+		              elementType: 'labels.text.fill',
+		              stylers: [{color: '#909eb4'}]
+		            },
+		            {
+		              featureType: 'transit',
+		              elementType: 'geometry',
+		              stylers: [{color: '#2f3948'}]
+		            },
+		            {
+		              featureType: 'transit.station',
+		              elementType: 'labels.text.fill',
+		              stylers: [{color: '#909eb4'}]
+		            },
+		            {
+		              featureType: 'water',
+		              elementType: 'geometry',
+		              stylers: [{color: '#17263c'}]
+		            },
+		            {
+		              featureType: 'water',
+		              elementType: 'labels.text.fill',
+		              stylers: [{color: '#909eb4'}]
+		            },
+		            {
+		              featureType: 'water',
+		              elementType: 'labels.text.stroke',
+		              stylers: [{color: '#17263c'}]
+		            }
+		          ]
+		        });
+		      }
+		</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUfoxgE101Q3t7toxnjEhKcJg-LmDqtJg&callback=initMap">
 		</script>
 	</body>
 </html>

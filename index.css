@@ -1,21 +1,35 @@
+html {
+	min-width: 740px;
+}
 
 body {
-	min-width: 500px;
 	margin: 0px;
 	padding: 70px;
 
-	font-family: 'Arimo', system, -apple-system, BlinkMacSystemFont, "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-family: BlinkMacSystemFont, system, -apple-system, 'Roboto', "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
 
 	background: #373d55;
 }
 
+img.avatar {
+	width: 100px;
+	height: 100px;
+
+	border-radius: 50%;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+}
+
 h1 {
-	margin-top: 20px;
+	margin-top: 30px;
 	margin-bottom: 35px;
 
 	font-size: 50px;
-	font-weight: 300;
-	line-height: 0.9;
+	font-weight: 400;
+	line-height: 0;
 	color: #909eb4;
 }
 
@@ -23,18 +37,18 @@ h2 {
 	font-size: 25px;
 	font-weight: 300;
 	color: #909eb4;
-	opacity: 0.8;
-}
 
-p {
-	margin-top: -15px;
+	margin-top: -10px;
 }
 
 div.biography {
 	color: #4a4a48;
 
-	width: 210px;
+	width: 800px;
+	height: 630px;
 	display: block;
+
+	margin-top: 0px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -43,21 +57,33 @@ div.biography {
 	font-size: 18px;
 }
 
-img.avatar {
-	width: 82px;
-	height: 82px;
+.mapcontainer {
+	z-index: -100;
+	position: absolute;
+ 	pointer-events: none;
 
-	border-radius: 50%;
+	top: 500px;
+	left: 0px;
+	width: 100%;
+	height: 300px;
 
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	-webkit-box-shadow: inset 0px 0px 300px 50px rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 0px 0px 300px 50px rgba(0,0,0,0.1);
+	box-shadow: inset 0px 0px 300px 50px rgba(0,0,0,0.1);
+}
+
+#map {
+	margin-left: -110px;
+	height: 100%;
+	width: 120%; /* 20% of min-width = 148px, minimum margin required to hide HUD elements on left side is 110px */
+
+	opacity: 0.1;
 }
 
 .links {
 	font-family: 'Roboto', system, -apple-system, BlinkMacSystemFont, "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
 
-	font-size: 35px;
+	font-size: 26px;
 	font-weight: 300;
 
 	clear: both;
@@ -67,7 +93,8 @@ img.avatar {
 	text-align: center;
 	line-height: 1.7;
 
-	margin-top: 40px;	
+	margin-top: -10px;	
+	margin-left: 0px;
 
 	font-variant: small-caps;
 }
@@ -98,29 +125,12 @@ img.avatar {
 	background-color: rgba(1,1,1,0.2);
  }
 
- .mapcontainer {
- 	pointer-events: none;
-
-	width: 115.5%;
-	height: 200px;
-
-	margin-left: -70px;
-	margin-top: 50px;
-	margin-bottom: 50px;
- }
-
-#map {
-	height: 200px;
-}
-
 .apps-overflow {
 	font-family: 'Roboto', system, -apple-system, BlinkMacSystemFont, "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
 	table-layout: fixed;
 	font-size: 18px;
 	
-	margin-left: -20px;
-	margin-right: 0px;
-	margin-top: -10px;
+	margin-top: 50px;
 
 	text-align: left;
 
@@ -132,7 +142,7 @@ img.avatar {
 }
 
 .apps-overflow td {
-	width: 33%;
+	width: 30%;
 
 	-webkit-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
@@ -142,7 +152,7 @@ img.avatar {
 	border-bottom-color: rgba(0,0,0,0);
 }
 
-.apps-overflow td:hover {
+.inner-app:hover {
 	border-bottom-width: 2px;
 	border-bottom-style: solid;
 	border-bottom-color: #909eb4;
