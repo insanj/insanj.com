@@ -2,20 +2,25 @@
 <html>
 	<head>
 		<title>insanj</title>
-		<meta name="viewport" content="width=device-width, initial-scale=0.5">
+		<meta name="viewport" content="width=1000px, initial-scale=1.0">
 		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
 		<link rel="icon" type="image/png" href="images/favicon.png">
 		<link rel="stylesheet" href="index.css">
-		<link href='http://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+		<meta name="description" content="Julian (insanj) Weiss is a Philadelphia-based software developer, designer, and entrepreneur." />
+		<meta name="keywords" content="insanj,julian weiss,ios,software,philadelphia,submarine,slyce,reddit,gampets,dribbleup,pianote,flogg,revuu,github" />
+		<meta name="robots" content="index,follow" />
 	</head>
 
 	<body>	
 		<div class="sidebar">
-			<div class="sidebar-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
-			<div class="sidebar-apps"><i class="fa fa-globe" aria-hidden="true"></i></div>
+			<div class="sidebar-top"><i class="fa fa-coffee" aria-hidden="true"></i></div>
+			<div class="sidebar-apps"><i class="fa fa-apple" aria-hidden="true"></i></div>
 			<div class="sidebar-programming"><i class="fa fa-code-fork" aria-hidden="true"></i></div>
 			<div class="sidebar-writing"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+			<div class="sidebar-bottom" style="display:none;"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
 		</div>
 
 		<div class="biography">
@@ -25,17 +30,17 @@
 			<p><h2>iOS entrepreneur, design pragmatist,<br/>music enthusiast, college grad.</h2></p>
 
 			<div class="links">
- 				<a target='_blank' href="https://twitter.com/insanj" style="color: #059FF5">twitter</a>
-				<a target='_blank' href="https://github.com/insanj" style="color: #F0CA5A;">github</a>
-				<a target='_blank' href="https://medium.com/@insanj" style="color: #00ab6c;">medium</a>
+ 				<a target='_blank' href="https://twitter.com/insanj" style="text-decoration-color: #059FF5">twitter</a>
+				<a target='_blank' href="https://github.com/insanj" style="text-decoration-color: #F0CA5A;">github</a>
+				<a target='_blank' href="https://medium.com/@insanj" style="text-decoration-color: #00ab6c;">medium</a>
 			</div>
 
-			<table class="apps-overflow">
+			<table id="teaser-apps-overflow" class="apps-overflow">
 				<tr>
 					<td></td>
 					<td class="inner-app"><a target='_blank' href="http://slyce.it"><img class="icon" src="images/slyce.jpg"/>
-					Slyce is an extraordinary visual search engine that drives mobile products for the top retailers in the United States.<br/><br/>
-					<b>julian @ slyce.it</b>
+					Slyce is an extraordinary visual search engine that drives mobile products for top retailers in the United States.
+					<p id="mini"><b>julian @ slyce.it<br/>Mobile Developer</b></p>
 					</a></td>
 					<td></td>
 				</tr>
@@ -85,7 +90,7 @@
 			<td></td>
 
 			<td class="inner-app"><a target='_blank' href="http://www.digital.nyc/startups/urlinq"><img class="icon" src="images/urlinq.png" />
-			Urlinq was a powerful ed-tech network for students and professors that brought the university experience to the 21st century.</a></td>
+			Urlinq was a powerful ed-tech network that brought the university experience to the 21st century. <b>Vice President of iOS Product Development 2013-2015.</b></a></td>
 
 		</tr>
 		</table>
@@ -348,7 +353,7 @@
 				        $(".sidebar-writing").attr("id", "selected");
 				        $(".sidebar-writing").css("border-left-width", "4px");
 			       	}
-			    }	
+			    }
 			}
 
 		    updateSelectedStatus($(window).scrollTop());
@@ -382,6 +387,12 @@
 			        scrollTop: $("#writing").offset().top
 			    }, animationTimeConstant);
 			});			
+
+			$(".sidebar-bottom").bind("click", function(){
+			    $('html, body').animate({
+			        scrollTop: $(".footer").offset().top
+			    }, animationTimeConstant);
+			});	
 
 			function initMap() {
 		      	// Styles a map in night mode.
