@@ -4,39 +4,17 @@ body {
 	width: 100%;
 	margin: 0px;
 
-	font-family: 'AmericanTypewriter', system, -apple-system, BlinkMacSystemFont, "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-family: 'Bitter', 'AmericanTypewriter', Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 
 	background: #00091b url('background-low.jpg') no-repeat fixed center;
     background-size: cover;
 	color: white;
-
-
-	/*animation:backgroundfade 10s;
-    -moz-animation:backgroundfade 10s infinite;
-    -webkit-animation:backgroundfade 10s infinite;*/
 }
 
 a {
 	text-decoration: none;
 	color: inherit;
 }
-
-.container {
-	background-color: rgba(1,1,1,0.5);
-}
-
-/*
-@-moz-keyframes backgroundfade {
-	0%   {background:#00091b;}
-	50%   {background:#000000;}
-	100%   {background:#00091b;}
-}
-
-@-webkit-keyframes backgroundfade {
-	0%   {background:#00091b;}
-	50%   {background:#000000;}
-	100%   {background:#00091b;}
-}*/
 
 .masthead {
 	display: block;
@@ -50,8 +28,8 @@ a {
 }
 
 .banner {
-	width: 500px;
-	height: 60px;
+	width: 440px;
+	height: 44px;
 	display: block;
 
 	text-align: left;
@@ -60,7 +38,7 @@ a {
 	margin-right: auto;
 
 	margin-top: 50px;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 
 	font-size: 16px;
 	line-height: 20px;
@@ -72,26 +50,25 @@ a {
 	width: 60px;
 	height: 60px;
 
-	margin-top: -5px;
+	margin-top: -8px;
 	margin-right: 10px;
 }
 
 h1 {
 	margin: 0px;
-
 	font-size: 100px;
-	font-weight: 600;
 	letter-spacing: 0.8px;
 	line-height: 80px;
 }
 
 h2 {
 	margin: 0px;
-
 	font-size: 30px;
 }
 
 .film {
+	margin-top: 50px;
+
 	display: block;
 	text-align: center;
 }
@@ -104,16 +81,30 @@ h2 {
 	background-color: black;
 	margin: 0px;
 
-	box-shadow: rgba(255,255,255,0.5) 0px 0px 10px 5px;
+	box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.25);
 
-	width: 560px;
-	height: 315px;
+	width: 700px;
+	height: 400px;
+
+	margin-bottom: 20px;
+}
+
+hr {
+	width: 600px;
+	margin-top: 50px;
+
+	border-color: rgba(255,255,255,0.25);
+	border-width: 2px;
+	border-style: solid;
 }
 
 .credits {
 	margin-top: 50px;
 
 	text-align: center;
+
+	font-family: 'Roboto', BlinkMacSystemFont, system, -apple-system, "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-size: 18px;
 }
 
 .credits table {
@@ -128,9 +119,15 @@ h2 {
 	padding-right: 20px;
 }
 
+.credits-table td:nth-child(odd) {
+	font-weight: 600;
+}
+
 .creditheader {
 	margin-top: 30px;
 	margin-bottom: 10px;
+
+	font-weight: 700;
 }
 
 .footer {
