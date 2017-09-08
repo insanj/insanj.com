@@ -379,25 +379,25 @@
 
 			$(".sidebar-apps").bind("click", function(){
 			    $('html, body').animate({
-			        scrollTop: $("#main-apps-overflow").offset().top
+			        scrollTop: $("#main-apps-overflow").offset().top + 1
 			    }, animationTimeConstant);
 			});
 
 			$(".sidebar-programming").bind("click", function(){
 			    $('html, body').animate({
-			        scrollTop: $("#programming").offset().top
+			        scrollTop: $("#programming").offset().top + 1
 			    }, animationTimeConstant);
 			});
 
 			$(".sidebar-writing").bind("click", function(){
 			    $('html, body').animate({
-			        scrollTop: $("#writing").offset().top
+			        scrollTop: $("#writing").offset().top + 1
 			    }, animationTimeConstant);
 			});			
 
 			$(".sidebar-bottom").bind("click", function(){
 			    $('html, body').animate({
-			        scrollTop: $(".footer").offset().top
+			        scrollTop: $(".footer").offset().top + 1
 			    }, animationTimeConstant);
 			});	
 
