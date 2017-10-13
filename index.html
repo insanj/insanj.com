@@ -27,12 +27,6 @@
 				<a target='_blank' href="https://medium.com/@insanj" style="text-decoration-color: #00ab6c;">medium</a>
 			</div>
 
-			<a href="https://github.com/insanj?tab=overview">
-			<div class="github-contributions">
-				<img src="https://insanj-github.herokuapp.com/graph/insanj"></img>
-			</div>
-			</a>
-
 			<table id="teaser-apps-overflow" class="apps-overflow">
 				<tr>
 					<td></td>
@@ -49,7 +43,7 @@
 		<table id="main-apps-overflow" class="apps-overflow"><a name="apps"></a>
 		<tr>
 		    <td class="inner-app"><a target='_blank' href="https://angel.co/projects/609856-am-projected-relation?src=user_profile"><img class="icon" src="images/AM.jpg"/>
-			AM/Projected Relation is a relational art project interested in the various data-selves we produce through our many profiles, like this one. Full stack developer Spring and Summer 2017. <b>Talk to her on iOS and Web.</b>
+			AM/Projected Relation is a relational art project interested in the various data-selves we produce through our many profiles. Full stack developer Spring and Summer 2017. <b>Talk to her on iOS and Web.</b>
 			</a></td>
 			
 			<td class="inner-app"><a target='_blank' href="http://submarineforios.com"><img class="icon" src="submarine/images/submarine.jpg"/>
@@ -93,6 +87,14 @@
 
 		</tr>
 		</table>
+
+		<hr class="projectseparator"/>
+
+		<a href="https://github.com/insanj?tab=overview">
+			<div class="github-contributions">
+				<img src="https://insanj-github.herokuapp.com/graph/insanj"></img>
+			</div>
+		</a>
 
 		<hr class="projectseparator"/>
 
@@ -363,6 +365,9 @@
 			       	}
 			    }
 			}
+
+			$(".mapcontainer").css("top", $("#teaser-apps-overflow").offset().top);
+			$(".mapcontainer").css("height", $("#teaser-apps-overflow").height());
 
 		    updateSelectedStatus($(window).scrollTop());
 
