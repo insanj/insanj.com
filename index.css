@@ -1,3 +1,4 @@
+/* Document Attributes */
 html {
 	min-width: 1000px;
 }
@@ -10,18 +11,7 @@ body {
 	background: #373d55;
 }
 
-img.avatar {
-	width: 100px;
-	height: 100px;
-
-	border-radius: 50%;
-
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0px;
-}
-
+/* Base Attributes */
 h1 {
 	margin-top: 30px;
 	margin-bottom: 35px;
@@ -40,6 +30,40 @@ h2 {
 	margin-top: -10px;
 }
 
+::selection {
+	color: #CCCCCC;
+	background: black;
+}
+
+::-moz-selection {
+	color: #CCCCCC;
+	background: black; 
+}
+
+a {
+	text-decoration: none;
+	color: #909eb4;
+	cursor: pointer;
+
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+a:hover {
+	text-decoration: inherit;
+}
+
+
+/* Site Page (in order from top to bottom):
+/* - Biography
+/* -- Links
+/* - Showcase (in its own css file)
+/* - Github Contributions
+/* - Extra Projects (w optional Project Separator) x3 
+/* - Footer
+/* - Sidebar (fixed)
+/* Biography */
+
 div.biography {
 	padding-top: 70px;
 	padding-bottom: 70px;
@@ -57,57 +81,19 @@ div.biography {
 	font-size: 18px;
 }
 
-.github-contributions {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-
-	border-width: 10px;
-	border-style: solid;
-	border-color: #313749;
-	border-radius: 0px;
-	background-color: #909eb4;
-
-	width: 500px;
+img.avatar {
+	width: 100px;
 	height: 100px;
 
-	-webkit-animation: githubContributionsAnimation 4s infinite;
-	-moz-animation: githubContributionsAnimation 4s infinite;
-	-o-animation: githubContributionsAnimation 4s infinite;
-	animation: githubContributionsAnimation 4s infinite;
+	border-radius: 50%;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
 }
 
-.github-contributions img {
-	padding: 10px;
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
-
-	-webkit-filter: invert(0);
-	filter: invert(0);
-}
-
-@keyframes githubContributionsAnimation {
-	0%   { opacity:1; }
-	50%  { opacity:0.7; }
-	100% { opacity:1; }
-}
-@-o-keyframes githubContributionsAnimation {
-	0%   { opacity:1; }
-	50%  { opacity:0.7; }
-	100% { opacity:1; }
-}
-@-moz-keyframes githubContributionsAnimation {
-	0%   { opacity:1; }
-	50%  { opacity:0.7; }
-	100% { opacity:1; }
-}
-@-webkit-keyframes githubContributionsAnimation {
-	0%   { opacity:1; }
-	50%  { opacity:0.7; }
-	100% { opacity:1; }
-}
-
+/* Links */
 .links {
 	font-size: 26px;
 	font-weight: 400;
@@ -156,57 +142,60 @@ div.biography {
 	text-decoration: underline;
 }
 
-div.footer {
-	position: relative;
-	
-	clear: both;
-	float: center;
-	
-	line-height: normal;
-	margin-top: 80px;
-	margin-left: 0px;
-	margin-right: 0px;
+/* Github Contributions */
+.github-contributions {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
 
-	text-align: center;
-	color: #909eb4;
-	font-size: 14px;
-	opacity: 0.5;
+	border-width: 10px;
+	border-style: solid;
+	border-color: #313749;
+	border-radius: 0px;
+	background-color: #909eb4;
 
-	padding: 20px;
+	width: 500px;
+	height: 100px;
+
+	-webkit-animation: githubContributionsAnimation 4s infinite;
+	-moz-animation: githubContributionsAnimation 4s infinite;
+	-o-animation: githubContributionsAnimation 4s infinite;
+	animation: githubContributionsAnimation 4s infinite;
 }
 
-.footer a:hover {
-	opacity: 0.5;
+.github-contributions img {
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+
+	-webkit-filter: invert(0);
+	filter: invert(0);
 }
 
-::selection {
-	color: #CCCCCC;
-	background: black;
+/* Github Contribution Animations */
+@keyframes githubContributionsAnimation {
+	0%   { opacity:1; }
+	50%  { opacity:0.7; }
+	100% { opacity:1; }
+}
+@-o-keyframes githubContributionsAnimation {
+	0%   { opacity:1; }
+	50%  { opacity:0.7; }
+	100% { opacity:1; }
+}
+@-moz-keyframes githubContributionsAnimation {
+	0%   { opacity:1; }
+	50%  { opacity:0.7; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes githubContributionsAnimation {
+	0%   { opacity:1; }
+	50%  { opacity:0.7; }
+	100% { opacity:1; }
 }
 
-::-moz-selection {
-	color: #CCCCCC;
-	background: black; 
-}
-
-a {
-	text-decoration: none;
-	color: #909eb4;
-	cursor: pointer;
-
-	-webkit-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-}
-
-a:hover {
-	text-decoration: inherit;
-}
-
-/*div.footer a {
-	text-decoration: none;
-	color: rgba(97, 102, 231, 0.7);
-}*/
-
+/* Extra Projects */
 .extraprojects {
 	padding: 20px;
 	padding-left: 65px;
@@ -278,6 +267,31 @@ a:hover {
 	background-color: rgba(1,1,1,0.2);
 }
 
+/* Footer */
+div.footer {
+	position: relative;
+	
+	clear: both;
+	float: center;
+	
+	line-height: normal;
+	margin-top: 80px;
+	margin-left: 0px;
+	margin-right: 0px;
+
+	text-align: center;
+	color: #909eb4;
+	font-size: 14px;
+	opacity: 0.5;
+
+	padding: 20px;
+}
+
+.footer a:hover {
+	opacity: 0.5;
+}
+
+/* Sidebar */
 .sidebar {
 	position: fixed;
 
@@ -308,8 +322,4 @@ a:hover {
 
 .sidebar div #selected {
 	border-left-width: 4px;
-}
-
-#github-contributions {
-
 }
