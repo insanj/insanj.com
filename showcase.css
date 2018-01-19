@@ -31,7 +31,7 @@
 	border-width: 1px;
 }
 
-#showcase-item {
+.showcase-item {
 	display: flex;
 	position: relative;
 
@@ -76,11 +76,6 @@
 	box-shadow: 0px 0px 20px 5px rgba(144, 158, 180, 0.5);
 }
 
-#showcase-item p {
-	margin-left: 30px;
-	margin-top: 45px;
-}
-
 #showcase-text {
 	float: left;
 	width: 400px;
@@ -88,29 +83,36 @@
 	text-align: left;
 	font-size: 22px;
 	font-weight: 300;
+
+	margin-left: 30px;
+	margin-top: 45px;
 }
 
 #showcase-role {
 	float: left;
 	width: 150px;
 
-	margin-top: 0px;
 	padding-left: 10px;
 
 	text-align: left;
 	font-size: 20px;
 	font-weight: 500;
+
+	margin-left: 30px;
+	margin-top: 45px;
 }
 
 #showcase-availability {
 	float: right;
 	width: 100px;
 
-	margin-top: 0px;
 	padding-left: 0px;
 	padding-right: 0px;
 
 	text-align: left;
 	font-size: 20px;
 	font-weight: 300;
+
+	margin-left: 30px;
+	margin-top: 45px;
 }
