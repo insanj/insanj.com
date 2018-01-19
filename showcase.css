@@ -10,9 +10,9 @@
 
 #showcase-title {
 	padding-top: 20px;
-	margin-left: 60px;
+	margin-left: 0px;
 
-	color: #373d55;
+	color: rgba(144, 158, 180, 0.5);
 
 	font-weight: 600;
 	font-size: 50px;
