@@ -431,7 +431,7 @@
 			  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 			}
 
-		    function applyScrollEffect(animated) {
+		    function applyScrollEffect() {
 	    		var document_center_point = $(window).innerHeight() / 2;
 	    		var document_scroll_position = $(window).scrollTop();
 	    		$(".showcase-item").each(function() {
@@ -442,9 +442,10 @@
 
 					var max_threshold = 600.0;
 					var mapped_scroll_to_thres = map(scroll_offset, 0, 600, 1.0, 0.2);
-					var transform_value = map(mapped_scroll_to_thres, 1.0, 0.2, 1.0, 0.9);
+					var transform_value = map(mapped_scroll_to_thres, 1.0, 0.2, 1.1, 0.85);
 
 					var scroll_effect_properties = { 
+					  'opacity' : mapped_scroll_to_thres,
 					  '-webkit-transform' : 'scale(' + transform_value + ')',
 					  '-moz-transform'    : 'scale(' + transform_value + ')',
 					  '-ms-transform'     : 'scale(' + transform_value + ')',
@@ -452,7 +453,8 @@
 					  'transform'         : 'scale(' + transform_value + ')'
 					};
 
-					if (animated) {
+					$(this).css(scroll_effect_properties);
+					/*if (animated) {
 						var anim_counter = 0;
 						$(this).animate({ anim_counter: transform_value }, {
 						    step: function(now,fx) {
@@ -472,11 +474,7 @@
 						    }
 						});
 
-					} else {
-											  
-						// $(this).css({'opacity' : mapped_scroll_to_thres});
-						$(this).css(scroll_effect_properties);
-					}
+					}*/					  
 				});
 		    }
 
@@ -559,23 +557,23 @@
 			    }, animationTimeConstant);
 			});
 
-			function updateDynamicContent(animated) {
+			function updateDynamicContent() {
 				updateSelectedStatus();
-		    	applyScrollEffect(animated);
+		    	applyScrollEffect();
 			}
 
 			$(window).scroll(function () {
-		    	updateDynamicContent(false);
+		    	updateDynamicContent();
 			});
 
 			$( window ).resize(function() {
-		    	updateDynamicContent(false);
+		    	updateDynamicContent();
 			});
 
 			$(document).ready(function() {
 				$("html").animate({"margin-top": "0px", "opacity" : "1.0"}, {
 					step: function() {
-						updateDynamicContent(false);
+						updateDynamicContent();
 					}
 				}, "slow", "swing");
 			});
