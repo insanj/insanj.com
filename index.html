@@ -423,67 +423,61 @@
 
 		<script src="https://insanj.com/jquery-3.1.1.min.js"></script>
 		<script>
-			$(document).ready(function() {
-				$("html").animate({"margin-top": "0px", "opacity" : "1.0"}, "slow", "swing");
-			});
-
 			var reset_scroll_effect = false;
 			var existing_timeout = false;
 
-			function map( x,  in_min,  in_max,  out_min,  out_max)
-			{
+			// https://www.arduino.cc/reference/en/language/functions/math/map/
+			function map( x,  in_min,  in_max,  out_min,  out_max) {
 			  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 			}
 
-		    function applyScrollEffect() {
-		    	console.log("scrolleffect");
-		    	if (reset_scroll_effect == true) {
-		    		$("div").each(function() {
-						$(this).animate({"margin-top": "0px"}, "fast", "swing");
-					});
-		    	} else {
-		    		// var height = $(window).scrollTop() + ($(window).height() / 2.0);
-		    		var document_center_point = $(window).innerHeight() / 2;
-		    		var document_scroll_position = $(window).scrollTop();
-		    		$(".showcase-item").each(function() {
-						var item_offset = $(this).offset().top + $(this).height();
-						var document_offset = document_scroll_position + document_center_point;
+		    function applyScrollEffect(animated) {
+	    		var document_center_point = $(window).innerHeight() / 2;
+	    		var document_scroll_position = $(window).scrollTop();
+	    		$(".showcase-item").each(function() {
+					var item_offset = $(this).offset().top + $(this).height();
+					var document_offset = document_scroll_position + document_center_point;
 
-						var scroll_offset =  Math.abs(document_offset - item_offset);
+					var scroll_offset =  Math.abs(document_offset - item_offset);
 
-						var max_threshold = 600.0;
-						var mapped_scroll_to_thres = map(scroll_offset, 0, 600, 1.0, 0.2);
-						$(this).css("opacity", mapped_scroll_to_thres);
+					var max_threshold = 600.0;
+					var mapped_scroll_to_thres = map(scroll_offset, 0, 600, 1.0, 0.2);
+					var transform_value = map(mapped_scroll_to_thres, 1.0, 0.2, 1.0, 0.9);
 
-						var transform_value = map(mapped_scroll_to_thres, 1.0, 0.2, 1.0, 0.9);
-						$(this).css({
-						  '-webkit-transform' : 'scale(' + transform_value + ')',
-						  '-moz-transform'    : 'scale(' + transform_value + ')',
-						  '-ms-transform'     : 'scale(' + transform_value + ')',
-						  '-o-transform'      : 'scale(' + transform_value + ')',
-						  'transform'         : 'scale(' + transform_value + ')'
+					var scroll_effect_properties = { 
+					  '-webkit-transform' : 'scale(' + transform_value + ')',
+					  '-moz-transform'    : 'scale(' + transform_value + ')',
+					  '-ms-transform'     : 'scale(' + transform_value + ')',
+					  '-o-transform'      : 'scale(' + transform_value + ')',
+					  'transform'         : 'scale(' + transform_value + ')'
+					};
+
+					if (animated) {
+						var anim_counter = 0;
+						$(this).animate({ anim_counter: transform_value }, {
+						    step: function(now,fx) {
+						    	console.log("anim now=" + now);
+						    	var step_transform_value = map(now, 0.0, 1.0, 0.9, 1.0);
+						        $(this).css({
+								  '-webkit-transform' : 'scale(' + step_transform_value + ')',
+								  '-moz-transform'    : 'scale(' + step_transform_value + ')',
+								  '-ms-transform'     : 'scale(' + step_transform_value + ')',
+								  '-o-transform'      : 'scale(' + step_transform_value + ')',
+								  'transform'         : 'scale(' + step_transform_value + ')'
+						        });
+						    },
+
+						    done: function() {
+    							$(this).css(scroll_effect_properties);
+						    }
 						});
 
-						/*var threshold_for_full = 300.0;
-						var threshold_for_partial = 500.0;
-						if (scroll_offset < threshold_for_full) {
-							$(this).css("opacity", "1.0");
-						} else if (scroll_offset < threshold_for_partial) {
-							$(this).css("opacity", "0.7");
-						} else {
-							$(this).css("opacity", "0.2");
-						}*/
-
-		    			//var existing_offset = $(this).css("top");
-		    			//existing_offset = existing_offset.substring(0, existing_offset.length-2);
-		    			//existing_offset = parseInt(existing_offset);
-		    			//var scroll_effect_offset = existing_offset + (document_offset - height );
-		    			//var new_offset = scroll_effect_offset + "px";
-		    			// console.log("applyScrollEffect existing_offset=" + existing_offset + " scroll_effect_offset=" + scroll_effect_offset + " new_offset= "+ new_offset +" div id =" + this.id);
-		    			//$(this).css("top", new_offset);
-						//$(this).animate({"margin-top": new_offset, "opacity" : "1.0"}, "fast", "swing");
-		    		});
-		    	}
+					} else {
+											  
+						// $(this).css({'opacity' : mapped_scroll_to_thres});
+						$(this).css(scroll_effect_properties);
+					}
+				});
 		    }
 
 			function updateSelectedStatus() {
@@ -533,13 +527,6 @@
 			    }
 			}
 
-		    updateSelectedStatus($(window).scrollTop());
-
-
-			$(window).scroll(function (event) {
-		    	updateSelectedStatus();
-		    	applyScrollEffect();
-			});
 
 			var animationTimeConstant = 1000;
 			$(".sidebar-top").bind("click", function(){
@@ -570,7 +557,28 @@
 			    $('html, body').animate({
 			        scrollTop: $(".footer").offset().top + 1
 			    }, animationTimeConstant);
-			});	
+			});
+
+			function updateDynamicContent(animated) {
+				updateSelectedStatus();
+		    	applyScrollEffect(animated);
+			}
+
+			$(window).scroll(function () {
+		    	updateDynamicContent(false);
+			});
+
+			$( window ).resize(function() {
+		    	updateDynamicContent(false);
+			});
+
+			$(document).ready(function() {
+				$("html").animate({"margin-top": "0px", "opacity" : "1.0"}, {
+					step: function() {
+						updateDynamicContent(false);
+					}
+				}, "slow", "swing");
+			});
 		</script>
 	</body>
 </html>
