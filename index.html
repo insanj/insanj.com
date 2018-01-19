@@ -412,6 +412,10 @@
 
 		<script src="https://insanj.com/jquery-3.1.1.min.js"></script>
 		<script>
+			$( document ).ready(function() {
+				$("html").animate({"margin-top": "0px", "opacity" : "1.0"}, "slow");
+			});
+
 			function updateSelectedStatus(height) {
 				var height = $(window).scrollTop();
 				var appsHeight = $("#showcase").offset().top;

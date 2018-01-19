@@ -1,6 +1,9 @@
 /* Document Attributes */
 html {
 	min-width: 1000px;
+
+	opacity: 0.0; /* animates in on load */
+	margin-top: 200px;
 }
 
 body {
