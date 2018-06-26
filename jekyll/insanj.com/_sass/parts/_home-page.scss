@@ -11,6 +11,11 @@
   padding: 20px 10px;
   background-color: $background-sidebar;
 }
+.page-link {
+  color: $sidebar-link;
+  text-decoration: none;
+  margin: 0px;
+}
 .about {
   margin: 0 0 40px;
   text-align: center;

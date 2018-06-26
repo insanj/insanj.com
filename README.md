@@ -2,7 +2,7 @@
 
 # Built using
 
-- [jekyll](https://github.com/artemsheludko/flexible-jekyll)
+- [flexible-jekyll](https://github.com/artemsheludko/flexible-jekyll)
 
 Complete personal website, including assets and external resources. Includes [Catalyst](http://insanj.com/catalyst), [Circlet](http://insanj.com/circlet), [Colendar](http://insanj.com/colendar), and [Orangered](http://insanj.com/orangered). Head over to the [Repository](https://github.com/insanj/repository) for my Cydia Repos.
 
