@@ -4,7 +4,7 @@ build:
 	jekyll build
 	
 serve:
-	open "http://127.0.0.1:4000/flexible-jekyll/"
+	open "http://127.0.0.1:4000/"
 	jekyll serve
 
 clean:
