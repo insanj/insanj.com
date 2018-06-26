@@ -1,26 +1,582 @@
----
-layout: main
----
-{% for post in paginator.posts %}
-<article class="post">
-  {% if post.img %}
-    <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
-  {% else %}
-  {% endif %}
-  <div class="post-content">
-    <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-    <p>{{ post.content | strip_html | truncatewords: 10 }}</p>
-    <span class="post-date">
-      <i class="fa fa-tag" aria-hidden="true"></i>  {{post.tags}}
-      <br/>
-      <i class="fa fa-clock-o" aria-hidden="true"></i>  {{post.date | date: '%Y'}}
-    </span>
-  {% if post.show_word_count %}
-    &nbsp;&nbsp;&nbsp;—&nbsp;
-    <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
-  {% endif %}
-  </div>
-</article>
-{% endfor %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>insanj</title>
+		<meta name="viewport" content="width=745, initial-scale=1.0">
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+		<link rel="icon" type="image/png" href="images/favicon.png">
 
-{% include pagination.html %}
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="showcase.css">
+
+		<link href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+
+		<meta name="description" content="Julian (insanj) Weiss is a Philadelphia-based software developer, designer, and entrepreneur." />
+		<meta name="keywords" content="insanj,julian weiss,ios,software,philadelphia,submarine,slyce,reddit,gampets,dribbleup,pianote,flogg,revuu,github" />
+		<meta name="robots" content="index,follow" />
+	</head>
+
+	<body>			
+		<div class="biography">
+			<a target='_blank' href="https://instagram.com/insanj"><img class="avatar" src="images/summer.jpg"/></a>
+			<h1>Julian Weiss</h1>
+
+			<p><h2>iOS entrepreneur, design pragmatist,<br/>music enthusiast, college grad.</h2></p>
+
+			<div class="links">
+ 				<a target='_blank' href="https://twitter.com/insanj" style="text-decoration-color: #059FF5">twitter</a>
+				<a target='_blank' href="https://github.com/insanj" style="text-decoration-color: #F0CA5A;">github</a>
+				<a target='_blank' href="https://earn.com/insanj/" style="text-decoration-color: rgb(201, 149, 81);">earn</a>
+			</div>
+		</div>
+
+		<div id="showcase">
+			<div id="showcase-title">
+				PORTFOLIO<br/>
+				<h2></h2>
+			</div>
+
+
+			<hr id="showcase-title-divider"/>
+
+			<!-- SLYCE -->
+			<div class="showcase-item"><a target='_blank' href="http://slyce.it">
+				<div id="showcase-icon-container"><img id="showcase-icon" src="images/slyce.jpg"/></div>
+				<p id="showcase-text"><b>Slyce</b> is an extraordinary visual search engine that drives mobile products for top retailers in the United States.</p>
+				<p id="showcase-role">Mobile Developer<br/>2017-2018.</p>
+				<p id="showcase-availability">Philadelphia</p>
+				<div id="showcase-disclosure-indicator">⇨</div>
+			</a></div>
+
+			<hr />
+
+			<!-- REC -->
+			<div class="showcase-item"><a target='_blank' href="https://recphilly.com">
+				<div id="showcase-icon-container"><img id="showcase-icon" src="images/rec.png"/></div>
+				<p id="showcase-text"><b>REC</b> is Philadelphia's Agency for Creative Entrepreneurs, connecting creators and communities together every day.</p>
+				<p id="showcase-role">Lead Technologist 2018.</p>
+				<p id="showcase-availability">Philadelphia</p>
+				<div id="showcase-disclosure-indicator">⇨</div>
+			</a></div>
+
+			<hr />
+
+			<!-- SUBMARINE -->
+			<div class="showcase-item"><a target='_blank' href="https://insanj.com/submarine">
+		    	<div id="showcase-icon-container"><img id="showcase-icon" src="submarine/images/submarine.jpg"/></div>
+				<p id="showcase-text"><b>Submarine</b> is a feature-packed, community-driven Reddit app. <b>Submarine Two</b> is coming early 2018.</p>
+				<p id="showcase-role">Created 2015-2018.</p>
+				<p id="showcase-availability">Available on iOS.</p>
+				<div id="showcase-disclosure-indicator">⇨</div>
+			</a></div>
+
+			<hr />
+
+			<!-- AM -->
+		    <div class="showcase-item"><a target='_blank' href="https://angel.co/projects/609856-am-projected-relation?src=user_profile">
+		    	<div id="showcase-icon-container"><img id="showcase-icon" src="images/AM.jpg"/></div>
+				<p id="showcase-text"><b>AM/Projected Relation</b> is a relational art project interested in the various data-selves we produce through our many profiles.</p>
+				<p id="showcase-role">Full stack developer Spring 2017-2018.</p>
+				<p id="showcase-availability">Talk to her on iOS and Web.</p>
+				<div id="showcase-disclosure-indicator">⇨</div>
+			</a></div>
+
+			<hr />
+
+			<!-- TIMESHEET -->
+			<div class="showcase-item"><a target='_blank' href="https://producthunt.com/upcoming/timesheet">
+				<div id="showcase-icon-container"><img id="showcase-icon" src="images/timesheet.png"/></div>
+				<p id="showcase-text"><b>Timesheet</b> is a vibrant and collaboration-ready hour tracking tool. Control the time you spend doing absolutely anything, and share it selectively with other people.</p>
+				<p id="showcase-role">Full Stack Developer 2017-2018.</p>
+				<p id="showcase-availability">Coming Spring 2018 for iOS.</p>
+				<div id="showcase-disclosure-indicator">⇨</div>
+			</a></div>
+
+			<hr />
+
+			<!-- DRIBBLEUP -->
+			<div class="showcase-item"><a target='_blank' href="http://dribbleup.com">
+		    	<div id="showcase-icon-container"><img id="showcase-icon" src="images/dribbleup.png"/></div>
+				<p id="showcase-text"><b>DribbleUp</b> is the first basketball tracking app, a breakthrough tech with a custom ball.</p>
+				<p id="showcase-role">Lead iOS 2015-2016.</p>
+				<p id="showcase-availability">Available on iOS and Android.</p>
+				<div id="showcase-disclosure-indicator">⇨</div>
+			</a></div>
+
+			<hr />
+
+			<!-- GAMPETS / BESTO -->
+			<div class="showcase-item"><a target='_blank' href="http://gampets.com">
+		    	<div id="showcase-icon-container"><img id="showcase-icon" src="images/gampets.png"/></div>
+				<p id="showcase-text"><b>Gampets</b> is a fun way to share pet videos and get pets adopted.</p>
+				<p id="showcase-role">iOS Product Developer 2016.</p>
+				<p id="showcase-availability">Available on iOS.</p>
+				<div id="showcase-disclosure-indicator">⇨</div>
+			</a></div>
+
+			<hr />
+
+			<!-- FLOGG -->
+			<div class="showcase-item"><a target='_blank' href="https://twitter.com/flogg">
+		    	<div id="showcase-icon-container"><img id="showcase-icon" src="images/flogg.png"/></div>
+				<p id="showcase-text"><b>Flogg</b> is an innovative commerce platform for friends.</p>
+				<p id="showcase-role">iOS Developer 2016.</p>
+				<p id="showcase-availability">Available on iOS.</p>
+				<div id="showcase-disclosure-indicator">⇨</div>
+			</a></div>
+
+			<hr />
+
+			<!-- REVUU -->
+			<div class="showcase-item"><a target='_blank' href="https://twitter.com/REVUU_app">
+		    	<div id="showcase-icon-container"><img id="showcase-icon" src="images/revuu.png"/></div>
+				<p id="showcase-text"><b>REVUU</b> was an NYC startup reinventing the future of the magazine.</p>
+				<p id="showcase-role">Lead iOS 2015-2016.</p>
+				<p id="showcase-availability">Available on iOS and Web.</p>
+				<div id="showcase-disclosure-indicator">⇨</div>
+			</a></div>
+
+			<hr />
+
+			<!-- SMOCK -->
+			<div class="showcase-item"><a target='_blank' href="https://twitter.com/smockups">
+		    	<div id="showcase-icon-container"><img id="showcase-icon" src="images/smock.png"/></div>
+				<p id="showcase-text"><b>Smock</b> is a powerful responsive web mockup tool.</p>
+				<p id="showcase-role">Swift Developer 2016.</p>
+				<p id="showcase-availability">Available on Mac App Store.</p>
+				<div id="showcase-disclosure-indicator">⇨</div>
+			</a></div>
+
+			<hr />
+
+			<!-- COLD OPEN -->
+			<div class="showcase-item"><a target='_blank' href="https://itunes.apple.com/us/app/cold-open-your-new-favorite/id1047272956?mt=8">
+		    	<div id="showcase-icon-container"><img id="showcase-icon" src="images/cold%20open.png"/></div>
+				<p id="showcase-text"><b>Cold Open</b> is an intuitive TV show app.</p>
+				<p id="showcase-role">iOS Developer Summer 2015 as a part of The Appical.</p>
+				<p id="showcase-availability">Available on iOS.</p>
+				<div id="showcase-disclosure-indicator">⇨</div>
+			</a></div>
+
+			<hr />
+
+			<!-- GIFFAGE -->
+			<div class="showcase-item"><a target='_blank' href=https://twitter.com/giffageapp">
+		    	<div id="showcase-icon-container"><img id="showcase-icon" src="images/giffage.png"/></div>
+				<p id="showcase-text"><b>Giffage</b> is an all-in-one GIF keyboard.</p>
+				<p id="showcase-role">Implemented core iOS features Summer 2015.</p>
+				<p id="showcase-availability">Available on iOS.</p>
+				<div id="showcase-disclosure-indicator">⇨</div>
+			</a></div>
+
+			<hr />
+
+			<!-- PIANOTE -->
+			<div class="showcase-item"><a target='_blank' href="https://twitter.com/pianoteapp">
+		    	<div id="showcase-icon-container"><img id="showcase-icon" src="images/pianote.png"/></div>
+				<p id="showcase-text"><b>Pianote</b> is a streamlined app for musicians. Practice your music smarter.</p>
+				<p id="showcase-role">iOS Developer 2015-2017.</p>
+				<p id="showcase-availability">In development.</p>
+				<div id="showcase-disclosure-indicator">⇨</div>
+			</a></div>
+
+			<hr />
+
+			<!-- URLINQ -->
+			<div class="showcase-item"><a target='_blank' href="http://www.digital.nyc/startups/urlinq">
+		    	<div id="showcase-icon-container"><img id="showcase-icon" src="images/urlinq.png"/></div>
+				<p id="showcase-text"><b>Urlinq</b> was a powerful ed-tech network that brought the university experience to the 21st century.</p>
+				<p id="showcase-role">Vice President of iOS Product Development 2013-2015.</p>
+				<p id="showcase-availability">No longer available.</p>
+				<div id="showcase-disclosure-indicator">⇨</div>
+			</a></div>
+		</div>
+
+		<div id="github-contributions">
+			<hr class="projectseparator"/>
+
+			<a href="https://github.com/insanj?tab=overview">
+				<div class="github-contributions">
+					<img src="https://insanj-github.herokuapp.com/graph/insanj"></img>
+				</div>
+			</a>
+
+			<hr class="projectseparator"/>
+		</div>
+
+		<div class="extraprojects" id="programming">
+			<div class="projectgroup">
+				<div class="project-header">Cocoapods</div>
+
+				<div class="project"><a target='_blank' href="https://github.com/insanj/ContentTableViewController">ContentTableViewController</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/SmartStickyPullToRefresh">SmartStickyPullToRefresh</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/SUBLicenseViewController">SUBLicenseViewController</a></div>
+			</div>
+
+			<div class="projectgroup">
+				<div class="project-header">Jailbreak Tweaks</div>
+				
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Actapaper">Actapaper</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/ActiveAlarm">ActiveAlarm</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Arpeggio">Arpeggio</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/AwayToTop">AwayToTop</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Bluepicker">Bluepicker</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/BlurBar">BlurBar</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Circlet">Circlet</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/ClearforProWidgets">Clear for ProWidgets</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/CalmCall">CalmCall</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Cleary">Cleary</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/CloseAll">CloseAll</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Colendar">Colendar</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Darkness">Darkness</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/DarkPhotos">DarkPhotos</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/RinseDev/Dated">Dated</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/DimWithFlash">DimWithFlash</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/EditAlarms">Edit Alarms</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/EditClocks">Edit Clocks</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Homepaper">Homepaper</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/GoogleSearchforVelox">Google Search for Velox</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Hidebot">Hidebot</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/HideHomeTime">HideHomeTime</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/LockFreeze">LockFreeze</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/LongerAutoLock">LongerAutoLock</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/MessagePopper">MessagePopper</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Meter">Meter</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/NoAlertsPrivateBrowsing">No Alerts Private Browsing</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/NotesCounter">NotesCounter</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/OmniFast">OmniFast</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/RinseDev/Orangered">Orangered</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Pandorafier">Pandorafier</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/PartialGrabbers">PartialGrabbers</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/PassTime">PassTime</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/PreferenceOrganizer2">PreferenceOrganizer2</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/PrivateKeyboard">PrivateKeyboard</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Pulse">Pulse</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/QuickCarrot">QuickCarrot</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/RightX">RightX</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/RoundedTwitterrific">RoundedTwitterrific</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/SaveGram">SaveGram</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/SelfDestruct">SelfDestruct</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Slackboard">Slackboard</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/SleepyAlarm">SleepyAlarm</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/SlickGram">SlickGram</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/SliderKiller">SliderKiller</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Snooze">Snooze</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/SwitcherBlur">SwitcherBlur</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Tintbot">Tintbot</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/TodoFast">TodoFast</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Tranquil">Tranquil</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Unread">Unread</a></div>
+
+				<div class="project">Alien Blue Velox</div>
+				<div class="project">App Store for Velox</div>
+				<div class="project">Chrome for Velox</div>
+				<div class="project">Dolphin for Velox</div>
+				<div class="project">iTunes for Velox</div>
+				<div class="project">LandscapeCalc</div>
+				<div class="project">Orangered (iOS 6)</div>
+				<div class="project">Orangered for iOS 7</div>
+				<div class="project">Safari for Velox</div>
+				<div class="project">SliderCustomizer</div>
+			</div>
+
+			<div class="projectgroup">
+				<div class="project-header">Github</div>
+
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Blimp">Blimp</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Gametime">Gametime</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/NimbusSyllabus">NimbusSyllabus</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/PlaceMat">PlaceMat</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Sorty">Sorty</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/TheNextL">TheNextL</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/UROpen">UROpen</a></div>
+			</div>
+
+			<div class="projectgroup">
+				<div class="project-header">Minecraft Mods</div>				
+				<div class="project"><a target='_blank' href="https://github.com/insanj/BlockBlocker">BlockBlocker</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/BlockChanger">BlockChanger</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/ChestDrop">ChestDrop</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/LiteSpwnr">LiteSpwnr</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/MakeSpawnNotSleep">MakeSpawnNotSleep</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/OreMagnet">OreMagnet</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/Replicator">Replicator</a></div>
+				<div class="project"><a target='_blank' href="https://github.com/insanj/TreeOctopus">TreeOctopus</a></div>
+			</div>
+
+		</div>
+
+		<hr class="projectseparator"/>
+
+		<div class="extraprojects" id="writing">
+			<div class="projectgroup">
+				<div class="project-header">Medium</div>
+				<div class="project"><a target='_blank' href="https://insanj.com/images/ah398%20-%20final%20paper%20-%20julian%20weiss.pdf">"The Fl&#226;nerie of Instagram: Studying the Photography-Based Social Network as a Self-Curated Newspaper within the Modern Cityscape of the Internet" (2016)</a></div>
+
+				<div class="project"><a target='_blank' href="https://medium.com/musewithmusic/coloring-book-97236388dd9c">"Coloring Book" Album Review (2016)</a></div>
+
+				<div class="project"><a target='_blank' href="https://medium.com/@insanj/dropbox-broke-my-heart-for-the-last-time-techs-unsatisfied-need-for-cloud-storage-23010becff47">"Dropbox Broke My Heart For The Last Time: Tech's Unsatisfied Need For Cloud Storage" (2015)</a></div>
+				<div class="project"><a target='_blank' href="https://medium.com/@insanj/our-understanding-of-time-is-poisonous-aaee242868a8">"Our Understanding of Time is Poisonous" (2015)</a></div>
+				<div class="project"><a target='_blank' href="https://medium.com/@insanj/slow-down-b48f155d820">"Slow Down" (2014)</a></div>
+				<div class="project"><a target='_blank' href="https://medium.com/@insanj/the-most-important-thing-is-to-write-it-down-1a031082be34">"The Most Important Thing Is To Write It Down" (2014)</a></div>
+				<div class="project"><a target='_blank' href="https://medium.com/@insanj/how-apple-changed-my-life-today-and-why-good-design-isnt-about-interfaces-784465f04ca0">"How Apple Changed My Life Today, and Why Good Design Isn't About Interfaces" (2014)</a></div>
+				<div class="project"><a target='_blank' href="https://medium.com/@insanj/cellcircle-5e72a868f7a4">"CellCircle: On Jailbreak development, stagnation, disappointment, and redemption" (2014)</a></div>
+				<div class="project"><a target='_blank' href="https://medium.com/@insanj/a-21st-century-battle-of-operating-systems-a62b24ab1fe4">"A 21st Century Battle of Operating Systems" (2014)</a></div>
+
+				<div class="project"><a target='_blank' href="https://medium.com/i-m-h-o/a-crisis-of-whether-weather-65c9f2d2de21">"A Crisis of Whether Weather" (2013)</a></div>
+				<div class="project"><a target='_blank' href="https://medium.com/@insanj/labyrinthian-homes-40969f4ab433">"Labyrinthian Homes: What was once complexity is now comfort" (2013)</a></div>
+				<div class="project"><a target='_blank' href="https://medium.com/@insanj/robotic-uprising-or-undercutting-dd3bcba9d240">"Robot Rising or Undercutting?" (2013)</a></div>
+				<div class="project"><a target='_blank' href="https://medium.com/this-happened-to-me/using-medium-4d9d39e485b3">"Using Medium: A subtle hint that the internet is still hard to use" (2013)</a></div>
+				<div class="project"><a target='_blank' href="https://medium.com/i-m-h-o/the-ios-paradigm-ff17072c2a20">"The iOS Paradigm: iOS's controversial success and ultimate failure" (2013)</a></div>
+			</div>
+
+			<div class="projectgroup">
+				<div class="project-header">Blog</div>
+				<div class="project"><a target='_blank' href="http://insanj.tumblr.com/post/45871073843/bidding-evasi0n-farewell-reflecting-on-evasi0n">Bidding Evasi0n Farewell: Reflecting on Evasi0n, the @evad3rs, Cydia, and the end of the "iOS 6.x.x jailbreak"</a></div>
+
+				<div class="project"><a target='_blank' href="http://insanj.tumblr.com/post/45391987124/on-tweaking-and-blogging-entering-the">On Tweaking and Blogging: Entering The Jailbreaking Community And Reinvigorating The Blog</a></div>
+
+				<div class="project"><a target='_blank' href="http://insanjblog.tumblr.com/post/51579182818/kiwi">iOS Themes: A Few Quick Thoughts On Beauty and Consistency</a></div>
+
+				<div class="project"><a target='_blank' href="http://insanjblog.tumblr.com/post/50466064172/analog-camera-and-developers-infatuation-with">Analog Camera and Developers' Infatuation With "iPhotography"</a></div>
+
+				<div class="project"><a target='_blank' href="http://insanjblog.tumblr.com/post/49986180687/velox-vs-badger-what-is-the-tweak-youve-been">Velox vs. Badger: What Is "The Tweak You've Been Waiting For?"</a></div>
+
+				<div class="project"><a target='_blank' href="http://insanjblog.tumblr.com/post/48827667150/why-reimagining-mail-for-iphone-doesnt-work">Why "Reimagining" Mail for iPhone Doesn't Work: Mailbox, Sparrow, Triage, Gmail, and Why I Never Stay</a></div>
+
+				<div class="project"><a target='_blank' href="http://insanjblog.tumblr.com/post/46091952940/plugging-jailbreaks-why-apple-doesnt-let">Plugging Jailbreaks: Why Apple Doesn't Let Jailbreaks Last, and Why We Shouldn't Be Upset About It</a></div>
+
+				<div class="project"><a target='_blank' href="http://insanjblog.tumblr.com/post/45563005080/rethinking-cyueues-interface-making-cyueue">Rethinking Cyueue's Interface: Making Cyueue Gorgeous and Easier to Use</a></div>
+
+				<div class="project"><a target='_blank' href="http://insanjblog.tumblr.com/post/38764975098/2012">Happy Holidays and a Merry New Year (2012 wrap up, 2013 introduction)</a></div>
+
+				<div class="project"><a target='_blank' href="http://insanjblog.tumblr.com/post/37730982230/versaries">Versaries: Remembering the Important Times in Your Life (App Review)</a></div>
+
+				<div class="project"><a target='_blank' href="http://insanjblog.tumblr.com/post/36696360704/asphalt-vs-nfs">Racing Giants Go Head to Head: Asphalt 7 vs. Most Wanted (App Review)</a></div>
+
+				<div class="project"><a target='_blank' href="http://insanjblog.tumblr.com/post/36162185142/duolingo">Duolingo: A Beautiful, Ingenious, and Extraordinary Way To Learn A Langauge (and translate the internet) (App Review)</a></div>
+
+				<div class="project"><a target='_blank' href="http://insanjblog.tumblr.com/post/35666894518/ifalarm">IfAlarm: Waking Up Has Never Been Smarter (App Review)</a></div>
+			</div>
+
+			<div class="projectgroup">
+				<div class="project-header">YouTube</div>
+
+				<div class="project"><a target='_blank' href="https://www.youtube.com/user/insanj/videos?view=0&sort=p&flow=grid">Popular Videos</a></div>
+
+				<div class="project"><a target='_blank' href="https://www.youtube.com/watch?v=LMUpr2VOAK4">Carrot (Weekly App Review)</a></div>
+
+				<div class="project"><a target='_blank' href="https://www.youtube.com/watch?v=jKIc5lrmVQE">14px (Weekly App Review)</a></div>
+
+				<div class="project"><a target='_blank' href="https://www.youtube.com/watch?v=gWMlu70vjC4">Alpha Calc (Weekly App Review)</a></div>
+
+				<div class="project"><a target='_blank' href="https://www.youtube.com/watch?v=Cz390AGAi_o">Songza (Weekly App Review)</a></div>
+
+				<div class="project"><a target='_blank' href="https://www.youtube.com/watch?v=Jy9BgVxmeSc">CarTunes (Weekly App Review)</a></div>
+
+				<div class="project"><a target='_blank' href="https://www.youtube.com/watch?v=sfoOwU-PpNM">Into The Dead (Weekly App Review)</a></div>
+			</div>
+		</div>
+
+		<hr class="projectseparator"/>
+
+		<div class="extraprojects" id="awards">
+			<div class="projectgroup">
+				<div class="project-header">Awards</div>
+
+				<div class="project"><a href="http://lucidshortfilm.com">University of Rochester Gollin Film Festival, Selected for Lucid, Voice Actor and Assistant Editor (2017)</a></div>
+
+				<div class="project">University of Rochester Writing, Speaking, and Argument Writing Contest Winner, Honorable Mention in Humanities (2017)</div>
+
+				<div class="project">University of Rochester Dean's List (Spring 2014, Fall 2014, Spring 2016, Fall 2016, Spring 2017)</div>
+
+				<div class="project">NYU Global Hackathon Grand Prize, 1st Place for Alloy iOS (2015)</div>
+
+				<div class="project">Computer Science Academic Achievement Award (Moorestown High School, 2013)</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			&copy; 2008-2018 Julian Weiss<br/>
+			<a target='_blank' href="https://soundcloud.com/insanj">soundcloud</a>
+			&#10035;&#65038; <a target='_blank' href="https://instagram.com/insanj">instagram</a>
+			&#10035;&#65038; <a target='_blank' href="https://medium.com/@insanj">medium</a>
+			&#10035;&#65038; <a target='_blank' href="http://www.lucidshortfilm.com">lucid</a>
+			<br/>
+			<a target='_blank' href="catalyst">catalyst</a>
+			&#10035;&#65038; <a target='_blank' href="/circlet">circlet</a>
+			&#10035;&#65038; <a target='_blank' href="/colendar">colendar</a>
+			&#10035;&#65038; <a target='_blank' href="/orangered">orangered</a>
+			&#10035;&#65038; <a target='_blank' href="/submarine">submarine</a>
+		</div>
+		
+		<div class="sidebar">
+			<div class="sidebar-top"><i class="fa fa-coffee" aria-hidden="true"></i></div>
+			<div class="sidebar-apps"><i class="fa fa-apple" aria-hidden="true"></i></div>
+			<div class="sidebar-programming"><i class="fa fa-code-fork" aria-hidden="true"></i></div>
+			<div class="sidebar-writing"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+			<div class="sidebar-bottom" style="display:none;"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+		</div>
+
+		<script src="https://insanj.com/jquery-3.1.1.min.js"></script>
+		<script>
+			var reset_scroll_effect = false;
+			var existing_timeout = false;
+
+			// https://www.arduino.cc/reference/en/language/functions/math/map/
+			function map( x,  in_min,  in_max,  out_min,  out_max) {
+			  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+			}
+
+		    function applyScrollEffect() {
+	    		var document_center_point = $(window).innerHeight() / 2;
+	    		var document_scroll_position = $(window).scrollTop();
+	    		$(".showcase-item").each(function() {
+					var item_offset = $(this).offset().top + $(this).height();
+					var document_offset = document_scroll_position + document_center_point;
+
+					var scroll_offset =  Math.abs(document_offset - item_offset);
+
+					var max_threshold = 600.0;
+					var mapped_scroll_to_thres = map(scroll_offset, 0, 600, 1.0, 0.2);
+					var transform_value = map(mapped_scroll_to_thres, 1.0, 0.2, 1.1, 0.85);
+
+					var scroll_effect_properties = { 
+					  'opacity' : mapped_scroll_to_thres,
+					  '-webkit-transform' : 'scale(' + transform_value + ')',
+					  '-moz-transform'    : 'scale(' + transform_value + ')',
+					  '-ms-transform'     : 'scale(' + transform_value + ')',
+					  '-o-transform'      : 'scale(' + transform_value + ')',
+					  'transform'         : 'scale(' + transform_value + ')'
+					};
+
+					$(this).css(scroll_effect_properties);
+					/*if (animated) {
+						var anim_counter = 0;
+						$(this).animate({ anim_counter: transform_value }, {
+						    step: function(now,fx) {
+						    	console.log("anim now=" + now);
+						    	var step_transform_value = map(now, 0.0, 1.0, 0.9, 1.0);
+						        $(this).css({
+								  '-webkit-transform' : 'scale(' + step_transform_value + ')',
+								  '-moz-transform'    : 'scale(' + step_transform_value + ')',
+								  '-ms-transform'     : 'scale(' + step_transform_value + ')',
+								  '-o-transform'      : 'scale(' + step_transform_value + ')',
+								  'transform'         : 'scale(' + step_transform_value + ')'
+						        });
+						    },
+
+						    done: function() {
+    							$(this).css(scroll_effect_properties);
+						    }
+						});
+
+					}*/					  
+				});
+		    }
+
+			function updateSelectedStatus() {
+				var height = $(window).scrollTop();
+				var appsHeight = $("#showcase").offset().top;
+				var programmingHeight = $("#programming").offset().top;
+				var writingHeight = $("#writing").offset().top;
+
+			    if (height < appsHeight) {
+			    	if ($(".sidebar-top").attr("id") != "selected") {
+				        $("#selected").css("border-left-width", "2px");
+				        $("#selected").removeAttr("id");
+
+				        $(".sidebar-top").attr("id", "selected");
+				        $(".sidebar-top").css("border-left-width", "4px");
+			       	}
+			    }	
+
+			    else if (height < programmingHeight) {
+			    	if ($(".sidebar-apps").attr("id") != "selected") {
+				        $("#selected").css("border-left-width", "2px");
+				        $("#selected").removeAttr("id");
+
+				        $(".sidebar-apps").attr("id", "selected");
+				        $(".sidebar-apps").css("border-left-width", "4px");
+					}
+			    }		
+
+				else if (height < writingHeight) {
+			    	if ($(".sidebar-programming").attr("id") != "selected") {
+						$("#selected").css("border-left-width", "2px");
+				        $("#selected").removeAttr("id");
+
+				        $(".sidebar-programming").attr("id", "selected");
+				        $(".sidebar-programming").css("border-left-width", "4px");
+			       	}
+			    }	
+
+				else {
+			    	if ($(".sidebar-writing").attr("id") != "selected") {
+						$("#selected").css("border-left-width", "2px");
+				        $("#selected").removeAttr("id");
+
+				        $(".sidebar-writing").attr("id", "selected");
+				        $(".sidebar-writing").css("border-left-width", "4px");
+			       	}
+			    }
+			}
+
+
+			var animationTimeConstant = 1000;
+			$(".sidebar-top").bind("click", function(){
+			    $('html, body').animate({
+			        scrollTop: $("body").offset().top
+			    }, animationTimeConstant);
+			});
+
+			$(".sidebar-apps").bind("click", function(){
+			    $('html, body').animate({
+			        scrollTop: $("#showcase").offset().top + 1
+			    }, animationTimeConstant);
+			});
+
+			$(".sidebar-programming").bind("click", function(){
+			    $('html, body').animate({
+			        scrollTop: $("#github-contributions").offset().top - 50
+			    }, animationTimeConstant);
+			});
+
+			$(".sidebar-writing").bind("click", function(){
+			    $('html, body').animate({
+			        scrollTop: $("#writing").offset().top + 1
+			    }, animationTimeConstant);
+			});			
+
+			$(".sidebar-bottom").bind("click", function(){
+			    $('html, body').animate({
+			        scrollTop: $(".footer").offset().top + 1
+			    }, animationTimeConstant);
+			});
+
+			function updateDynamicContent() {
+				updateSelectedStatus();
+		    	applyScrollEffect();
+			}
+
+			$(window).scroll(function () {
+		    	updateDynamicContent();
+			});
+
+			$( window ).resize(function() {
+		    	updateDynamicContent();
+			});
+
+			$(document).ready(function() {
+				$("html").animate({"margin-top": "0px", "opacity" : "1.0"}, {
+					step: function() {
+						updateDynamicContent();
+					}
+				}, "slow", "swing");
+			});
+		</script>
+	</body>
+</html>
