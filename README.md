@@ -1,5 +1,9 @@
 # insanj.com
 
+# Built using
+
+- [jekyll](https://github.com/artemsheludko/flexible-jekyll)
+
 Complete personal website, including assets and external resources. Includes [Catalyst](http://insanj.com/catalyst), [Circlet](http://insanj.com/circlet), [Colendar](http://insanj.com/colendar), and [Orangered](http://insanj.com/orangered). Head over to the [Repository](https://github.com/insanj/repository) for my Cydia Repos.
 
 This website has existed for as long as I've been on the internet (although I wish [it was always on Github](https://web.archive.org/web/*/insanj.com)), previously at [The Wio](https://web.archive.org/web/*/thewio.com), various blogs ("The Read-a-Thon", etc), and at one point merged with [my Tumblr](http://insanjblog.tumblr.com/) (which has now been consumed [by Medium](https://medium.com/@insanj)).
@@ -8,7 +12,7 @@ Also contains [lifeiscontent](https://github.com/lifeiscontent)'s responsive [sl
 
 ### [License](LICENSE.md)
 	insanj.com: complete personal, dynamic website
-	Copyright (C) 2008-2015  Julian (insanj) Weiss
+	Copyright (C) 2008-2018  Julian (insanj) Weiss
 
 	This program is free software: you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
