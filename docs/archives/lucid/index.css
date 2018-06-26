@@ -1,0 +1,140 @@
+
+body {
+	min-width: 700px;
+	width: 100%;
+	margin: 0px;
+
+	font-family: 'Bitter', 'AmericanTypewriter', Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+
+	background: #00091b url('background-low.jpg') no-repeat fixed center;
+    background-size: cover;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.masthead {
+	display: block;
+	text-align: center;
+
+	padding-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+
+	line-height: normal;
+}
+
+.banner {
+	width: 440px;
+	height: 44px;
+	display: block;
+
+	text-align: left;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	margin-top: 50px;
+	margin-bottom: 0px;
+
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.banner img {
+	float: left;
+
+	width: 60px;
+	height: 60px;
+
+	margin-top: -8px;
+	margin-right: 10px;
+}
+
+h1 {
+	margin: 0px;
+	font-size: 100px;
+	letter-spacing: 0.8px;
+	line-height: 80px;
+}
+
+h2 {
+	margin: 0px;
+	font-size: 30px;
+}
+
+.film {
+	margin-top: 50px;
+
+	display: block;
+	text-align: center;
+}
+
+.anchor {
+
+}
+
+.video {
+	background-color: black;
+	margin: 0px;
+
+	box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.25);
+
+	width: 700px;
+	height: 400px;
+
+	margin-bottom: 20px;
+}
+
+hr {
+	width: 600px;
+	margin-top: 50px;
+
+	border-color: rgba(255,255,255,0.25);
+	border-width: 2px;
+	border-style: solid;
+}
+
+.credits {
+	margin-top: 50px;
+
+	text-align: center;
+
+	font-family: 'Roboto', BlinkMacSystemFont, system, -apple-system, "HelveticaNeue", HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-size: 18px;
+}
+
+.credits table {
+	display: inline-block;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.credits td {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.credits-table td:nth-child(odd) {
+	font-weight: 600;
+}
+
+.creditheader {
+	margin-top: 30px;
+	margin-bottom: 10px;
+
+	font-weight: 700;
+}
+
+.footer {
+	font-size: 12px;
+	text-align: center;
+	opacity: 0.25;
+
+	margin-top: 50px;
+	padding-bottom: 20px;
+}

@@ -1,0 +1,15 @@
+---
+layout: post
+title: Giffage
+date: 2017-09-12 13:32:20 +0300
+description: Giffage is an all-in-one GIF keyboard.
+img: giffage.png
+fig-caption: via app store
+tags: [ios]
+---
+
+Giffage is an all-in-one GIF keyboard.
+
+Implemented core iOS features Summer 2015.
+
+Available on iOS.
