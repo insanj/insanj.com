@@ -1,0 +1,15 @@
+---
+layout: post
+title: Pianote
+date: 2017-09-12 13:32:20 +0300
+description: Pianote is a streamlined app for musicians. Practice your music smarter.
+img: pianote.png
+fig-caption: via testflight
+tags: [ios]
+---
+
+Pianote is a streamlined app for musicians. Practice your music smarter.
+
+iOS Developer 2015-2018.
+
+In development.

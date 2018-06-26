@@ -9,7 +9,7 @@
   width: 240px;
   height: 100%;
   padding: 20px 10px;
-  background-color: $white;
+  background-color: $background-sidebar;
 }
 .about {
   margin: 0 0 40px;
@@ -71,7 +71,7 @@
 .contact {
   .contact-title {
     position: relative;
-    color: $dark;
+    color: $body-color;
     font-weight: 400;
     font-size: 12px;
     margin: 0 0 5px;
@@ -141,7 +141,7 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  min-height: 11rem;
+  min-height: 200px;
   border-radius: 10px;
   overflow: hidden;
   transition: all .3s ease;
@@ -154,7 +154,7 @@ footer {
   .post-thumbnail {
     width: 30%;
     max-width: 100%;
-    min-height: 11rem;
+    min-height: 100px;
     background-size: cover;
     background-position: 50% 50%;
   }
@@ -170,6 +170,7 @@ footer {
       margin: 0 0 10px;
       font-size: 30px;
       font-weight: 400;
+      line-height: 70%;
       a {
         font-family: $font, serif;
         text-decoration: none;

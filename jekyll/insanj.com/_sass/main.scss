@@ -13,7 +13,7 @@ html {
 body {
   font-family: $font, sans-serif;
   color: $body-color;
-  background-color: #fbfbfb;
+  background-color: $background;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -114,7 +114,8 @@ table tfoot td {
 }
 
 .post, .article-page {
-  background-color: #fff;
+  border-radius: 20px;
+  background-color: $background-post;
 }
 
 ::-moz-selection {
