@@ -1,7 +1,7 @@
 ---
 layout: post
 title: REC Philly
-date: 2017-09-12 13:32:20 +0300
+date: 2018-04-01 13:32:20 +0300
 description: REC is Philadelphia's Agency for Creative Entrepreneurs, connecting creators and communities together every day.
 img: rec.png
 fig-caption: 

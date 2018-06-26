@@ -26,8 +26,9 @@ plugins:
   - jekyll-paginate
   - jemoji
 
-paginate: 8
+paginate: 6
 paginate_path: "/page/:num"
+permalink: /:title/
 
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 
