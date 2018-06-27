@@ -7,18 +7,18 @@
 ## Usage
 
 Mac and Linux:
-- `make build` or `make serve`
+- `make` or `make deploy`
 
 Windows:
 - [Setup Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-- Run `make build` or `make serve` using Ubuntu
+- Run `make` or `make deploy` using Ubuntu
 
 ## Sites
 
 - [Catalyst](http://insanj.com/catalyst)
 - [Circlet](http://insanj.com/circlet)
 - [Colendar](http://insanj.com/colendar)
-- [Orangered](http://insanj.com/orangered). 
+- [Orangered](http://insanj.com/orangered)
 - [Repository](https://github.com/insanj/repository)
 
 This website has existed for as long as I've been on the internet (although I wish [it was always on Github](https://web.archive.org/web/*/insanj.com)), previously at [The Wio](https://web.archive.org/web/*/thewio.com), various blogs ("The Read-a-Thon", etc), and at one point merged with [my Tumblr](http://insanjblog.tumblr.com/) (which has now been consumed [by Medium](https://medium.com/@insanj)).
