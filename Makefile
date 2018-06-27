@@ -2,11 +2,7 @@ build: clean
 	jekyll build --destination docs
 
 open:
-	ifeq ($(OS),Windows_NT)
-		explorer "http://localhost:8080"
-	else
-		open "http://localhost:8080"
-	endif
+	python -m webbrowser "http://localhost:8080"
 
 local: build open
 	cd docs && python -m SimpleHTTPServer 8080
@@ -27,6 +23,7 @@ windows-deps: # steps that may be required in a new Ubuntu environment
 	sudo apt install gcc
 	sudo apt install g++
 	sudo apt-get install zlib1g-dev
+	sudo apt install python
 	make windows-deps-gems
 
 windows-deps-gems:
