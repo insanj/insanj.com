@@ -1,12 +1,8 @@
 ﻿﻿<p align="center">
-   <img src="assets/favicon/favicon.ico" width=75 height=75 />
+   <img src="assets/img/favicon/favicon.ico" width=75 height=75 />
    <h3 align="center">insanj.com</h3>
-   <h4 align="center">complete personal website</h4>
+   <h4 align="center">🏡 complete personal website</h4>
 </p>
-
-## Built using
-
-- [flexible-jekyll](https://github.com/artemsheludko/flexible-jekyll)
 
 ## Usage
 
@@ -26,6 +22,10 @@ Windows:
 - [Repository](https://github.com/insanj/repository)
 
 This website has existed for as long as I've been on the internet (although I wish [it was always on Github](https://web.archive.org/web/*/insanj.com)), previously at [The Wio](https://web.archive.org/web/*/thewio.com), various blogs ("The Read-a-Thon", etc), and at one point merged with [my Tumblr](http://insanjblog.tumblr.com/) (which has now been consumed [by Medium](https://medium.com/@insanj)).
+
+## Built using
+
+- [flexible-jekyll](https://github.com/artemsheludko/flexible-jekyll)
 
 ## [License](LICENSE.md)
 
