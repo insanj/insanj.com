@@ -36,4 +36,4 @@ sass:
   sass_dir: _sass
   style: :compressed
 
-julian-url: "" # namespaced to prevent conflicts
+julian-site: http://127.0.0.1:4000/

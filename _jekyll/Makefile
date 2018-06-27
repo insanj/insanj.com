@@ -1,29 +1,35 @@
-LOCAL_CONFIG=_local_config.yml
-REMOTE_CONFIG=_remote_config.yml
+BASE_CONFIG=_config_base.yml
 CONFIG=_config.yml
 SITE_DIR=_site
+SITE_FLAG=julian-site: 
+LOCAL_SITE=http://127.0.0.1:4000/
+LOCAL_SITE_PORT=4000
+REMOTE_SITE=https://insanj.github.io/insanj.com/
 
-default: config-local build
+default: config-local serve
 
 remote: config-remote build
+
+serve: config-local open
+	jekyll serve --destination $(SITE_DIR)
 
 build: clean
 	jekyll build --destination $(SITE_DIR)
 
 open:
-	python -m webbrowser "http://localhost:8080"
+	python -m webbrowser "$(LOCAL_SITE)"
 
 local: build open
-	cd docs && python -m SimpleHTTPServer 8080
+	cd docs && python -m SimpleHTTPServer $(LOCAL_SITE_PORT)
 
-serve: config-local open
-	jekyll serve
+config-local: setup-config
+	echo "$(SITE_FLAG)$(LOCAL_SITE)" >> $(CONFIG)
 
-config-local: clean-config
-	cp -rf $(LOCAL_CONFIG) $(CONFIG)
+config-remote: setup-config
+	echo "$(SITE_FLAG)$(REMOTE_SITE)" >> $(CONFIG)
 
-config-remote:
-	cp -rf $(REMOTE_CONFIG) $(CONFIG)
+setup-config: clean-config
+	cp -rf $(BASE_CONFIG) $(CONFIG)
 
 clean-config:
 	rm -r -f $(CONFIG)
