@@ -6,7 +6,7 @@ layout: main
     {% if page.img %}
     <div class="page-cover-image">
       <figure>
-        <img class="page-image" src={{ "/assets/img/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
+        <img class="page-image" src={{ "assets/img/" | prepend: site.julian-site | append : page.img}} alt="{{page.title}}">
         {% if page.fig-caption %}
           <figcaption>{{page.fig-caption}}</figcaption>
         {% endif %}
@@ -23,7 +23,7 @@ layout: main
       <div class="page-footer">
         <div class="page-tag">
           {% for tag in page.tags %}
-            <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">{{ tag }}</a>
+            <a href="{{site.julian-site}}tags#{{tag}}" class="tag">{{ tag }}</a>
           {% endfor %}
         </div>
       </div>
