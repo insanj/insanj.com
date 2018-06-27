@@ -10,8 +10,6 @@ default: config-local serve
 
 remote: config-remote build
 
-deploy: remote clean-deploy
-
 serve: config-local open
 	jekyll serve --destination $(SITE_DIR)
 
@@ -38,10 +36,6 @@ clean-config:
 
 clean:
 	rm -r -f $(SITE_DIR)
-
-DEPLOY_BLACKLIST=-name 'Gemfile' -name 'Gemfile.lock' -name 'Makefile'
-clean-deploy:
-	find $(SITE_DIR)/* -type f $(DEPLOY_BLACKLIST) -delete
 
 deps:
 	gem install jekyll bundler jekyll-paginate
