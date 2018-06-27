@@ -36,4 +36,4 @@ sass:
   sass_dir: _sass
   style: :compressed
 
-julian-url: "" # namespaced to prevent conflicts
+julian-url: "https://insanj.github.io/insanj.com/" # namespaced to prevent conflicts
