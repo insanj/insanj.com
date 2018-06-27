@@ -11,7 +11,9 @@ layout: main
     <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
     <p>{{ post.content | strip_html | truncatewords: 10 }}</p>
     <span class="post-date">
-      <i class="fa fa-tag" aria-hidden="true"></i>  {{post.tags}}
+      {% if post.tags %}
+        <i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{ post.tags | array_to_sentence_string }}
+      {% endif %}
       <br/>
       <i class="fa fa-clock-o" aria-hidden="true"></i>  {{post.date | date: '%Y'}}
     </span>

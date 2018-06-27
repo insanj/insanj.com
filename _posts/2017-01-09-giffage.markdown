@@ -5,7 +5,7 @@ date: 2017-09-12 13:32:20 +0300
 description: Giffage is an all-in-one GIF keyboard.
 img: giffage.png
 fig-caption: via app store
-tags: [ios]
+tags: [ios, freelance]
 ---
 
 Giffage is an all-in-one GIF keyboard.
