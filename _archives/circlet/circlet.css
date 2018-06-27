@@ -1,0 +1,157 @@
+body {
+	margin:3%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 17px;
+	background-color: #545454; //* Original Hex is #F2F2F2, or you can try #4a4c42. try 545454 too*//
+	text-align: left;
+	padding-left: 25px;
+    padding-right: 25px;
+    color: #F2F2F2;
+    height: 10%;
+    overflow: visible;
+}
+
+a{
+	text-decoration:none;
+	color:gray;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+.img1 {
+  height: 179px;
+  width: 100px;
+ 
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.img1:hover {
+  width: 160px;
+  height: 284px;
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+
+}
+.img2 {
+  height: 179px;
+  width: 100px;
+ 
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+.img2:hover {
+  width: 160px;
+  height: 284px;
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+
+}
+
+.img3 {
+  height: 179px;
+  width: 100px;
+ 
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.img3:hover {
+  width: 160px;
+  height: 284px;
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+
+}
+.img4 {
+  height: 179px;
+  width: 100px;
+ 
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.img4:hover {
+  width: 160px;
+  height: 284px;
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+
+}
+
+#body {
+    visibility:visible; }
+
+.contact {
+    opacity: 0.3; }
+    -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+.contact:hover {
+    opacity: 1.0; 
+    -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.circlet:hover {
+    height:240px;
+    width:547.2px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease; 
+    animation-name: move;
+}
+
+.circlet {
+    height:137.5px;
+    width: 325px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+    animation-name: move;
+}
+
+b.footersmall {
+  font-variant:small-caps;
+}
+
+@keyframes move {
+    from { top: 0; left: 0; }
+    to { top: 100px; left: 100px; }
+}
