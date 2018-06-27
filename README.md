@@ -1,16 +1,34 @@
-# insanj.com
+﻿﻿<p align="center">
+   <img src="assets/favicon/favicon.ico" width=75 height=75 />
+   <h3 align="center">insanj.com</h3>
+   <h4 align="center">complete personal website</h4>
+</p>
 
-# Built using
+## Built using
 
 - [flexible-jekyll](https://github.com/artemsheludko/flexible-jekyll)
 
-Complete personal website, including assets and external resources. Includes [Catalyst](http://insanj.com/catalyst), [Circlet](http://insanj.com/circlet), [Colendar](http://insanj.com/colendar), and [Orangered](http://insanj.com/orangered). Head over to the [Repository](https://github.com/insanj/repository) for my Cydia Repos.
+## Usage
+
+Mac and Linux:
+- `make build` or `make serve`
+
+Windows:
+- [Setup Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+- Run `make build` or `make serve` using Ubuntu
+
+## Sites
+
+- [Catalyst](http://insanj.com/catalyst)
+- [Circlet](http://insanj.com/circlet)
+- [Colendar](http://insanj.com/colendar)
+- [Orangered](http://insanj.com/orangered). 
+- [Repository](https://github.com/insanj/repository)
 
 This website has existed for as long as I've been on the internet (although I wish [it was always on Github](https://web.archive.org/web/*/insanj.com)), previously at [The Wio](https://web.archive.org/web/*/thewio.com), various blogs ("The Read-a-Thon", etc), and at one point merged with [my Tumblr](http://insanjblog.tumblr.com/) (which has now been consumed [by Medium](https://medium.com/@insanj)).
 
-Also contains [lifeiscontent](https://github.com/lifeiscontent)'s responsive [sleepyti.me](http://sleepyti.me/) [fork](https://github.com/lifeiscontent/sleepyti.me)—use it, if you want!
+## [License](LICENSE.md)
 
-### [License](LICENSE.md)
 	insanj.com: complete personal, dynamic website
 	Copyright (C) 2008-2018  Julian (insanj) Weiss
 
