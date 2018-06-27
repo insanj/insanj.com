@@ -20,6 +20,10 @@
 
 .page-content {
   max-width: 500px;
+
+  a {
+    color: $sidebar-link;
+  }
 }
 
 .page-cover-image {
@@ -87,6 +91,7 @@
       color: $dark-blue;
       text-transform: uppercase;
       border: 1px solid $dark-blue;
+      line-height: 30px;
       &:hover {
         text-decoration: underline;
       }

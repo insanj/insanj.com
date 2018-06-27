@@ -5,10 +5,10 @@ date: 2017-09-12 13:32:20 +0300
 description: Flogg is an innovative commerce platform for friends.
 img: flogg.png
 fig-caption: via app store
-tags: [ios, nyc, freelance]
+tags: [ios, nyc, objective-c, freelance]
 ---
 
-Flogg is an innovative commerce platform for friends.
+🔖 Flogg is an innovative commerce platform for friends.
 
 iOS Developer 2016.
 

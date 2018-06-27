@@ -5,10 +5,10 @@ date: 2017-09-12 13:32:20 +0300
 description: REVUU was an NYC startup reinventing the future of the magazine.
 img: revuu.png
 fig-caption: via app store
-tags: [ios, nyc]
+tags: [ios, freelance, objective-c, php, nyc]
 ---
 
-REVUU was an NYC startup reinventing the future of the magazine.
+📕 REVUU was an NYC startup reinventing the future of the magazine.
 
 Lead iOS 2015-2016.
 

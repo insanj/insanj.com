@@ -5,11 +5,11 @@ date: 2018-04-01 13:32:20 +0300
 description: REC is Philadelphia's Agency for Creative Entrepreneurs, connecting creators and communities together every day.
 img: rec.png
 fig-caption: 
-tags: [ios, philadelphia]
+tags: [ios, swift, philadelphia]
 ---
 
-REC is Philadelphia's Agency for Creative Entrepreneurs, connecting creators and communities together every day.
+🎤 REC is Philadelphia's Agency for Creative Entrepreneurs, connecting creators and communities together every day.
 
 Lead Technologist 2018
 
-Philadelphia
+<i class="fa fa-apple" aria-hidden="true"></i> Philadelphia
