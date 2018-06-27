@@ -5,13 +5,23 @@ SITE_FLAG=julian-site:
 LOCAL_SITE=http://127.0.0.1:4000/
 LOCAL_SITE_PORT=4000
 REMOTE_SITE=https://insanj.github.io/insanj.com/
+SERVE_FILE=serve-tmp.bash
+SERVE_PREPARE_DELAY=3
+ARCHIVES_DIR=_archives
 
-default: config-local serve
+default: serve
 
 remote: config-remote build
 
-serve: config-local open
+serve: config-local open # serve-prepare
 	jekyll serve --destination $(SITE_DIR)
+
+serve-prepare: server-prepare-archives
+	# (sleep $(SERVE_PREPARE_DELAY); ls; make server-prepare-archives) & 
+
+server-prepare-archives:
+	ln -sf ../$(ARCHIVES_DIR) $(SITE_DIR)/$(ARCHIVES_DIR)
+	# cp -rf $(ARCHIVES_DIR) $(SITE_DIR)
 
 build: clean
 	jekyll build --destination $(SITE_DIR)
@@ -40,7 +50,7 @@ clean:
 deps:
 	gem install jekyll bundler jekyll-paginate
 	bundle install
-	
+
 windows-deps: # steps that may be required in a new Ubuntu environment
 	sudo apt-get update
 	sudo apt-get install ruby-full
@@ -49,6 +59,7 @@ windows-deps: # steps that may be required in a new Ubuntu environment
 	sudo apt-get install zlib1g-dev
 	sudo apt install python
 	make windows-deps-gems
+	sudo apt install xterm
 
 windows-deps-gems:
 	sudo gem install jekyll
