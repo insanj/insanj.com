@@ -36,4 +36,4 @@ sass:
   sass_dir: _sass
   style: :compressed
 
-show-fancy-background: false
+show-fancy-background: true
