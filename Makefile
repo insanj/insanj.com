@@ -30,7 +30,7 @@ chmod:
 	chmod -R 0755 .
 
 .PHONY: upload
-upload: upload-clean deploy chmod
+upload: upload-clean deploy
 	git clone https://github.com/ezyang/git-ftp
 	python git-ftp/git-ftp.py
 	
