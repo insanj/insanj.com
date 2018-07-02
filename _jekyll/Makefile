@@ -4,7 +4,7 @@ SITE_DIR=_site
 SITE_FLAG=julian-site: 
 LOCAL_SITE=http://127.0.0.1:4000/
 LOCAL_SITE_PORT=4000
-REMOTE_SITE=https://insanj.github.io/insanj.com/
+REMOTE_SITE=https://insanj.com/beta/
 
 default: serve
 
