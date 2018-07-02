@@ -5,23 +5,13 @@ SITE_FLAG=julian-site:
 LOCAL_SITE=http://127.0.0.1:4000/
 LOCAL_SITE_PORT=4000
 REMOTE_SITE=https://insanj.github.io/insanj.com/
-SERVE_FILE=serve-tmp.bash
-SERVE_PREPARE_DELAY=3
-ARCHIVES_DIR=_archives
 
 default: serve
 
 remote: config-remote build
 
-serve: config-local open # serve-prepare
+serve: config-local open
 	jekyll serve --destination $(SITE_DIR)
-
-serve-prepare: server-prepare-archives
-	# (sleep $(SERVE_PREPARE_DELAY); ls; make server-prepare-archives) & 
-
-server-prepare-archives:
-	ln -sf ../$(ARCHIVES_DIR) $(SITE_DIR)/$(ARCHIVES_DIR)
-	# cp -rf $(ARCHIVES_DIR) $(SITE_DIR)
 
 build: clean
 	jekyll build --destination $(SITE_DIR)

@@ -1,4 +1,4 @@
-default:
+default: archives
 	make -C _jekyll
 
 remote:
@@ -18,8 +18,10 @@ deploy-clean-build:
 	find $(DEPLOY_PATH) -name Gemfile -exec rm -r {} \;
 	find $(DEPLOY_PATH) -name Makefile -exec rm -r {} \;
 
-#DEPLOY_WHITELIST=(.git|_archives|_jekyll|.gitignore|LICENSE.md|Makefile|README.md)
-#deploy-clean:
-#	GLOBIGNORE='.git|_archives|_jekyll|.gitignore|LICENSE.md|Makefile|README.md' && rm -rf *
-# rm -rf !$(DEPLOY_WHITELIST)
-#	shopt -s extglob
+ARCHIVES_PATH=_archives
+.PHONY: archives
+archives:
+	(sleep 3; cp -r -f $(ARCHIVES_PATH) $(DEPLOY_PATH)) &
+
+#ln -sf ../$(ARCHIVES_DIR) $(SITE_DIR)/$(ARCHIVES_DIR)
+# cp -rf $(ARCHIVES_DIR) $(SITE_DIR)
