@@ -3,10 +3,12 @@
 {% include head.html %}
 <body>
 
+{% if site.show-fancy-background %}
 <div class="julian-background">
 	<div class="stars"></div>
 	<div class="twinkling"></div>
 </div>
+{% endif %}
 
   <div class="wrapper">
     {{ content }}
