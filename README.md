@@ -13,7 +13,14 @@ Windows:
 - [Setup Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 - Run `make` or `make deploy` using Ubuntu
 
-## Sites
+## Built using
+
+- [jekyll](https://github.com/jekyll/jekyll) & [flexible-jekyll](https://github.com/artemsheludko/flexible-jekyll)
+- [@NickMkrtchyan](https://github.com/NickMkrtchyan)'s [stars background](https://codepen.io/WebSonick/pen/vjmgu)
+
+## Archives
+
+Using the archives feature, you can still browse the sites hosted via insanj.com, which include:
 
 - [Catalyst](http://insanj.com/catalyst)
 - [Circlet](http://insanj.com/circlet)
@@ -23,9 +30,6 @@ Windows:
 
 This website has existed for as long as I've been on the internet (although I wish [it was always on Github](https://web.archive.org/web/*/insanj.com)), previously at [The Wio](https://web.archive.org/web/*/thewio.com), various blogs ("The Read-a-Thon", etc), and at one point merged with [my Tumblr](http://insanjblog.tumblr.com/) (which has now been consumed [by Medium](https://medium.com/@insanj)).
 
-## Built using
-
-- [flexible-jekyll](https://github.com/artemsheludko/flexible-jekyll)
 
 ## [License](LICENSE.md)
 
