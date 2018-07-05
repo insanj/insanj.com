@@ -42,14 +42,11 @@ build-open:
 	open "$(shell pwd)/$(SITE_DIR)/index.html"
 
 # REMOTE
-REMOTE_SITE=https://insanj.github.io/insanj.com/
+REMOTE_SITE=https://insanj.com
 remote: clean setup remote-config remote-open
 
 remote-config:
 	echo "$(SITE_FLAG)$(REMOTE_SITE)" >> $(CONFIG)
-
-remote-open:
-	python -m webbrowser "$(REMOTE_SITE)"
 
 # GHPAGES
 GHPAGES_SITE=https://insanj.github.io/insanj.com/
@@ -57,9 +54,6 @@ ghpages: clean setup ghpages-config ghpages-open
 
 ghpages-config:
 	echo "$(SITE_FLAG)$(GHPAGES_SITE)" >> $(CONFIG)
-
-ghpages-open:
-	python -m webbrowser "$(GHPAGES_SITE)"
 
 # EXTRAS
 local: build open

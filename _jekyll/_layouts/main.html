@@ -18,8 +18,9 @@ layout: default
   {%- for path in page_paths -%}
     {%- assign my_page = site.pages | where: "path", path | first -%}
     {%- if my_page.title -%}
-    <li><a class="page-link" href="{{ my_page.url | prepend: site.julian-site }}">{{ my_page.title | escape }}</a></li>
-    <br/>
+    <div class="sidebar-page-links">
+      <a class="page-link" href="{{ my_page.url | prepend: site.julian-site }}">{{ my_page.title | escape }}</a></li>
+    </div>
     {%- endif -%}
   {%- endfor -%}
 

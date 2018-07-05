@@ -11,7 +11,7 @@ ghpages:
 	make -C _jekyll ghpages
 
 DEPLOY_PATH=_jekyll/_site/
-deploy: remote deploy-clean-build deploy-clean-root
+deploy: build deploy-clean-build deploy-clean-root
 	cp -r -f $(DEPLOY_PATH)* .
 
 DEPLOY_WHITELIST=-not -name '.git' -not -name '_archives' -not -name '_jekyll' -not -name '.gitignore' -not -name 'LICENSE.md' -not -name 'Makefile' -not -name 'README.md' -not -name '.gitftpignore' 

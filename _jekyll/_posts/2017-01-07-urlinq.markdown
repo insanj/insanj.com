@@ -6,6 +6,7 @@ description: Urlinq was a powerful ed-tech network that brought the university e
 img: urlinq.png
 fig-caption: 
 tags: [ios, objective-c, startup, nyc]
+permalink: urlinq/
 ---
 
 🎓 Urlinq was a powerful ed-tech network that brought the university experience to the 21st century.
