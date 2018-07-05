@@ -2,45 +2,73 @@ BASE_CONFIG=_config_base.yml
 CONFIG=_config.yml
 SITE_DIR=_site
 SITE_FLAG=julian-site: 
-LOCAL_SITE=http://127.0.0.1:4000/
 LOCAL_SITE_PORT=4000
-REMOTE_SITE=https://insanj.com/beta/
 
 default: serve
 
-remote: config-remote build
+# SHARED
+setup: setup-config
 
-serve: config-local open
-	jekyll serve --destination $(SITE_DIR)
-
-build: clean
-	jekyll build --destination $(SITE_DIR)
-
-open:
-	python -m webbrowser "$(LOCAL_SITE)"
-
-local: build open
-	cd docs && python -m SimpleHTTPServer $(LOCAL_SITE_PORT)
-
-config-local: setup-config
-	echo "$(SITE_FLAG)$(LOCAL_SITE)" >> $(CONFIG)
-
-config-remote: setup-config
-	echo "$(SITE_FLAG)$(REMOTE_SITE)" >> $(CONFIG)
-
-setup-config: clean-config
+setup-config:
 	cp -rf $(BASE_CONFIG) $(CONFIG)
+
+clean: clean-config
+	rm -r -f $(SITE_DIR)
 
 clean-config:
 	rm -r -f $(CONFIG)
 
-clean:
-	rm -r -f $(SITE_DIR)
+# SERVE
+SERVE_SITE=http://127.0.0.1:4000/
+serve: clean setup serve-config serve-open
+	jekyll serve --destination $(SITE_DIR)
+
+serve-config:
+	echo "$(SITE_FLAG)$(SERVE_SITE)" >> $(CONFIG)
+
+serve-open:
+	python -m webbrowser "$(SERVE_SITE)"
+
+# BUILD
+BUILD_SITE=
+build: clean setup build-config 
+	jekyll build --destination $(SITE_DIR)
+	make build-open
+
+build-config:
+	echo "$(SITE_FLAG)$(BUILD_SITE)" >> $(CONFIG)
+
+build-open:
+	open "$(shell pwd)/$(SITE_DIR)/index.html"
+
+# REMOTE
+REMOTE_SITE=https://insanj.github.io/insanj.com/
+remote: clean setup remote-config remote-open
+
+remote-config:
+	echo "$(SITE_FLAG)$(REMOTE_SITE)" >> $(CONFIG)
+
+remote-open:
+	python -m webbrowser "$(REMOTE_SITE)"
+
+# GHPAGES
+GHPAGES_SITE=https://insanj.github.io/insanj.com/
+ghpages: clean setup ghpages-config ghpages-open
+
+ghpages-config:
+	echo "$(SITE_FLAG)$(GHPAGES_SITE)" >> $(CONFIG)
+
+ghpages-open:
+	python -m webbrowser "$(GHPAGES_SITE)"
+
+# EXTRAS
+local: build open
+	cd docs && python -m SimpleHTTPServer $(LOCAL_SITE_PORT)
 
 deps:
 	gem install jekyll bundler jekyll-paginate
 	bundle install
-
+	
 windows-deps: # steps that may be required in a new Ubuntu environment
 	sudo apt-get update
 	sudo apt-get install ruby-full

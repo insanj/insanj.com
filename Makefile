@@ -1,8 +1,14 @@
-default: archives
-	make -C _jekyll
+serve: archives
+	make -C _jekyll serve
+
+build:
+	make -C _jekyll build
 
 remote:
 	make -C _jekyll remote
+
+ghpages:
+	make -C _jekyll ghpages
 
 DEPLOY_PATH=_jekyll/_site/
 deploy: remote deploy-clean-build deploy-clean-root
