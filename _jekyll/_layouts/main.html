@@ -6,7 +6,7 @@ layout: default
   <header>
     <div class="about">
       <div class="cover-author-image">
-        <a href="{{site.julian-site}}/"><img src="{{site.julian-site}}/assets/img/{% if site.author-img %}{{site.author-img}}{% endif %}" alt="{{site.author}}"></a>
+        <a href="{{site.julian-site}}"><img src="{{site.julian-site}}assets/img/{% if site.author-img %}{{site.author-img}}{% endif %}" alt="{{site.author}}"></a>
       </div>
       <h3>{{ site.author }}</h3>
       <p>{{site.about-author}}</p>
@@ -19,7 +19,7 @@ layout: default
     {%- assign my_page = site.pages | where: "path", path | first -%}
     {%- if my_page.title -%}
     <div class="sidebar-page-links">
-      <a class="page-link" href="{{ my_page.url | prepend: site.julian-site }}">{{ my_page.title | escape }}</a></li>
+      <a class="page-link" href="{{ my_page.url | remove_first: '/' | prepend: site.julian-site }}">{{ my_page.title | escape }}</a></li>
     </div>
     {%- endif -%}
   {%- endfor -%}
