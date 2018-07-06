@@ -1,18 +1,24 @@
+# three primary forms of building insanj.com
+# (1) test & build server locally with localhost
 serve: archives
 	make -C _jekyll serve
 
+# (2) build for ghpages (use github URL), deploy to root dir
+ghpages: build deploy
+
+# (3) build for remote (insanj.com/beta/), deploy to root dir
+remote:
+	make -C _jekyll remote
+	make upload
+
+# test & build without any remote URLs
 build:
 	make -C _jekyll build
 
 local: build
 	make -C _jekyll build-open
 
-ghpages: build deploy
-
-remote:
-	make -C _jekyll remote
-	make deploy
-
+# DEPLOY (move files to root dir, clean up)
 DEPLOY_PATH=_jekyll/_site/
 deploy: deploy-clean-build deploy-clean-root
 	cp -r -f $(DEPLOY_PATH)* .
@@ -38,6 +44,7 @@ archives:
 chmod:
 	chmod -R 0755 .
 
+# UPLOAD (upload, sync to remote server using git-ftp)
 .PHONY: upload
 upload: upload-clean deploy
 	git clone https://github.com/ezyang/git-ftp
@@ -55,6 +62,7 @@ upload-init:
 
 upload-deps:
 	easy_install gitpython
+	
 
 upload-clean:
 	rm -r -f git-ftp
