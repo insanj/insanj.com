@@ -30,36 +30,25 @@ serve-open:
 	python -m webbrowser "$(SERVE_SITE)"
 
 # BUILD
-BUILD_SITE=
+BUILD_SITE=/
 build: clean setup build-config 
 	jekyll build --destination $(SITE_DIR)
-	make build-open
 
 build-config:
 	echo "$(SITE_FLAG)$(BUILD_SITE)" >> $(CONFIG)
 
 build-open:
-	open "$(shell pwd)/$(SITE_DIR)/index.html"
+	python -m webbrowser "http://localhost:$(LOCAL_SITE_PORT)"
+	cd $(SITE_DIR) && python -m SimpleHTTPServer $(LOCAL_SITE_PORT)
+	#open "$(shell pwd)/$(SITE_DIR)/index.html"
 
 # REMOTE
-REMOTE_SITE=https://insanj.github.io/insanj.com/
-remote: clean setup remote-config remote-open
+REMOTE_SITE=https://insanj.com/beta/
+remote: clean setup remote-config
+	jekyll build --destination $(SITE_DIR)
 
 remote-config:
 	echo "$(SITE_FLAG)$(REMOTE_SITE)" >> $(CONFIG)
-
-remote-open:
-	python -m webbrowser "$(REMOTE_SITE)"
-
-# GHPAGES
-GHPAGES_SITE=https://insanj.github.io/insanj.com/
-ghpages: clean setup ghpages-config ghpages-open
-
-ghpages-config:
-	echo "$(SITE_FLAG)$(GHPAGES_SITE)" >> $(CONFIG)
-
-ghpages-open:
-	python -m webbrowser "$(GHPAGES_SITE)"
 
 # EXTRAS
 local: build open

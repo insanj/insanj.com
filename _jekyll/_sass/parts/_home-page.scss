@@ -11,8 +11,19 @@
   padding: 20px 10px;
   background-color: $background-sidebar;
 }
+.sidebar-page-links {
+  background-color: rgba(0,0,0,0.1);
+  height: 30px;
+  border-radius: 7px;
+
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+}
+
 .page-link {
-  color: $sidebar-link !important;
+  color: inherit !important;
   text-decoration: none;
   margin: 0px;
 }

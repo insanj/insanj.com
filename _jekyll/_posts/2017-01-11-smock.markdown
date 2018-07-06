@@ -6,6 +6,7 @@ description: Smock is a powerful responsive web mockup tool.
 img: smock.png
 fig-caption: via app store
 tags: [mac, swift, freelance]
+permalink: smock/
 ---
 
 🎨 Smock is a powerful responsive web mockup tool.

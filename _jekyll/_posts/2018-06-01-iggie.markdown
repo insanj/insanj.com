@@ -6,6 +6,7 @@ description: interactive github site history
 img: iggie.png
 fig-caption: 
 tags: [web, javascript]
+permalink: iggie/
 ---
 
 🤖 interactive github site history

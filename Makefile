@@ -4,14 +4,17 @@ serve: archives
 build:
 	make -C _jekyll build
 
+local: build
+	make -C _jekyll build-open
+
+ghpages: build deploy
+
 remote:
 	make -C _jekyll remote
-
-ghpages:
-	make -C _jekyll ghpages
+	make deploy
 
 DEPLOY_PATH=_jekyll/_site/
-deploy: remote deploy-clean-build deploy-clean-root
+deploy: deploy-clean-build deploy-clean-root
 	cp -r -f $(DEPLOY_PATH)* .
 
 DEPLOY_WHITELIST=-not -name '.git' -not -name '_archives' -not -name '_jekyll' -not -name '.gitignore' -not -name 'LICENSE.md' -not -name 'Makefile' -not -name 'README.md' -not -name '.gitftpignore' 

@@ -6,6 +6,7 @@ description: REVUU was an NYC startup reinventing the future of the magazine.
 img: revuu.png
 fig-caption: via app store
 tags: [ios, freelance, objective-c, php, nyc]
+permalink: revuu/
 ---
 
 📕 REVUU was an NYC startup reinventing the future of the magazine.

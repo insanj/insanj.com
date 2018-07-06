@@ -6,6 +6,7 @@ description: REC is Philadelphia's Agency for Creative Entrepreneurs, connecting
 img: rec.png
 fig-caption: 
 tags: [ios, swift, philadelphia]
+permalink: rec-philly/
 ---
 
 🎤 REC is Philadelphia's Agency for Creative Entrepreneurs, connecting creators and communities together every day.

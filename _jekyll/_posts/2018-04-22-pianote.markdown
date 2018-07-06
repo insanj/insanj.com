@@ -6,6 +6,7 @@ description: Pianote is a streamlined app for musicians. Practice your music sma
 img: pianote.png
 fig-caption: via testflight
 tags: [ios, objective-c]
+permalink: pianote-project/
 ---
 
 🎼 Pianote is a streamlined app for musicians. Practice your music smarter.

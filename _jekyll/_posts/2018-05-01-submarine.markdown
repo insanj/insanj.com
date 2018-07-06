@@ -6,6 +6,7 @@ description: cutting edge reddit app for ios
 img: submarine.jpg
 fig-caption: via app store
 tags: [ios, objective-c, swift]
+permalink: submarine-project/
 ---
 
 🌊 Submarine  is a feature-packed, community-driven Reddit app.

@@ -6,6 +6,7 @@ description: Flogg is an innovative commerce platform for friends.
 img: flogg.png
 fig-caption: via app store
 tags: [ios, nyc, objective-c, freelance]
+permalink: flogg/
 ---
 
 🔖 Flogg is an innovative commerce platform for friends.
