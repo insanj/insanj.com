@@ -6,6 +6,7 @@ description: Cold Open is an intuitive TV show app.
 img: cold%20open.png
 fig-caption: via app store
 tags: [ios, objective-c, freelance]
+permalink: cold-open/
 ---
 
 📺 Cold Open is an intuitive TV show app.

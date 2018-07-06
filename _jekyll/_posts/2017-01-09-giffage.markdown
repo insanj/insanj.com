@@ -6,6 +6,7 @@ description: Giffage is an all-in-one GIF keyboard.
 img: giffage.png
 fig-caption: via app store
 tags: [ios, objective-c, freelance]
+permalink: giffage/
 ---
 
 🎬 Giffage is an all-in-one GIF keyboard.

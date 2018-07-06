@@ -6,6 +6,7 @@ description: python bot that crawls slyce nespresso patrons via venmo
 img: coffee.png
 fig-caption: 
 tags: [web, python]
+permalink: julian-coffee/
 ---
 
 ☕ python bot that crawls slyce nespresso patrons via venmo

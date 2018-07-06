@@ -6,6 +6,7 @@ description: Timesheet is a vibrant and collaboration-ready hour tracking tool. 
 img: timesheet.png
 fig-caption: via testflight
 tags: [ios, swift, php, fullstack]
+permalink: timesheet/
 ---
 
 ⏰ Timesheet is a vibrant and collaboration-ready hour tracking tool. Control the time you spend doing absolutely anything, and share it selectively with other people.

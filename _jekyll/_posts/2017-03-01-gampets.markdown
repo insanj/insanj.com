@@ -6,6 +6,7 @@ description: Gampets is a fun way to share pet videos and get pets adopted.
 img: gampets.png
 fig-caption: via app store
 tags: [ios, nyc, swift, freelance]
+permalink: gampets/
 ---
 
 🐕 Gampets is a fun way to share pet videos and get pets adopted.

@@ -6,6 +6,7 @@ description: AM/Projected Relation is a relational art project interested in the
 img: AM.jpg
 fig-caption: 
 tags: [ios, swift, javascript, php, fullstack, freelance]
+permalink: am-project/
 ---
 
 ✨ AM/Projected Relation is a relational art project interested in the various data-selves we produce through our many profiles.

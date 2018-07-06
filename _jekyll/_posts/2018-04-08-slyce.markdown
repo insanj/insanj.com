@@ -6,6 +6,7 @@ description: Slyce is an extraordinary visual search engine that drives mobile p
 img: slyce.jpg
 fig-caption: via app store
 tags: [ios, android, philadelphia, objective-c, swift, java, jenkins]
+permalink: slyce/
 ---
 
 🎩 Slyce is an extraordinary visual search engine that drives mobile products for top retailers in the United States.
