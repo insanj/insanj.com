@@ -9,12 +9,14 @@ ghpages: build deploy
 # (3) build for remote (insanj.com/beta/), deploy to root dir
 remote:
 	make -C _jekyll remote
-	make upload
+#	make deploy
 
-# test & build without any remote URLs
+# (4) build for github, local site (use no URL), deploy to root dir
 build:
 	make -C _jekyll build
+#	make deploy
 
+# test locally built github site
 local: build
 	make -C _jekyll build-open
 
@@ -63,6 +65,5 @@ upload-init:
 upload-deps:
 	easy_install gitpython
 	
-
 upload-clean:
 	rm -r -f git-ftp
