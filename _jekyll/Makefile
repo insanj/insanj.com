@@ -43,7 +43,7 @@ build-open:
 	#open "$(shell pwd)/$(SITE_DIR)/index.html"
 
 # REMOTE
-REMOTE_SITE=https://insanj.com/beta/
+REMOTE_SITE=https://insanj.com/
 remote: clean setup remote-config
 	jekyll build --destination $(SITE_DIR)
 
