@@ -22,7 +22,8 @@
   max-width: 500px;
 
   a {
-    color: $sidebar-link;
+    color: $sidebar-link !important;
+    text-decoration: none;
   }
 }
 

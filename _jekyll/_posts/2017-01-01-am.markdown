@@ -1,0 +1,16 @@
+---
+layout: post
+title: AM
+date: 2017-01-01 00:00:00 +0000
+description: AM/Projected Relation is a relational art project interested in the various data-selves we produce through our many profiles.
+img: AM.jpg
+fig-caption: 
+tags: [ios, swift, javascript, php, fullstack, freelance]
+permalink: am-project/
+---
+
+✨ AM/Projected Relation is a relational art project interested in the various data-selves we produce through our many profiles.
+
+🔬 Full stack developer Spring 2017-2018.
+
+Talk to her on <i class="fa fa-apple" aria-hidden="true"></i> iOS and <i class="fa fa-globe" aria-hidden="true"></i> Web.

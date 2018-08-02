@@ -4,12 +4,12 @@ layout: main
 {% for post in paginator.posts %}
 <article class="post">
   {% if post.img %}
-    <a class="post-thumbnail" style="background-image: url({{"assets/img/" | prepend: site.julian-site | append : post.img}})" href="{{post.url | prepend: site.julian-site}}"></a>
+    <a class="post-thumbnail" style="background-image: url({{"assets/img/" | prepend: site.julian-site | append : post.img}})" href="{{post.permalink | prepend: site.julian-site}}"></a>
   {% else %}
   {% endif %}
   <div class="post-content">
     <h2 class="post-title"><a href="{{ post.url | prepend: site.julian-site }}">{{post.title}}</a></h2>
-    <p>{{ post.content | strip_html | truncatewords: 10 }}</p>
+    <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
     <span class="post-date">
       {% if post.tags %}
         <i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{ post.tags | array_to_sentence_string }}

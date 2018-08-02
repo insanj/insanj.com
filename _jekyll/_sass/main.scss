@@ -1,6 +1,7 @@
 @import 'normalize';
 @import 'syntax';
 @import 'variables';
+@import 'background';
 
 *, *::after, *::before {
   box-sizing: border-box;
@@ -35,7 +36,7 @@ img + em {
   margin-top: 10px;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: $primary-font-size;
 }
 
 blockquote {
@@ -76,7 +77,7 @@ table td, table.blueTable th {
   padding: 3px 2px;
 }
 table tbody td {
-  font-size: 13px;
+  font-size: $secondary-font-size;
 }
 table tr:nth-child(even) {
   background: #adbecc;
@@ -87,7 +88,7 @@ table thead {
   border-bottom: 1px solid #8c8c8c;
 }
 table thead th {
-  font-size: 14px;
+  font-size: $primary-font-size;
   font-weight: bold;
   color: #fff;
   border-left: 1px solid #d0e4f5;
@@ -97,7 +98,7 @@ table thead th:first-child {
 }
 
 table tfoot {
-  font-size: 14px;
+  font-size: $primary-font-size;
   font-weight: bold;
   color: #fff;
   background: #d0e4f5;
@@ -105,18 +106,17 @@ table tfoot {
   border-top: 2px solid #444;
 }
 table tfoot td {
-  font-size: 14px;
+  font-size: $primary-font-size;
 }
 
 .wrapper {
-  max-width: 1250px;
   position: relative;
 }
 
 .post, .article-page {
   border-radius: 20px;
   background-color: $background-post;
-  font-size: 14px;
+  font-size: $primary-font-size;
 }
 
 ::-moz-selection {
@@ -149,3 +149,6 @@ table tfoot td {
 
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
 @import 'media';
+
+/* - - - - - - - - - - Background Animation - - - - - - - - - - */
+@import 'background';

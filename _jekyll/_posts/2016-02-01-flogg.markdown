@@ -1,0 +1,16 @@
+---
+layout: post
+title: Flogg
+date: 2016-02-01 00:00:00 +0000
+description: Flogg is an innovative commerce platform for friends.
+img: flogg.png
+fig-caption: via app store
+tags: [ios, nyc, objective-c, freelance]
+permalink: flogg/
+---
+
+🔖 Flogg is an innovative commerce platform for friends.
+
+🏨 iOS Developer 2016.
+
+🖐 Available on iOS.
