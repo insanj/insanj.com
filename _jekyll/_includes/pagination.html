@@ -10,7 +10,9 @@
         {% endif %}
       {% endif %}
 
+      {% if paginator.total_pages > 1 %}
         <span class="page-number">Page {{paginator.page}} of {{paginator.total_pages}}</span>
+      {% endif %}
 
         {% if paginator.next_page %}
           <a class="older-posts" href="{{ site.julian-site }}page/{{ paginator.next_page }}/"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
