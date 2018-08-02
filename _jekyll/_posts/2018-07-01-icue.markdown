@@ -1,7 +1,7 @@
 ---
 layout: post
 title: icue
-date: 2018-07-01 13:32:20 +0300
+date: 2018-07-01 00:00:00 +0000
 description: fix icue bug on windows where it spazzes out
 img: icue.svg
 fig-caption: 
@@ -11,8 +11,7 @@ permalink: icue/
 
 💡 fix icue bug on windows where it spazzes out
 
-
-Created 2018.
+🚦 Created 2018.
 
 Available on <i class="fa fa-github" aria-hidden="true"></i> <a href="https://insanj.github.io/icue/">Github</a>.
 

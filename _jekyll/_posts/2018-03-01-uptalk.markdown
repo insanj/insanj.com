@@ -1,7 +1,7 @@
 ---
 layout: post
 title: uptalk
-date: 2018-07-01 13:32:20 +0300
+date: 2018-03-01 00:00:00 +0000
 description: 
 img: uptalk.png
 fig-caption: 
@@ -11,8 +11,7 @@ permalink: uptalk/
 
 🚀 next-generation analytics for everyone
 
-
-CTO 2018.
+⚡ CTO 2018.
 
 Organization on <i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/UptalkTech/">Github</a>.
 

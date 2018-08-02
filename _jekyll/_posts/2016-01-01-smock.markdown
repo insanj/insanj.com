@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Smock
-date: 2017-09-12 13:32:20 +0300
+date: 2016-01-01 00:00:00 +0000
 description: Smock is a powerful responsive web mockup tool.
 img: smock.png
 fig-caption: via app store
@@ -11,6 +11,6 @@ permalink: smock/
 
 🎨 Smock is a powerful responsive web mockup tool.
 
-Swift Developer 2016.
+🦆 Swift Developer 2016.
 
-Available on Mac App Store.
+💻 Available on Mac App Store.

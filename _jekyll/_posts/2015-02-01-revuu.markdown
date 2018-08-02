@@ -1,7 +1,7 @@
 ---
 layout: post
 title: REVUU
-date: 2017-09-12 13:32:20 +0300
+date: 2015-02-01 00:00:00 +0000
 description: REVUU was an NYC startup reinventing the future of the magazine.
 img: revuu.png
 fig-caption: via app store
@@ -11,6 +11,6 @@ permalink: revuu/
 
 📕 REVUU was an NYC startup reinventing the future of the magazine.
 
-Lead iOS 2015-2016.
+📐 Lead iOS 2015-2016.
 
-Available on iOS and Web.
+🕸 Available on iOS and Web.
