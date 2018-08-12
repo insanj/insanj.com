@@ -13,4 +13,4 @@ permalink: flogg/
 
 🏨 iOS Developer 2016.
 
-🖐 Available on iOS.
+<a href="https://www.crunchbase.com/organization/flogg#section-overview">🖐 Available on iOS.</a>

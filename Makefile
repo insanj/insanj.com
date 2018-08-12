@@ -35,6 +35,14 @@ deploy-clean-build:
 	find $(DEPLOY_PATH) -name Gemfile -exec rm -r {} \;
 	find $(DEPLOY_PATH) -name Makefile -exec rm -r {} \;
 
+# combined builds for deployment
+ship:
+	make remote
+	make deploy
+	git add .
+	git commit --amend
+	make upload
+
 ARCHIVES_PATH=_archives
 .PHONY: archives
 archives:
