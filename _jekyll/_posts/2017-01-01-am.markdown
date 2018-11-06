@@ -13,4 +13,4 @@ permalink: am-project/
 
 🔬 Full stack developer Spring 2017-2018.
 
-Talk to her on <i class="fa fa-apple" aria-hidden="true"></i> iOS and <i class="fa fa-globe" aria-hidden="true"></i> Web.
+Talk to her on <a href="http://amprojectedrelation.com/"><i class="fa fa-apple" aria-hidden="true"></i> iOS and <i class="fa fa-globe" aria-hidden="true"></i> Web.</a>

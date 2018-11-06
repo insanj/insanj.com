@@ -13,4 +13,4 @@ permalink: timesheet-project/
 
 📚 Full Stack Developer 2017-2018.
 
-<i class="fa fa-apple" aria-hidden="true"></i> Coming Spring 2018 for iOS.
+<i class="fa fa-apple" aria-hidden="true"></i> Coming Spring 2018 for iOS. <a href="https://www.producthunt.com/upcoming/timesheet">Get updates from Product Hunt.</a>

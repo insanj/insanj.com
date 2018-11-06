@@ -13,4 +13,4 @@ permalink: gampets/
 
 🐱 iOS Product Developer 2016.
 
-🛋 Available on iOS.
+<a href="https://www.crunchbase.com/organization/gampets#section-overview">Available on all platforms.</a>

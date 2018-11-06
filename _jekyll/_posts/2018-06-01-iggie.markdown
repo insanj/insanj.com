@@ -1,9 +1,9 @@
 ---
 layout: post
 title: iggie
-date: 2018-06-01 00:00:00 +0000
+date: 2018-08-12 00:00:00 +0000
 description: interactive github site history
-img: iggie.png
+img: iggie-screenshot.png
 fig-caption: 
 tags: [web, javascript]
 permalink: iggie/
@@ -11,7 +11,7 @@ permalink: iggie/
 
 🤖 interactive github site history
 
-🍊 Created 2018.
+🍊 Created 2018. Open sourced 8/12/2018.
 
 Available on <i class="fa fa-globe" aria-hidden="true"></i> <a href="http://iggie.site/">iggie.site</a> and on <i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/insanj/iggie">Github</a>.
 

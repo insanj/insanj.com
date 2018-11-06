@@ -1,15 +1,22 @@
 title: insanj.com
 description: > # this means to ignore newlines until "baseurl:"
-  iOS entrepreneur, design pragmatist,
-  music enthusiast, college grad.
+  👋 freelancing & looking for work in philly 
+  📱 iOS entrepreneur 
+  🎨 design pragmatist 
+  🎼 music enthusiast 
+  🎓 college grad 
 permalink: pretty
 baseurl: ""
 url: ""
 site-twitter: insanj
 author: Julian Weiss
 author-img: summer.jpg # add your photo
-about-author: iOS entrepreneur, design pragmatist,
-  music enthusiast, college grad.
+about-author: >
+  <p>👋 freelancing & looking for work in philly</p>
+  <p>📱 iOS entrepreneur</p>
+  <p>🎨 design pragmatist</p>
+  <p>🎼 music enthusiast</p> 
+  <p>🎓 college grad</p>
 social-twitter: insanj 
 social-github: insanj
 social-linkedin: insanj

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: uptalk
+title: Uptalk
 date: 2018-03-01 00:00:00 +0000
 description: 
 img: uptalk.png
@@ -9,7 +9,7 @@ tags: [ios, swift, web, python]
 permalink: uptalk/
 ---
 
-🚀 next-generation analytics for everyone
+🚀 Next-generation analytics for everyone.
 
 ⚡ CTO 2018.
 
