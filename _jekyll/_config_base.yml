@@ -1,10 +1,8 @@
 title: insanj.com
 description: > # this means to ignore newlines until "baseurl:"
-  👋 freelancing & looking for work in philly 
-  📱 iOS entrepreneur 
-  🎨 design pragmatist 
-  🎼 music enthusiast 
-  🎓 college grad 
+  🎥 i make siege videos every week
+  🚂 i'm also a very active software developer, on the hunt for new projects
+  💖 support me on patreon and let's make something awesome
 permalink: pretty
 baseurl: ""
 url: ""
@@ -12,16 +10,15 @@ site-twitter: insanj
 author: Julian Weiss
 author-img: summer.jpg # add your photo
 about-author: >
-  <p>👋 freelancing & looking for work in philly</p>
-  <p>📱 iOS entrepreneur</p>
-  <p>🎨 design pragmatist</p>
-  <p>🎼 music enthusiast</p> 
-  <p>🎓 college grad</p>
+  <p>🎥<br/>i make siege videos every week</p>
+  <p>🚂<br/>active software developer, on the hunt for new projects</p>
+  <p>💖<br/>support me on patreon and let's make something awesome</p>
 social-twitter: insanj 
 social-github: insanj
 social-linkedin: insanj
 social-email: me@insanj.com
 social-angellist: insanj
+social-youtube: insanj
 
 # Tracker
 analytics: # Google Analytics
@@ -42,5 +39,13 @@ exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 sass:
   sass_dir: _sass
   style: :compressed
+
+sidebar_page_links:
+- title: "🌎 Portfolio"
+  url: "http://insane.works"
+- title: "🚀 Patreon"
+  url: "http://patreon.com/insanj"
+- title: "👋 Resume"
+  url: "http://julianresume.site"
 
 show-fancy-background: true

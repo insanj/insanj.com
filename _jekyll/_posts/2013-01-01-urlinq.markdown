@@ -2,7 +2,7 @@
 layout: post
 title: Urlinq
 date: 2013-01-01 00:00:20 +0000
-description: Urlinq was a powerful ed-tech network that brought the university experience to the 21st century.
+description: 🎓 Urlinq was a powerful ed-tech network
 img: urlinq.png
 fig-caption: 
 tags: [ios, objective-c, startup, nyc]

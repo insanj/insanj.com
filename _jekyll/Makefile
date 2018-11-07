@@ -21,7 +21,7 @@ clean-config:
 # SERVE
 SERVE_SITE=http://127.0.0.1:4000/
 serve: clean setup serve-config serve-open
-	jekyll serve --destination $(SITE_DIR)
+	bundle exec jekyll serve --destination $(SITE_DIR)
 
 serve-config:
 	echo "$(SITE_FLAG)$(SERVE_SITE)" >> $(CONFIG)
@@ -32,7 +32,7 @@ serve-open:
 # BUILD
 BUILD_SITE=/
 build: clean setup build-config 
-	jekyll build --destination $(SITE_DIR)
+	bundle exec jekyll build --destination $(SITE_DIR)
 
 build-config:
 	echo "$(SITE_FLAG)$(BUILD_SITE)" >> $(CONFIG)
@@ -45,7 +45,7 @@ build-open:
 # REMOTE
 REMOTE_SITE=https://insanj.com/
 remote: clean setup remote-config
-	jekyll build --destination $(SITE_DIR)
+	bundle exec jekyll build --destination $(SITE_DIR)
 
 remote-config:
 	echo "$(SITE_FLAG)$(REMOTE_SITE)" >> $(CONFIG)

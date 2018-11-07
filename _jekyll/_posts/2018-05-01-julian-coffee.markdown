@@ -2,7 +2,7 @@
 layout: post
 title: julian.coffee
 date: 2018-05-01 00:00:00 +0300
-description: python bot that crawls slyce nespresso patrons via venmo
+description: ☕ python bot that crawls slyce nespresso patrons via venmo
 img: julian-coffee-screenshot.png
 fig-caption: 
 tags: [web, python]

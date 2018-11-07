@@ -2,7 +2,7 @@
 layout: post
 title: Uptalk
 date: 2018-03-01 00:00:00 +0000
-description: 
+description: 🚀 Next-generation analytics for everyone.
 img: uptalk.png
 fig-caption: 
 tags: [ios, swift, web, python]

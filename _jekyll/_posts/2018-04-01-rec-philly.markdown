@@ -2,7 +2,7 @@
 layout: post
 title: REC Philly
 date: 2018-04-01 00:00:00 +0000
-description: REC is Philadelphia's Agency for Creative Entrepreneurs, connecting creators and communities together every day.
+description: 🎤 REC is Philadelphia's Agency for Creative Entrepreneurs
 img: rec.png
 fig-caption: 
 tags: [ios, swift, philadelphia]

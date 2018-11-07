@@ -8,8 +8,8 @@ layout: main
   {% else %}
   {% endif %}
   <div class="post-content">
-    <h2 class="post-title"><a href="{{ post.url | prepend: site.julian-site }}">{{post.title}}</a></h2>
-    <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
+    <h2 class="post-title" style="text-align:center;"><a href="{{ post.url | prepend: site.julian-site }}">{{post.title}}</a></h2>
+    <p style="text-align: center;">{{ post.description }}</p>
     <span class="post-date">
       {% if post.tags %}
         <i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{ post.tags | array_to_sentence_string }}
@@ -17,10 +17,6 @@ layout: main
       <br/>
       <i class="fa fa-clock-o" aria-hidden="true"></i>  {{post.date | date: '%Y'}}
     </span>
-  {% if post.show_word_count %}
-    &nbsp;&nbsp;&nbsp;—&nbsp;
-    <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
-  {% endif %}
   </div>
 </article>
 {% endfor %}

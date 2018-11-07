@@ -2,7 +2,7 @@
 layout: post
 title: Gampets
 date: 2016-02-01 00:00:00 +0000
-description: Gampets is a fun way to share pet videos and get pets adopted.
+description: 🐕 Gampets is a fun way to share pet videos and get pets adopted
 img: gampets.png
 fig-caption: via app store
 tags: [ios, nyc, swift, freelance]

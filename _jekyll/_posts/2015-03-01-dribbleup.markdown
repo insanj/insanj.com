@@ -2,7 +2,7 @@
 layout: post
 title: DribbleUp
 date: 2015-03-01 00:00:00 +0000
-description: DribbleUp is the first basketball tracking app, a breakthrough tech with a custom ball.
+description: 🏀 DribbleUp is the first basketball tracking app
 img: dribbleup.png
 fig-caption: 
 tags: [ios, nyc, objective-c, freelance]

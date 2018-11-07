@@ -2,7 +2,7 @@
 layout: post
 title: REVUU
 date: 2015-02-01 00:00:00 +0000
-description: REVUU was an NYC startup reinventing the future of the magazine.
+description: 📕 REVUU was an NYC startup reinventing the magazine
 img: revuu.png
 fig-caption: via app store
 tags: [ios, freelance, objective-c, php, nyc]
