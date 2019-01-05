@@ -1,10 +1,26 @@
 
-build:
+build: config-remote
 	bundle exec jekyll build 
 
-serve:
+serve: config-local
 	bundle exec jekyll serve --watch
 
+BASE_CONFIG=_config_base.yml	
+CONFIG=_config.yml	
+config:
+	rm -r -f $(CONFIG)
+	cp -rf $(BASE_CONFIG) $(CONFIG)
+
+SITE_FLAG=julian-site: 
+BUILD_SITE=http://localhost:4000/
+config-local: config 
+	echo "$(SITE_FLAG)$(BUILD_SITE)" >> $(CONFIG)
+
+REMOTE_SITE=https://insanj.com/	
+config-remote: config
+		echo "$(SITE_FLAG)$(REMOTE_SITE)" >> $(CONFIG)
+
+SITE_DIR=_site
 open:
 	python -m webbrowser "http://localhost:4000"
 	cd $(SITE_DIR) && python -m SimpleHTTPServer 4000

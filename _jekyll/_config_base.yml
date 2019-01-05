@@ -1,0 +1,47 @@
+title: insanj.com
+description: > # this means to ignore newlines until "baseurl:"
+  🎨 hyperactive software developer on the hunt for new projects
+permalink: pretty
+baseurl: ""
+url: ""
+site-twitter: insanj
+author: Julian Weiss
+author-img: summer.jpg # add your photo
+about-author: >
+  🎨 hyperactive software developer on the hunt for new projects
+social-twitter: insanj 
+social-github: insanj
+social-linkedin: insanj
+social-email: me@insanj.com
+social-angellist: insanj
+social-youtube: insanj
+
+# Tracker
+analytics: # Google Analytics
+
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+
+paginate: 18
+paginate_path: "/page/:num"
+permalink: /:title/
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+sidebar_page_links:
+- title: "🚀 OpenMessage"
+  url: "http://openmessage.io"
+- title: "🌎 Portfolio"
+  url: "http://insane.works"
+- title: "👋 Resume"
+  url: "http://julianresume.site"
+
+show-fancy-background: true
