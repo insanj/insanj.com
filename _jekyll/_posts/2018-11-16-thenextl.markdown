@@ -1,0 +1,21 @@
+---
+layout: post
+title: thenextl
+date: 2018-11-16 00:00:00 +0000
+description: 🥗 a fresh take on spotify's extremely limited music library
+img: thenextl.png
+fig-caption: 
+tags: [web, javascript]
+permalink: thenextl/
+---
+
+🥗 a fresh take on spotify's extremely limited music library
+
+🎸 Started development in late 2018.
+
+⌛️ Based off project idea developed in May 2016.
+
+Learn more on <i class="fa fa-github" aria-hidden="true"></i> <a href="https://docs.thenextl.com/">Github</a>.
+
+
+
