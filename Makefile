@@ -11,3 +11,6 @@ build:
 
 serve:
 	make -C _jekyll serve
+
+init: # check _jekyll/Makefile for more specific dep instructions
+	cd _jekyll && bundle install
