@@ -1,8 +1,6 @@
 title: insanj.com
 description: > # this means to ignore newlines until "baseurl:"
-  🎥 i make siege videos every week
-  🚂 i'm also a very active software developer, on the hunt for new projects
-  💖 support me on patreon and let's make something awesome
+  🎨 hyperactive software developer on the hunt for new projects
 permalink: pretty
 baseurl: ""
 url: ""
@@ -10,9 +8,7 @@ site-twitter: insanj
 author: Julian Weiss
 author-img: summer.jpg # add your photo
 about-author: >
-  <p>🎥<br/>i make siege videos every week</p>
-  <p>🚂<br/>active software developer, on the hunt for new projects</p>
-  <p>💖<br/>support me on patreon and let's make something awesome</p>
+  🎨 hyperactive software developer on the hunt for new projects
 social-twitter: insanj 
 social-github: insanj
 social-linkedin: insanj
@@ -30,7 +26,7 @@ plugins:
   - jekyll-paginate
   - jemoji
 
-paginate: 18
+paginate: 100  # lol
 paginate_path: "/page/:num"
 permalink: /:title/
 
@@ -43,8 +39,6 @@ sass:
 sidebar_page_links:
 - title: "🌎 Portfolio"
   url: "http://insane.works"
-- title: "🚀 Patreon"
-  url: "http://patreon.com/insanj"
 - title: "👋 Resume"
   url: "http://julianresume.site"
 

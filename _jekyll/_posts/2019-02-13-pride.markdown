@@ -1,0 +1,19 @@
+---
+layout: post
+title: pride
+date: 2019-02-13 00:00:00 +0000
+description: 🦁  keep track of your playmates in minecraft
+img: pride.png
+fig-caption: 
+tags: [java]
+permalink: pride/
+---
+
+🦁  keep track of your playmates in minecraft
+
+Check it out on <i class="fa fa-globe" aria-hidden="true"></i> <a href="https://insanj.github.io/pride/">Github</a>!
+
+
+
+
+

@@ -1,58 +1,29 @@
-BASE_CONFIG=_config_base.yml
-CONFIG=_config.yml
-SITE_DIR=_site
-SITE_FLAG=julian-site: 
-LOCAL_SITE_PORT=4000
 
-default: serve
+build: config-remote
+	bundle exec jekyll build 
 
-# SHARED
-setup: setup-config
+serve: config-local
+	bundle exec jekyll serve --watch
 
-setup-config:
+BASE_CONFIG=_config_base.yml	
+CONFIG=_config.yml	
+config:
+	rm -r -f $(CONFIG)
 	cp -rf $(BASE_CONFIG) $(CONFIG)
 
-clean: clean-config
-	rm -r -f $(SITE_DIR)
-
-clean-config:
-	rm -r -f $(CONFIG)
-
-# SERVE
-SERVE_SITE=http://127.0.0.1:4000/
-serve: clean setup serve-config serve-open
-	bundle exec jekyll serve --destination $(SITE_DIR)
-
-serve-config:
-	echo "$(SITE_FLAG)$(SERVE_SITE)" >> $(CONFIG)
-
-serve-open:
-	python -m webbrowser "$(SERVE_SITE)"
-
-# BUILD
-BUILD_SITE=/
-build: clean setup build-config 
-	bundle exec jekyll build --destination $(SITE_DIR)
-
-build-config:
+SITE_FLAG=julian-site: 
+BUILD_SITE=http://localhost:4000/
+config-local: config 
 	echo "$(SITE_FLAG)$(BUILD_SITE)" >> $(CONFIG)
 
-build-open:
-	python -m webbrowser "http://localhost:$(LOCAL_SITE_PORT)"
-	cd $(SITE_DIR) && python -m SimpleHTTPServer $(LOCAL_SITE_PORT)
-	#open "$(shell pwd)/$(SITE_DIR)/index.html"
+REMOTE_SITE=https://insanj.com/	
+config-remote: config
+		echo "$(SITE_FLAG)$(REMOTE_SITE)" >> $(CONFIG)
 
-# REMOTE
-REMOTE_SITE=https://insanj.com/
-remote: clean setup remote-config
-	bundle exec jekyll build --destination $(SITE_DIR)
-
-remote-config:
-	echo "$(SITE_FLAG)$(REMOTE_SITE)" >> $(CONFIG)
-
-# EXTRAS
-local: build open
-	cd docs && python -m SimpleHTTPServer $(LOCAL_SITE_PORT)
+SITE_DIR=_site
+open:
+	python -m webbrowser "http://localhost:4000"
+	cd $(SITE_DIR) && python -m SimpleHTTPServer 4000
 
 deps:
 	gem install jekyll bundler jekyll-paginate
