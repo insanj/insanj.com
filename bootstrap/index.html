@@ -8,11 +8,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap.min.css">
     <link href="http://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-    <link href="index.css" type="text/css" rel="stylesheet">
 
-    <title></title>
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <link href="navbar.css" type="text/css" rel="stylesheet">
+    <link href="button_toolbar.css" type="text/css" rel="stylesheet">
+    <link href="content.css" type="text/css" rel="stylesheet">
+
+    <title>julian weiss - insanj.com</title>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
         <img src="summer.jpg" width="30" height="30" class="d-inline-block align-top rounded mr-2" alt="">
@@ -49,6 +54,76 @@
         </ul>
       </div>
     </nav>
+
+    <!-- Button Toolbar -->
+    <div class="btn-toolbar mt-3" role="toolbar" id="insanj_button_toolbar" aria-label="insanj.com button toolbar">
+      <div id="insanj_button_toolbar_group" class="btn-group" role="group" aria-label="Minecraft group">
+        <button type="button" class="btn btn-primary" style="text-align:center;" width="50" height="50">
+          <img class="insanj_button_toolbar_img" src="minecraft.png" width="30" height="30" />
+          Minecraft
+        </button>
+      </div>
+
+      <div id="insanj_button_toolbar_group" class="btn-group" role="group" aria-label="Websites group">
+        <button type="button" class="btn btn-outline-primary" style="text-align:center;" width="50" height="50">
+          <img class="insanj_button_toolbar_img" src="minecraft.png" width="30" height="30" />
+          Websites
+        </button>
+      </div>
+
+      <div id="insanj_button_toolbar_group" class="btn-group" role="group" aria-label="Apps group">
+        <button type="button" class="btn btn-outline-primary" style="text-align:center;" width="50" height="50">
+          <img class="insanj_button_toolbar_img" src="minecraft.png" width="30" height="30" />
+          Apps
+        </button>
+      </div>
+
+      <div id="insanj_button_toolbar_group" class="btn-group" role="group" aria-label="Startups group">
+        <button type="button" class="btn btn-outline-primary" style="text-align:center;" width="50" height="50">
+          <img class="insanj_button_toolbar_img" src="minecraft.png" width="30" height="30" />
+          Startups
+        </button>
+      </div>
+
+      <div id="insanj_button_toolbar_group" class="btn-group" role="group" aria-label="Tweaks group">
+        <button type="button" class="btn btn-outline-primary" style="text-align:center;" width="50" height="50">
+          <img class="insanj_button_toolbar_img" src="minecraft.png" width="30" height="30" />
+          Tweaks
+        </button>
+      </div>
+
+      <div id="insanj_button_toolbar_group" class="btn-group" role="group" aria-label="Third group">
+        <button type="button" class="btn btn-outline-primary" style="text-align:center;" width="50" height="50">
+          <img class="insanj_button_toolbar_img" src="minecraft.png" width="30" height="30" />
+          Videos
+        </button>
+      </div>
+    </div>
+
+    <!-- Content container -->
+    <div class="container-fluid" id="insanj_minecraft_content">
+      <div class="row">
+        <!-- Project -->
+        <div class="col-sm-6">
+          <div class="card bg-dark m-4" style="max-width: 18rem;">
+            <div class="card-body text-light">
+              <img class="card-img-top" src="pride.png" />
+              <h5 class="card-header text-center" style="font-size: 24px;">pride</h5>
+              <p class="card-text text-center mt-3">
+                🦁  keep track of your playmates in minecraft
+              </p>
+              <p class="card-footer text-muted">
+               <i class="em em-coffee"></i> java
+               <br/>
+               <i class="em em-clock1"></i> 2019
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="jquery-3.3.1.slim.min.js"></script>

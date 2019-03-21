@@ -1,0 +1,74 @@
+
+
+/*
+  Extra small devices (portrait phones, less than 576px)
+  No media query since this is the default in Bootstrap
+*/
+
+/* Navbar */
+#insanj_navbar_rightside {
+  float: left;
+}
+
+li {
+  margin-right: 15px;
+}
+
+.navbar-nav {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+/*
+  Small devices (landscape phones, 576px and up)
+*/
+@media (min-width: 576px) {
+  #insanj_navbar_rightside {
+    float: left;
+  }
+
+  li {
+    margin-right: 15px;
+  }
+
+  .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+}
+
+/*
+  Medium devices (tablets, 768px and up)
+*/
+@media (min-width: 768px) {
+  #insanj_navbar_rightside {
+    float: left;
+  }
+
+  li {
+    margin-right: 15px;
+  }
+
+  .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+}
+
+/*
+  Large devices (desktops, 992px and up)
+*/
+@media (min-width: 992px) {
+  #insanj_navbar_rightside {
+    float: right;
+  }
+}
+
+/*
+  Extra large devices (large desktops, 1200px and up)
+*/
+@media (min-width: 1200px) {
+  #insanj_navbar_rightside {
+    float: right;
+  }
+}
