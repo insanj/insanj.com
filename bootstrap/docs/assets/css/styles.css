@@ -1,0 +1,94 @@
+body {
+  background-image: url("../img/bg.gif");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: saturation;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+/*
+  Extra small devices (portrait phones, less than 576px)
+  No media query since this is the default in Bootstrap
+*/
+/* Navbar */
+#insanj_navbar_rightside {
+  float: left; }
+
+li {
+  margin-right: 15px; }
+
+.navbar-nav {
+  display: flex !important;
+  flex-direction: row !important; }
+
+/*
+  Small devices (landscape phones, 576px and up)
+*/
+@media (min-width: 576px) {
+  #insanj_navbar_rightside {
+    float: left; }
+
+  li {
+    margin-right: 15px; }
+
+  .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important; } }
+/*
+  Medium devices (tablets, 768px and up)
+*/
+@media (min-width: 768px) {
+  #insanj_navbar_rightside {
+    float: left; }
+
+  li {
+    margin-right: 15px; }
+
+  .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important; } }
+/*
+  Large devices (desktops, 992px and up)
+*/
+@media (min-width: 992px) {
+  #insanj_navbar_rightside {
+    float: right; } }
+/*
+  Extra large devices (large desktops, 1200px and up)
+*/
+@media (min-width: 1200px) {
+  #insanj_navbar_rightside {
+    float: right; } }
+#insanj_minecraft_content {
+  justify-content: center; }
+
+/*
+  Extra small devices (portrait phones, less than 576px)
+  No media query since this is the default in Bootstrap
+*/
+#insanj_button_toolbar {
+  margin-top: 10px !important;
+  justify-content: center !important; }
+
+#insanj_button_toolbar_group {
+  margin: 5px 5px 0px 5px !important; }
+
+.insanj_button_toolbar_img {
+  display: block;
+  margin: auto; }
+
+#insanj_button_toolbar_group > .btn {
+  border-width: 2px;
+  border-radius: 10px; }
+
+/*
+  Small devices (landscape phones, 576px and up)
+*/
+/*
+  Medium devices (tablets, 768px and up)
+*/
+/*
+  Large devices (desktops, 992px and up)
+*/
+/*
+  Extra large devices (large desktops, 1200px and up)
+*/
