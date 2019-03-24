@@ -3,113 +3,60 @@ layout: index
 title: julian weiss - insanj.com
 ---
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
-    <img src="/assets/img/summer.jpg" width="30" height="30" class="d-inline-block align-top rounded mr-2" alt="">
-    julian weiss
-  </a>
-
-  <div class="collapse navbar-collapse" id="navbarNav" style="display: inline !important;">
-    <ul class="navbar-nav" id="insanj_navbar_rightside">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">
-           <i class="em em-fox_face mr-1" style="font-size: 12px; margin-bottom: 3px;"></i>
-           insanj.com <span class="sr-only">(current)</span>
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="http://insane.works" target=_blank>
-          <i class="em em-pancakes mr-1" style="font-size: 12px; margin-bottom: 3px;"></i>
-          portfolio
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="http://julianresume.site" target=_blank>
-          <i class="em em-blossom mr-1" style="font-size: 12px; margin-bottom: 3px;"></i>
-          resume
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/tags">
-          <i class="em em-bookmark mr-1" style="font-size: 12px; margin-bottom: 3px;"></i>
-          tags
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<!-- Button Toolbar -->
-<div class="btn-toolbar mt-3" role="toolbar" id="insanj_button_toolbar" aria-label="insanj.com button toolbar">
-  <div id="insanj_button_toolbar_group" class="btn-group" role="group" aria-label="Minecraft group">
-    <button type="button" class="btn btn-primary" width="50" height="50">
-      <img class="insanj_button_toolbar_img" src="/assets/img/minecraft.png" width="30" height="30" />
-      Minecraft
-    </button>
-  </div>
-
-  <div id="insanj_button_toolbar_group" class="btn-group" role="group" aria-label="Websites group">
-    <button type="button" class="btn btn-outline-primary" width="50" height="50">
-      <img class="insanj_button_toolbar_img" src="/assets/img/minecraft.png" width="30" height="30" />
-      Websites
-    </button>
-  </div>
-
-  <div id="insanj_button_toolbar_group" class="btn-group" role="group" aria-label="Apps group">
-    <button type="button" class="btn btn-outline-primary" width="50" height="50">
-      <img class="insanj_button_toolbar_img" src="/assets/img/minecraft.png" width="30" height="30" />
-      Apps
-    </button>
-  </div>
-
-  <div id="insanj_button_toolbar_group" class="btn-group" role="group" aria-label="Startups group">
-    <button type="button" class="btn btn-outline-primary" width="50" height="50">
-      <img class="insanj_button_toolbar_img" src="/assets/img/minecraft.png" width="30" height="30" />
-      Startups
-    </button>
-  </div>
-
-  <div id="insanj_button_toolbar_group" class="btn-group" role="group" aria-label="Tweaks group">
-    <button type="button" class="btn btn-outline-primary" width="50" height="50">
-      <img class="insanj_button_toolbar_img" src="/assets/img/minecraft.png" width="30" height="30" />
-      Tweaks
-    </button>
-  </div>
-
-  <div id="insanj_button_toolbar_group" class="btn-group" role="group" aria-label="Third group">
-    <button type="button" class="btn btn-outline-primary" width="50" height="50">
-      <img class="insanj_button_toolbar_img" src="/assets/img/minecraft.png" width="30" height="30" />
-      Videos
-    </button>
-  </div>
-</div>
+{% include navbar.html %}
+{% include toolbar.html %}
 
 <!-- Content container -->
 <div class="container-fluid text-light" id="insanj_minecraft_content">
   <!-- Year -->
-  <h2 class="ml-4 mt-3">2019</h2>
-
-  <!-- Project -->
   <div class="row">
-    <!-- Project -->
-    <div class="col-sm-6">
-      <div class="card bg-dark ml-4 ml-4 mb-4" style="max-width: 18rem;">
-        <div class="card-body text-light">
-          <img class="card-img-top" src="/assets/img/pride.png" />
-          <h5 class="card-header text-center" style="font-size: 24px;">pride</h5>
-          <p class="card-text text-center mt-3">
-            🦁  keep track of your playmates in minecraft
-          </p>
-          <p class="card-footer text-muted">
-           <i class="em em-coffee"></i> java
-           <br/>
-           <i class="em em-clock1"></i> 2019
-          </p>
+    {% for post in site.posts  %}
+      {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+      {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+      {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+      {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
+
+      {% if forloop.first %}
+      <span class="m-5 w-100">
+        <h2 id="{{ this_year }}-ref">{{this_year}}</h2>
+        <h3 id="{{ this_year }}-{{ this_month }}-ref">{{ this_month }}</h3>
+      </span>
+      {% endif %}
+
+      <!-- Project -->
+      <div class="col-sm-6">
+        <div class="card bg-dark ml-4 ml-4 mb-4" style="max-width: 18rem;">
+          <div class="card-body text-light">
+            <img class="card-img-top" src="{{ post.img }}" />
+            <h5 class="card-header text-center" style="font-size: 24px;">{{ post.title }}</h5>
+            <p class="card-text text-center mt-3">
+              {{ post.description }}
+            </p>
+            <p class="card-footer text-muted">
+             <i class="em em-coffee"></i> {{ post.language }}
+             <br/>
+             <i class="em em-clock1"></i> {{ post.date | date: '%Y' }}
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+
+      {% if forloop.last %}
+      {% else %}
+        {% if this_year != next_year %}
+          <span class="m-5 w-100">
+            <h2 id="{{ next_year }}-ref">{{next_year}}</h2>
+            <h3 id="{{ next_year }}-{{ next_month }}-ref">{{ next_month }}</h3>
+          </span>
+        {% else %}
+          {% if this_month != next_month %}
+          <span class="m-5 w-100">
+            <h3 id="{{ this_year }}-{{ next_month }}-ref">{{ next_month }}</h3>
+          </span>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
 
   </div>
 </div>
