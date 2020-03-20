@@ -1,5 +1,5 @@
 ﻿﻿<p align="center">
-   <img src="assets/img/favicon/favicon.ico" width=75 height=75 />
+   <img src="docs/assets/img/favicon/favicon.ico" width=75 height=75 />
    <h3 align="center">insanj.com</h3>
    <h4 align="center">🏡 complete personal website</h4>
 </p>
