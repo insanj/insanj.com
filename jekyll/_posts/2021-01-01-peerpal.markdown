@@ -1,0 +1,26 @@
+---
+layout: post
+title: PeerPal
+date: 2021-01-02 00:00:00 +0000
+description: 📝 PeerPal is a groundbreaking ed-tech platform for the admissions process.
+img: peerpal.png
+fig-caption: via peerpal
+permalink: peerpal/
+tags:
+  [
+    web,
+    javascript,
+    fullstack,
+    ios,
+    android,
+    rochester,
+    objective-c,
+    swift,
+    java,
+    jenkins,
+  ]
+---
+
+📝 PeerPal is a groundbreaking ed-tech platform for the admissions process. Worked remotely mostly from Rochester. Acquired by Graduway 2021.
+
+🛠 Full Stack Developer 2020-2021.
